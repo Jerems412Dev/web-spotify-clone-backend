@@ -29,34 +29,18 @@ public class UserDTO {
     private List<UserPlaylistDTO> playlists;
 
     //relation for fav user track
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "fav_track",
-            joinColumns = @JoinColumn(name = "track_id", referencedColumnName = "idTrack"),
-            inverseJoinColumns = @JoinColumn(name = "user_id",
-                    referencedColumnName = "idUser"))
+    @ManyToMany
     private List<TrackDTO> tracks;
 
     //relation for follow user artist
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "follow_artist",
-            joinColumns = @JoinColumn(name = "artist_id", referencedColumnName = "idArtist"),
-            inverseJoinColumns = @JoinColumn(name = "user_id",
-                    referencedColumnName = "idUser"))
+    @ManyToMany
     private List<ArtistDTO> artists;
 
     //relation for fav user album
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "fav_album",
-            joinColumns = @JoinColumn(name = "album_id", referencedColumnName = "idAlbum"),
-            inverseJoinColumns = @JoinColumn(name = "user_id",
-                    referencedColumnName = "idUser"))
+    @ManyToMany
     private List<AlbumDTO> albums;
 
     //relation for fav user album
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "fav_playlist",
-            joinColumns = @JoinColumn(name = "playlist_id", referencedColumnName = "idSpotifyPlaylist"),
-            inverseJoinColumns = @JoinColumn(name = "user_id",
-                    referencedColumnName = "idUser"))
+    @ManyToMany
     private List<SpotifyPlaylistDTO> spotifyplaylists;
 }

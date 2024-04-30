@@ -26,34 +26,18 @@ public class TrackDTO {
     private List<UserDTO> users;
 
     //relation for artists
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "track_artist",
-            joinColumns = @JoinColumn(name = "artist_id", referencedColumnName = "idArtist"),
-            inverseJoinColumns = @JoinColumn(name = "track_id",
-                    referencedColumnName = "idTrack"))
+    @ManyToMany
     private List<ArtistDTO> artists;
 
     //relation for categories
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "track_category",
-            joinColumns = @JoinColumn(name = "category_id", referencedColumnName = "idCategory"),
-            inverseJoinColumns = @JoinColumn(name = "track_id",
-                    referencedColumnName = "idTrack"))
+    @ManyToMany
     private List<CategoryDTO> categories;
 
     //relation for spotifyplaylist
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "track_spotifyplaylist",
-            joinColumns = @JoinColumn(name = "spotifyplaylist_id", referencedColumnName = "idSpotifyPlaylist"),
-            inverseJoinColumns = @JoinColumn(name = "track_id",
-                    referencedColumnName = "idTrack"))
+    @ManyToMany
     private List<SpotifyPlaylistDTO> spotifyplaylists;
 
     //relation for userplaylist
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "track_userplaylist",
-            joinColumns = @JoinColumn(name = "userplaylist_id", referencedColumnName = "idUserPlaylist"),
-            inverseJoinColumns = @JoinColumn(name = "track_id",
-                    referencedColumnName = "idTrack"))
+    @ManyToMany
     private List<UserPlaylistDTO> userplaylists;
 }

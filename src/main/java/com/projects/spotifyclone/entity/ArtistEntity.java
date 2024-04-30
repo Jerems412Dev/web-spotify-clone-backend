@@ -29,10 +29,6 @@ public class ArtistEntity {
     private List<TrackEntity> tracks;
 
     //relation for category
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "artist_category",
-            joinColumns = @JoinColumn(name = "category_id", referencedColumnName = "idCategory"),
-            inverseJoinColumns = @JoinColumn(name = "artist_id",
-                    referencedColumnName = "idArtist"))
+    @ManyToMany
     private List<CategoryEntity> categories;
 }

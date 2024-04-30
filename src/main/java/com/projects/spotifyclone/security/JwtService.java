@@ -9,6 +9,7 @@ import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
 
@@ -21,18 +22,14 @@ import java.util.function.Function;
 
 @Component
 public class JwtService {
-    private final UserMapper userMapper;
+    @Autowired
+    private UserMapper userMapper;
 
-    private final UserRepository userRepository;
+    @Autowired
+    private UserRepository userRepository;
 
     // Secret Key for signing the JWT. It should be kept private.
     private static final String SECRET = "59d407208c0bfb4fc52780506cdecd71cbde23b4dd622bc80d84b66e9efc4dd2=\r\n";
-
-    public JwtService(UserMapper userMapper, UserRepository userRepository) {
-        this.userMapper = userMapper;
-        this.userRepository = userRepository;
-    }
-
 
     // Generates a JWT token for the given userName.
     public String generateToken(UserDTO user) {

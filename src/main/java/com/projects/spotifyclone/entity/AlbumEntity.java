@@ -30,10 +30,6 @@ public class AlbumEntity {
     private List<UserEntity> users;
 
     //relation for categories
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "album_category",
-            joinColumns = @JoinColumn(name = "category_id", referencedColumnName = "idCategory"),
-            inverseJoinColumns = @JoinColumn(name = "album_id",
-                    referencedColumnName = "idAlbum"))
+    @ManyToMany
     private List<CategoryEntity> categories;
 }

@@ -27,10 +27,6 @@ public class SpotifyPlaylistEntity {
     private List<TrackEntity> tracks;
 
     //relation for category
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "spotifyplaylist_category",
-            joinColumns = @JoinColumn(name = "category_id", referencedColumnName = "idCategory"),
-            inverseJoinColumns = @JoinColumn(name = "spotifyplaylist_id",
-                    referencedColumnName = "idSpotifyPlaylist"))
+    @ManyToMany
     private List<CategoryEntity> categories;
 }
