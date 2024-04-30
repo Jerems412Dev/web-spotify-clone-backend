@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Entity
 @Data
 @NoArgsConstructor
@@ -15,4 +17,13 @@ public class UserPlaylistEntity {
     private String namePlaylist;
     private String description;
     private String profilePicture;
+
+    //All relationships
+
+    @ManyToOne
+    @JoinColumn(name="user_id")
+    private UserEntity user;
+
+    @ManyToMany(mappedBy = "userplaylists")
+    private List<TrackEntity> tracks;
 }
