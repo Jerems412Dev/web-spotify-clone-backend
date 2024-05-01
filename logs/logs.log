@@ -19852,3 +19852,708 @@
   "threadPriority" : 5,
   "service" : "spotify-clone"
 }
+{
+  "instant" : {
+    "epochSecond" : 1714536559,
+    "nanoOfSecond" : 685797200
+  },
+  "thread" : "background-preinit",
+  "level" : "INFO",
+  "loggerName" : "org.hibernate.validator.internal.util.Version",
+  "message" : "HV000001: Hibernate Validator 8.0.1.Final",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.hibernate.validator.internal.util.logging.Log_$logger",
+  "threadId" : 24,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536559,
+    "nanoOfSecond" : 746790200
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "com.projects.spotifyclone.SpotifycloneApplication",
+  "message" : "Starting SpotifycloneApplication using Java 17.0.9 with PID 4120 (E:\\Projets\\Personnels\\Spring\\spotifyclone\\target\\classes started by DELL in E:\\Projets\\Personnels\\Spring\\spotifyclone)",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536559,
+    "nanoOfSecond" : 898789600
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "com.projects.spotifyclone.SpotifycloneApplication",
+  "message" : "No active profile set, falling back to 1 default profile: \"default\"",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536559,
+    "nanoOfSecond" : 986794000
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor",
+  "message" : "Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536559,
+    "nanoOfSecond" : 988794200
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor",
+  "message" : "For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536561,
+    "nanoOfSecond" : 683232600
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Multiple Spring Data modules found, entering strict repository configuration mode",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536561,
+    "nanoOfSecond" : 685233600
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Bootstrapping Spring Data JDBC repositories in DEFAULT mode.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536561,
+    "nanoOfSecond" : 737232400
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport",
+  "message" : "Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.projects.spotifyclone.repository.AlbumRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536561,
+    "nanoOfSecond" : 739235700
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport",
+  "message" : "Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.projects.spotifyclone.repository.ArtistRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536561,
+    "nanoOfSecond" : 741234800
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport",
+  "message" : "Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.projects.spotifyclone.repository.CategoryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536561,
+    "nanoOfSecond" : 743234900
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport",
+  "message" : "Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.projects.spotifyclone.repository.SpotifyPlaylistRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536561,
+    "nanoOfSecond" : 745235300
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport",
+  "message" : "Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.projects.spotifyclone.repository.TrackRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536561,
+    "nanoOfSecond" : 748237000
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport",
+  "message" : "Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.projects.spotifyclone.repository.UserPlaylistRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536561,
+    "nanoOfSecond" : 750232900
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport",
+  "message" : "Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.projects.spotifyclone.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536561,
+    "nanoOfSecond" : 751233700
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Finished Spring Data repository scanning in 56 ms. Found 0 JDBC repository interfaces.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536561,
+    "nanoOfSecond" : 765233500
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Multiple Spring Data modules found, entering strict repository configuration mode",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536561,
+    "nanoOfSecond" : 767234600
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536561,
+    "nanoOfSecond" : 825234500
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Finished Spring Data repository scanning in 48 ms. Found 7 JPA repository interfaces.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536562,
+    "nanoOfSecond" : 968234100
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.boot.web.embedded.tomcat.TomcatWebServer",
+  "message" : "Tomcat initialized with port 8081 (http)",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536562,
+    "nanoOfSecond" : 985235200
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.apache.coyote.http11.Http11NioProtocol",
+  "message" : "Initializing ProtocolHandler [\"http-nio-8081\"]",
+  "endOfBatch" : false,
+  "loggerFqcn" : "java.util.logging.Logger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536562,
+    "nanoOfSecond" : 989233300
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.apache.catalina.core.StandardService",
+  "message" : "Starting service [Tomcat]",
+  "endOfBatch" : false,
+  "loggerFqcn" : "java.util.logging.Logger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536562,
+    "nanoOfSecond" : 990237000
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.apache.catalina.core.StandardEngine",
+  "message" : "Starting Servlet engine: [Apache Tomcat/10.1.19]",
+  "endOfBatch" : false,
+  "loggerFqcn" : "java.util.logging.Logger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536563,
+    "nanoOfSecond" : 71231500
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]",
+  "message" : "Initializing Spring embedded WebApplicationContext",
+  "endOfBatch" : false,
+  "loggerFqcn" : "java.util.logging.Logger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536563,
+    "nanoOfSecond" : 72232600
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext",
+  "message" : "Root WebApplicationContext: initialization completed in 3082 ms",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536563,
+    "nanoOfSecond" : 138302900
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "com.zaxxer.hikari.HikariDataSource",
+  "message" : "HikariPool-1 - Starting...",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.slf4j.Log4jLogger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536563,
+    "nanoOfSecond" : 427278100
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "com.zaxxer.hikari.pool.HikariPool",
+  "message" : "HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5e3b0473",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.slf4j.Log4jLogger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536563,
+    "nanoOfSecond" : 429305600
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "com.zaxxer.hikari.HikariDataSource",
+  "message" : "HikariPool-1 - Start completed.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.slf4j.Log4jLogger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536563,
+    "nanoOfSecond" : 441301800
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration",
+  "message" : "H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/dbspotify?createDatabaseIfNotExist=true'",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536563,
+    "nanoOfSecond" : 606279700
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.hibernate.jpa.internal.util.LogHelper",
+  "message" : "HHH000204: Processing PersistenceUnitInfo [name: default]",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.hibernate.internal.EntityManagerMessageLogger_$logger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536563,
+    "nanoOfSecond" : 750284900
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.hibernate.Version",
+  "message" : "HHH000412: Hibernate ORM core version 6.4.4.Final",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.hibernate.internal.CoreMessageLogger_$logger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536563,
+    "nanoOfSecond" : 809283500
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.hibernate.cache.internal.RegionFactoryInitiator",
+  "message" : "HHH000026: Second-level cache disabled",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.hibernate.internal.CoreMessageLogger_$logger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536564,
+    "nanoOfSecond" : 266355500
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo",
+  "message" : "No LoadTimeWeaver setup: ignoring JPA class transformer",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536564,
+    "nanoOfSecond" : 381428600
+  },
+  "thread" : "restartedMain",
+  "level" : "WARN",
+  "loggerName" : "org.hibernate.dialect.Dialect",
+  "message" : "HHH000511: The 5.5.0 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.hibernate.internal.CoreMessageLogger_$logger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536566,
+    "nanoOfSecond" : 15660100
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator",
+  "message" : "HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.hibernate.internal.CoreMessageLogger_$logger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536566,
+    "nanoOfSecond" : 552675100
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean",
+  "message" : "Initialized JPA EntityManagerFactory for persistence unit 'default'",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536567,
+    "nanoOfSecond" : 627674800
+  },
+  "thread" : "restartedMain",
+  "level" : "WARN",
+  "loggerName" : "org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration",
+  "message" : "spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536567,
+    "nanoOfSecond" : 975674900
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.security.web.DefaultSecurityFilterChain",
+  "message" : "Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@340457db, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4068fece, org.springframework.security.web.context.SecurityContextHolderFilter@69c6ba8, org.springframework.security.web.header.HeaderWriterFilter@2baead81, org.springframework.web.filter.CorsFilter@3d0f702f, org.springframework.security.web.authentication.logout.LogoutFilter@76482952, com.projects.spotifyclone.security.JwtFilter@58f80145, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28622438, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3f01be56, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3422bb43, org.springframework.security.web.session.SessionManagementFilter@9c9a5de, org.springframework.security.web.access.ExceptionTranslationFilter@72c2c65b, org.springframework.security.web.access.intercept.AuthorizationFilter@5925b7b2]",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536568,
+    "nanoOfSecond" : 426676900
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer",
+  "message" : "LiveReload server is running on port 35729",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536568,
+    "nanoOfSecond" : 464682100
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.apache.coyote.http11.Http11NioProtocol",
+  "message" : "Starting ProtocolHandler [\"http-nio-8081\"]",
+  "endOfBatch" : false,
+  "loggerFqcn" : "java.util.logging.Logger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536568,
+    "nanoOfSecond" : 492679300
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.boot.web.embedded.tomcat.TomcatWebServer",
+  "message" : "Tomcat started on port 8081 (http) with context path ''",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536568,
+    "nanoOfSecond" : 507673000
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "com.projects.spotifyclone.SpotifycloneApplication",
+  "message" : "Started SpotifycloneApplication in 9.323 seconds (process running for 12.76)",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536612,
+    "nanoOfSecond" : 100748500
+  },
+  "thread" : "http-nio-8081-exec-1",
+  "level" : "INFO",
+  "loggerName" : "org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]",
+  "message" : "Initializing Spring DispatcherServlet 'dispatcherServlet'",
+  "endOfBatch" : false,
+  "loggerFqcn" : "java.util.logging.Logger",
+  "threadId" : 53,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536612,
+    "nanoOfSecond" : 100748500
+  },
+  "thread" : "http-nio-8081-exec-1",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.web.servlet.DispatcherServlet",
+  "message" : "Initializing Servlet 'dispatcherServlet'",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 53,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536612,
+    "nanoOfSecond" : 103750600
+  },
+  "thread" : "http-nio-8081-exec-1",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.web.servlet.DispatcherServlet",
+  "message" : "Completed initialization in 2 ms",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 53,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536679,
+    "nanoOfSecond" : 898921100
+  },
+  "thread" : "SpringApplicationShutdownHook",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean",
+  "message" : "Closing JPA EntityManagerFactory for persistence unit 'default'",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536679,
+    "nanoOfSecond" : 906906500
+  },
+  "thread" : "SpringApplicationShutdownHook",
+  "level" : "INFO",
+  "loggerName" : "com.zaxxer.hikari.HikariDataSource",
+  "message" : "HikariPool-1 - Shutdown initiated...",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.slf4j.Log4jLogger",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714536679,
+    "nanoOfSecond" : 922906900
+  },
+  "thread" : "SpringApplicationShutdownHook",
+  "level" : "INFO",
+  "loggerName" : "com.zaxxer.hikari.HikariDataSource",
+  "message" : "HikariPool-1 - Shutdown completed.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.slf4j.Log4jLogger",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
