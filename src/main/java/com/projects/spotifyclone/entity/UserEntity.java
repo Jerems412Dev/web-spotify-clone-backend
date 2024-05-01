@@ -1,11 +1,11 @@
 package com.projects.spotifyclone.entity;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Data
@@ -46,4 +46,7 @@ public class UserEntity {
     //relation for fav user album
     @ManyToMany
     private List<SpotifyPlaylistEntity> spotifyplaylists;
+
+    @OneToMany(mappedBy = "user")
+    private Set<TrackListenEntity> trackListen;
 }

@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Data
@@ -42,4 +43,7 @@ public class TrackEntity {
     //relation for userplaylist
     @ManyToMany
     private List<UserPlaylistEntity> userplaylists;
+
+    @OneToMany(mappedBy = "track")
+    private Set<TrackListenEntity> trackListen;
 }
