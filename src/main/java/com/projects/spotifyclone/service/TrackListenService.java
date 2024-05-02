@@ -3,7 +3,6 @@ package com.projects.spotifyclone.service;
 import com.projects.spotifyclone.dto.TrackListenDTO;
 import com.projects.spotifyclone.mapper.TrackListenMapper;
 import com.projects.spotifyclone.repository.TrackListenRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -11,11 +10,13 @@ import java.util.List;
 
 @Service
 public class TrackListenService {
-    @Autowired
-    private TrackListenMapper tracklistenMapper;
+    private final TrackListenMapper tracklistenMapper;
+    private final TrackListenRepository tracklistenRepository;
 
-    @Autowired
-    private TrackListenRepository tracklistenRepository;
+    public TrackListenService(TrackListenMapper tracklistenMapper, TrackListenRepository tracklistenRepository) {
+        this.tracklistenMapper = tracklistenMapper;
+        this.tracklistenRepository = tracklistenRepository;
+    }
 
     // find trackListen by username and titleTrack
     @Transactional(readOnly = true)

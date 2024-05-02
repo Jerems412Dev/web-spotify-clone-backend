@@ -2,10 +2,8 @@ package com.projects.spotifyclone.service;
 
 import com.projects.spotifyclone.dto.AlbumDTO;
 import com.projects.spotifyclone.dto.TrackDTO;
-import com.projects.spotifyclone.mapper.AlbumMapper;
 import com.projects.spotifyclone.mapper.TrackMapper;
 import com.projects.spotifyclone.repository.TrackRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -13,13 +11,13 @@ import java.util.List;
 
 @Service
 public class TrackService {
-    @Autowired
-    private TrackMapper trackMapper;
-    @Autowired
-    private AlbumMapper albumMapper;
+    private final TrackMapper trackMapper;
+    private final TrackRepository trackRepository;
 
-    @Autowired
-    private TrackRepository trackRepository;
+    public TrackService(TrackMapper trackMapper, TrackRepository trackRepository) {
+        this.trackMapper = trackMapper;
+        this.trackRepository = trackRepository;
+    }
 
     // create track
     @Transactional

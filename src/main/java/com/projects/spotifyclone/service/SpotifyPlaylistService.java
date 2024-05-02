@@ -3,7 +3,6 @@ package com.projects.spotifyclone.service;
 import com.projects.spotifyclone.dto.SpotifyPlaylistDTO;
 import com.projects.spotifyclone.mapper.SpotifyPlaylistMapper;
 import com.projects.spotifyclone.repository.SpotifyPlaylistRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -11,11 +10,13 @@ import java.util.List;
 
 @Service
 public class SpotifyPlaylistService {
-    @Autowired
-    private SpotifyPlaylistMapper spotifyPlaylistMapper;
+    private final SpotifyPlaylistMapper spotifyPlaylistMapper;
+    private final SpotifyPlaylistRepository spotifyPlaylistRepository;
 
-    @Autowired
-    private SpotifyPlaylistRepository spotifyPlaylistRepository;
+    public SpotifyPlaylistService(SpotifyPlaylistMapper spotifyPlaylistMapper, SpotifyPlaylistRepository spotifyPlaylistRepository) {
+        this.spotifyPlaylistMapper = spotifyPlaylistMapper;
+        this.spotifyPlaylistRepository = spotifyPlaylistRepository;
+    }
 
     // add an spotifyPlaylist
     @Transactional

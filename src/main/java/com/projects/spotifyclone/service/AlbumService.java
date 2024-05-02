@@ -6,7 +6,6 @@ import com.projects.spotifyclone.entity.UserEntity;
 import com.projects.spotifyclone.mapper.AlbumMapper;
 import com.projects.spotifyclone.repository.AlbumRepository;
 import com.projects.spotifyclone.repository.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -15,14 +14,17 @@ import java.util.List;
 
 @Service
 public class AlbumService {
-    @Autowired
-    private AlbumMapper albumMapper;
+    private final AlbumMapper albumMapper;
 
-    @Autowired
-    private AlbumRepository albumRepository;
+    private final AlbumRepository albumRepository;
 
-    @Autowired
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
+
+    public AlbumService(AlbumMapper albumMapper, AlbumRepository albumRepository, UserRepository userRepository) {
+        this.albumMapper = albumMapper;
+        this.albumRepository = albumRepository;
+        this.userRepository = userRepository;
+    }
 
     // add an album
     @Transactional

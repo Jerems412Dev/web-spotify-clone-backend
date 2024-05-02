@@ -18,12 +18,12 @@ import java.util.Optional;
 public class UserService implements UserDetailsService {
     @Autowired
     private UserMapper userMapper;
-
     @Autowired
     private UserRepository userRepository;
-
     @Autowired
     private  PasswordEncoder passwordEncoder;
+
+
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         Optional<UserEntity> user = userRepository.findByUsername(username);

@@ -3,7 +3,6 @@ package com.projects.spotifyclone.service;
 import com.projects.spotifyclone.dto.CategoryDTO;
 import com.projects.spotifyclone.mapper.CategoryMapper;
 import com.projects.spotifyclone.repository.CategoryRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -11,11 +10,13 @@ import java.util.List;
 
 @Service
 public class CategoryService {
-    @Autowired
-    private CategoryMapper categoryMapper;
+    private final CategoryMapper categoryMapper;
+    private final CategoryRepository categoryRepository;
 
-    @Autowired
-    private CategoryRepository categoryRepository;
+    public CategoryService(CategoryMapper categoryMapper, CategoryRepository categoryRepository) {
+        this.categoryMapper = categoryMapper;
+        this.categoryRepository = categoryRepository;
+    }
 
     // add new category
     @Transactional

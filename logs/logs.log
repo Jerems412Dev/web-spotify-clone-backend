@@ -25942,3 +25942,3250 @@
   "threadPriority" : 5,
   "service" : "spotify-clone"
 }
+{
+  "instant" : {
+    "epochSecond" : 1714660674,
+    "nanoOfSecond" : 857848000
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "com.projects.spotifyclone.SpotifycloneApplication",
+  "message" : "Starting SpotifycloneApplication using Java 17.0.9 with PID 14964 (E:\\Projets\\Personnels\\Spring\\spotifyclone\\target\\classes started by DELL in E:\\Projets\\Personnels\\Spring\\spotifyclone)",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660674,
+    "nanoOfSecond" : 773849400
+  },
+  "thread" : "background-preinit",
+  "level" : "INFO",
+  "loggerName" : "org.hibernate.validator.internal.util.Version",
+  "message" : "HV000001: Hibernate Validator 8.0.1.Final",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.hibernate.validator.internal.util.logging.Log_$logger",
+  "threadId" : 25,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660675,
+    "nanoOfSecond" : 136846300
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "com.projects.spotifyclone.SpotifycloneApplication",
+  "message" : "No active profile set, falling back to 1 default profile: \"default\"",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660675,
+    "nanoOfSecond" : 232849500
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor",
+  "message" : "Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660675,
+    "nanoOfSecond" : 233848200
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor",
+  "message" : "For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660677,
+    "nanoOfSecond" : 546333100
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Multiple Spring Data modules found, entering strict repository configuration mode",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660677,
+    "nanoOfSecond" : 549350800
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Bootstrapping Spring Data JDBC repositories in DEFAULT mode.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660677,
+    "nanoOfSecond" : 601365500
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport",
+  "message" : "Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.projects.spotifyclone.repository.AlbumRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660677,
+    "nanoOfSecond" : 603367300
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport",
+  "message" : "Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.projects.spotifyclone.repository.ArtistRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660677,
+    "nanoOfSecond" : 605368600
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport",
+  "message" : "Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.projects.spotifyclone.repository.CategoryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660677,
+    "nanoOfSecond" : 607370400
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport",
+  "message" : "Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.projects.spotifyclone.repository.SpotifyPlaylistRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660677,
+    "nanoOfSecond" : 610373400
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport",
+  "message" : "Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.projects.spotifyclone.repository.TrackListenRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660677,
+    "nanoOfSecond" : 612366000
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport",
+  "message" : "Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.projects.spotifyclone.repository.TrackRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660677,
+    "nanoOfSecond" : 615375000
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport",
+  "message" : "Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.projects.spotifyclone.repository.UserPlaylistRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660677,
+    "nanoOfSecond" : 617369100
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport",
+  "message" : "Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.projects.spotifyclone.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660677,
+    "nanoOfSecond" : 618367800
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Finished Spring Data repository scanning in 62 ms. Found 0 JDBC repository interfaces.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660677,
+    "nanoOfSecond" : 638388700
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Multiple Spring Data modules found, entering strict repository configuration mode",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660677,
+    "nanoOfSecond" : 644368300
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660677,
+    "nanoOfSecond" : 728365100
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Finished Spring Data repository scanning in 77 ms. Found 8 JPA repository interfaces.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660679,
+    "nanoOfSecond" : 8402800
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.boot.web.embedded.tomcat.TomcatWebServer",
+  "message" : "Tomcat initialized with port 8081 (http)",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660679,
+    "nanoOfSecond" : 25489800
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.apache.coyote.http11.Http11NioProtocol",
+  "message" : "Initializing ProtocolHandler [\"http-nio-8081\"]",
+  "endOfBatch" : false,
+  "loggerFqcn" : "java.util.logging.Logger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660679,
+    "nanoOfSecond" : 29462700
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.apache.catalina.core.StandardService",
+  "message" : "Starting service [Tomcat]",
+  "endOfBatch" : false,
+  "loggerFqcn" : "java.util.logging.Logger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660679,
+    "nanoOfSecond" : 30466000
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.apache.catalina.core.StandardEngine",
+  "message" : "Starting Servlet engine: [Apache Tomcat/10.1.19]",
+  "endOfBatch" : false,
+  "loggerFqcn" : "java.util.logging.Logger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660679,
+    "nanoOfSecond" : 144462700
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]",
+  "message" : "Initializing Spring embedded WebApplicationContext",
+  "endOfBatch" : false,
+  "loggerFqcn" : "java.util.logging.Logger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660679,
+    "nanoOfSecond" : 145465900
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext",
+  "message" : "Root WebApplicationContext: initialization completed in 3911 ms",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660679,
+    "nanoOfSecond" : 257475900
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "com.zaxxer.hikari.HikariDataSource",
+  "message" : "HikariPool-1 - Starting...",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.slf4j.Log4jLogger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660679,
+    "nanoOfSecond" : 577464100
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "com.zaxxer.hikari.pool.HikariPool",
+  "message" : "HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1a0eba98",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.slf4j.Log4jLogger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660679,
+    "nanoOfSecond" : 582467100
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "com.zaxxer.hikari.HikariDataSource",
+  "message" : "HikariPool-1 - Start completed.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.slf4j.Log4jLogger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660679,
+    "nanoOfSecond" : 599465300
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration",
+  "message" : "H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/dbspotify?createDatabaseIfNotExist=true'",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660679,
+    "nanoOfSecond" : 856463700
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.hibernate.jpa.internal.util.LogHelper",
+  "message" : "HHH000204: Processing PersistenceUnitInfo [name: default]",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.hibernate.internal.EntityManagerMessageLogger_$logger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660679,
+    "nanoOfSecond" : 965487400
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.hibernate.Version",
+  "message" : "HHH000412: Hibernate ORM core version 6.4.4.Final",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.hibernate.internal.CoreMessageLogger_$logger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660680,
+    "nanoOfSecond" : 26466100
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.hibernate.cache.internal.RegionFactoryInitiator",
+  "message" : "HHH000026: Second-level cache disabled",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.hibernate.internal.CoreMessageLogger_$logger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660680,
+    "nanoOfSecond" : 675466300
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo",
+  "message" : "No LoadTimeWeaver setup: ignoring JPA class transformer",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660680,
+    "nanoOfSecond" : 869464000
+  },
+  "thread" : "restartedMain",
+  "level" : "WARN",
+  "loggerName" : "org.hibernate.dialect.Dialect",
+  "message" : "HHH000511: The 5.5.0 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.hibernate.internal.CoreMessageLogger_$logger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660682,
+    "nanoOfSecond" : 735631500
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator",
+  "message" : "HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.hibernate.internal.CoreMessageLogger_$logger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660683,
+    "nanoOfSecond" : 306635000
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean",
+  "message" : "Initialized JPA EntityManagerFactory for persistence unit 'default'",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660684,
+    "nanoOfSecond" : 629678200
+  },
+  "thread" : "restartedMain",
+  "level" : "WARN",
+  "loggerName" : "org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration",
+  "message" : "spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660685,
+    "nanoOfSecond" : 79655500
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.security.web.DefaultSecurityFilterChain",
+  "message" : "Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1a55cf4f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@22f592d9, org.springframework.security.web.context.SecurityContextHolderFilter@22662a30, org.springframework.security.web.header.HeaderWriterFilter@54595f08, org.springframework.web.filter.CorsFilter@52b55173, org.springframework.security.web.authentication.logout.LogoutFilter@73bcb7c9, com.projects.spotifyclone.security.JwtFilter@1a22915a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28f77548, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@57f060ee, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1402262d, org.springframework.security.web.session.SessionManagementFilter@3328d609, org.springframework.security.web.access.ExceptionTranslationFilter@31fa6ef6, org.springframework.security.web.access.intercept.AuthorizationFilter@582c068a]",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660687,
+    "nanoOfSecond" : 965191700
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer",
+  "message" : "LiveReload server is running on port 35729",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660688,
+    "nanoOfSecond" : 188800
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.apache.coyote.http11.Http11NioProtocol",
+  "message" : "Starting ProtocolHandler [\"http-nio-8081\"]",
+  "endOfBatch" : false,
+  "loggerFqcn" : "java.util.logging.Logger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660688,
+    "nanoOfSecond" : 207205100
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.boot.web.embedded.tomcat.TomcatWebServer",
+  "message" : "Tomcat started on port 8081 (http) with context path ''",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660688,
+    "nanoOfSecond" : 250196600
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "com.projects.spotifyclone.SpotifycloneApplication",
+  "message" : "Started SpotifycloneApplication in 14.223 seconds (process running for 17.035)",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660702,
+    "nanoOfSecond" : 337226200
+  },
+  "thread" : "SpringApplicationShutdownHook",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean",
+  "message" : "Closing JPA EntityManagerFactory for persistence unit 'default'",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 24,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660702,
+    "nanoOfSecond" : 342232000
+  },
+  "thread" : "SpringApplicationShutdownHook",
+  "level" : "INFO",
+  "loggerName" : "com.zaxxer.hikari.HikariDataSource",
+  "message" : "HikariPool-1 - Shutdown initiated...",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.slf4j.Log4jLogger",
+  "threadId" : 24,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714660702,
+    "nanoOfSecond" : 356230900
+  },
+  "thread" : "SpringApplicationShutdownHook",
+  "level" : "INFO",
+  "loggerName" : "com.zaxxer.hikari.HikariDataSource",
+  "message" : "HikariPool-1 - Shutdown completed.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.slf4j.Log4jLogger",
+  "threadId" : 24,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663388,
+    "nanoOfSecond" : 317483800
+  },
+  "thread" : "background-preinit",
+  "level" : "INFO",
+  "loggerName" : "org.hibernate.validator.internal.util.Version",
+  "message" : "HV000001: Hibernate Validator 8.0.1.Final",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.hibernate.validator.internal.util.logging.Log_$logger",
+  "threadId" : 26,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663388,
+    "nanoOfSecond" : 398483900
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "com.projects.spotifyclone.SpotifycloneApplication",
+  "message" : "Starting SpotifycloneApplication using Java 17.0.9 with PID 15080 (E:\\Projets\\Personnels\\Spring\\spotifyclone\\target\\classes started by DELL in E:\\Projets\\Personnels\\Spring\\spotifyclone)",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663388,
+    "nanoOfSecond" : 570495100
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "com.projects.spotifyclone.SpotifycloneApplication",
+  "message" : "No active profile set, falling back to 1 default profile: \"default\"",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663388,
+    "nanoOfSecond" : 781489900
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor",
+  "message" : "Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663388,
+    "nanoOfSecond" : 784493400
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor",
+  "message" : "For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663390,
+    "nanoOfSecond" : 340487200
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Multiple Spring Data modules found, entering strict repository configuration mode",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663390,
+    "nanoOfSecond" : 345484300
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Bootstrapping Spring Data JDBC repositories in DEFAULT mode.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663390,
+    "nanoOfSecond" : 525492200
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport",
+  "message" : "Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.projects.spotifyclone.repository.AlbumRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663390,
+    "nanoOfSecond" : 536488200
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport",
+  "message" : "Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.projects.spotifyclone.repository.ArtistRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663390,
+    "nanoOfSecond" : 549487200
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport",
+  "message" : "Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.projects.spotifyclone.repository.CategoryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663390,
+    "nanoOfSecond" : 566488300
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport",
+  "message" : "Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.projects.spotifyclone.repository.SpotifyPlaylistRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663390,
+    "nanoOfSecond" : 580491900
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport",
+  "message" : "Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.projects.spotifyclone.repository.TrackListenRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663390,
+    "nanoOfSecond" : 586495600
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport",
+  "message" : "Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.projects.spotifyclone.repository.TrackRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663390,
+    "nanoOfSecond" : 589490700
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport",
+  "message" : "Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.projects.spotifyclone.repository.UserPlaylistRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663390,
+    "nanoOfSecond" : 595490700
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport",
+  "message" : "Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.projects.spotifyclone.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663390,
+    "nanoOfSecond" : 599486200
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Finished Spring Data repository scanning in 241 ms. Found 0 JDBC repository interfaces.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663390,
+    "nanoOfSecond" : 636484600
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Multiple Spring Data modules found, entering strict repository configuration mode",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663390,
+    "nanoOfSecond" : 648485800
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663390,
+    "nanoOfSecond" : 807485700
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Finished Spring Data repository scanning in 141 ms. Found 8 JPA repository interfaces.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663392,
+    "nanoOfSecond" : 83529600
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.boot.web.embedded.tomcat.TomcatWebServer",
+  "message" : "Tomcat initialized with port 8081 (http)",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663392,
+    "nanoOfSecond" : 109529500
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.apache.coyote.http11.Http11NioProtocol",
+  "message" : "Initializing ProtocolHandler [\"http-nio-8081\"]",
+  "endOfBatch" : false,
+  "loggerFqcn" : "java.util.logging.Logger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663392,
+    "nanoOfSecond" : 114528200
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.apache.catalina.core.StandardService",
+  "message" : "Starting service [Tomcat]",
+  "endOfBatch" : false,
+  "loggerFqcn" : "java.util.logging.Logger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663392,
+    "nanoOfSecond" : 116531000
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.apache.catalina.core.StandardEngine",
+  "message" : "Starting Servlet engine: [Apache Tomcat/10.1.19]",
+  "endOfBatch" : false,
+  "loggerFqcn" : "java.util.logging.Logger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663392,
+    "nanoOfSecond" : 222522500
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]",
+  "message" : "Initializing Spring embedded WebApplicationContext",
+  "endOfBatch" : false,
+  "loggerFqcn" : "java.util.logging.Logger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663392,
+    "nanoOfSecond" : 223527900
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext",
+  "message" : "Root WebApplicationContext: initialization completed in 3436 ms",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663392,
+    "nanoOfSecond" : 300526800
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "com.zaxxer.hikari.HikariDataSource",
+  "message" : "HikariPool-1 - Starting...",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.slf4j.Log4jLogger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663392,
+    "nanoOfSecond" : 557526300
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "com.zaxxer.hikari.pool.HikariPool",
+  "message" : "HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e2117b6",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.slf4j.Log4jLogger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663392,
+    "nanoOfSecond" : 561529100
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "com.zaxxer.hikari.HikariDataSource",
+  "message" : "HikariPool-1 - Start completed.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.slf4j.Log4jLogger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663392,
+    "nanoOfSecond" : 581525000
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration",
+  "message" : "H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/dbspotify?createDatabaseIfNotExist=true'",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663392,
+    "nanoOfSecond" : 787531600
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.hibernate.jpa.internal.util.LogHelper",
+  "message" : "HHH000204: Processing PersistenceUnitInfo [name: default]",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.hibernate.internal.EntityManagerMessageLogger_$logger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663392,
+    "nanoOfSecond" : 925523800
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.hibernate.Version",
+  "message" : "HHH000412: Hibernate ORM core version 6.4.4.Final",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.hibernate.internal.CoreMessageLogger_$logger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663392,
+    "nanoOfSecond" : 979548700
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.hibernate.cache.internal.RegionFactoryInitiator",
+  "message" : "HHH000026: Second-level cache disabled",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.hibernate.internal.CoreMessageLogger_$logger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663393,
+    "nanoOfSecond" : 393545300
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo",
+  "message" : "No LoadTimeWeaver setup: ignoring JPA class transformer",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663393,
+    "nanoOfSecond" : 518550100
+  },
+  "thread" : "restartedMain",
+  "level" : "WARN",
+  "loggerName" : "org.hibernate.dialect.Dialect",
+  "message" : "HHH000511: The 5.5.0 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.hibernate.internal.CoreMessageLogger_$logger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663395,
+    "nanoOfSecond" : 393600700
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator",
+  "message" : "HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.hibernate.internal.CoreMessageLogger_$logger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663396,
+    "nanoOfSecond" : 12681600
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean",
+  "message" : "Initialized JPA EntityManagerFactory for persistence unit 'default'",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663397,
+    "nanoOfSecond" : 440760900
+  },
+  "thread" : "restartedMain",
+  "level" : "WARN",
+  "loggerName" : "org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration",
+  "message" : "spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663397,
+    "nanoOfSecond" : 850846500
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.security.web.DefaultSecurityFilterChain",
+  "message" : "Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1f6849e3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@57b951bc, org.springframework.security.web.context.SecurityContextHolderFilter@1e9bc092, org.springframework.security.web.header.HeaderWriterFilter@1700c75f, org.springframework.web.filter.CorsFilter@152e6dcf, org.springframework.security.web.authentication.logout.LogoutFilter@17e249e0, com.projects.spotifyclone.security.JwtFilter@2875666f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@35da3e2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5bc26519, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@58c4be73, org.springframework.security.web.session.SessionManagementFilter@68764b1d, org.springframework.security.web.access.ExceptionTranslationFilter@1b6b15b9, org.springframework.security.web.access.intercept.AuthorizationFilter@8880230]",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663398,
+    "nanoOfSecond" : 348845000
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer",
+  "message" : "LiveReload server is running on port 35729",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663398,
+    "nanoOfSecond" : 378846500
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.apache.coyote.http11.Http11NioProtocol",
+  "message" : "Starting ProtocolHandler [\"http-nio-8081\"]",
+  "endOfBatch" : false,
+  "loggerFqcn" : "java.util.logging.Logger",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663398,
+    "nanoOfSecond" : 405843700
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.boot.web.embedded.tomcat.TomcatWebServer",
+  "message" : "Tomcat started on port 8081 (http) with context path ''",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663398,
+    "nanoOfSecond" : 420845600
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "com.projects.spotifyclone.SpotifycloneApplication",
+  "message" : "Started SpotifycloneApplication in 11.027 seconds (process running for 13.687)",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 22,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663455,
+    "nanoOfSecond" : 589588400
+  },
+  "thread" : "http-nio-8081-exec-1",
+  "level" : "INFO",
+  "loggerName" : "org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]",
+  "message" : "Initializing Spring DispatcherServlet 'dispatcherServlet'",
+  "endOfBatch" : false,
+  "loggerFqcn" : "java.util.logging.Logger",
+  "threadId" : 56,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663455,
+    "nanoOfSecond" : 590583800
+  },
+  "thread" : "http-nio-8081-exec-1",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.web.servlet.DispatcherServlet",
+  "message" : "Initializing Servlet 'dispatcherServlet'",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 56,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663455,
+    "nanoOfSecond" : 592583700
+  },
+  "thread" : "http-nio-8081-exec-1",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.web.servlet.DispatcherServlet",
+  "message" : "Completed initialization in 2 ms",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 56,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663519,
+    "nanoOfSecond" : 873540800
+  },
+  "thread" : "http-nio-8081-exec-5",
+  "level" : "ERROR",
+  "loggerName" : "com.projects.spotifyclone.config.LoggingAspect",
+  "message" : "Exception in com.projects.spotifyclone.controller.AuthenticationController.login() with message = Cannot invoke \"com.projects.spotifyclone.repository.UserRepository.findByUsername(String)\" because \"this.userRepository\" is null",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.slf4j.Log4jLogger",
+  "threadId" : 60,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663521,
+    "nanoOfSecond" : 579149200
+  },
+  "thread" : "http-nio-8081-exec-6",
+  "level" : "ERROR",
+  "loggerName" : "com.projects.spotifyclone.config.LoggingAspect",
+  "message" : "Exception in com.projects.spotifyclone.controller.AuthenticationController.login() with message = Cannot invoke \"com.projects.spotifyclone.repository.UserRepository.findByUsername(String)\" because \"this.userRepository\" is null",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.slf4j.Log4jLogger",
+  "threadId" : 61,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663532,
+    "nanoOfSecond" : 873003600
+  },
+  "thread" : "http-nio-8081-exec-7",
+  "level" : "ERROR",
+  "loggerName" : "com.projects.spotifyclone.config.LoggingAspect",
+  "message" : "Exception in com.projects.spotifyclone.controller.AuthenticationController.login() with message = Cannot invoke \"com.projects.spotifyclone.repository.UserRepository.findByUsername(String)\" because \"this.userRepository\" is null",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.slf4j.Log4jLogger",
+  "threadId" : 62,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663541,
+    "nanoOfSecond" : 909007400
+  },
+  "thread" : "http-nio-8081-exec-8",
+  "level" : "ERROR",
+  "loggerName" : "com.projects.spotifyclone.config.LoggingAspect",
+  "message" : "Exception in com.projects.spotifyclone.controller.AuthenticationController.login() with message = Cannot invoke \"com.projects.spotifyclone.repository.UserRepository.findByUsername(String)\" because \"this.userRepository\" is null",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.slf4j.Log4jLogger",
+  "threadId" : 63,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663591,
+    "nanoOfSecond" : 319181700
+  },
+  "thread" : "SpringApplicationShutdownHook",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean",
+  "message" : "Closing JPA EntityManagerFactory for persistence unit 'default'",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 25,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663591,
+    "nanoOfSecond" : 328184300
+  },
+  "thread" : "SpringApplicationShutdownHook",
+  "level" : "INFO",
+  "loggerName" : "com.zaxxer.hikari.HikariDataSource",
+  "message" : "HikariPool-1 - Shutdown initiated...",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.slf4j.Log4jLogger",
+  "threadId" : 25,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663591,
+    "nanoOfSecond" : 344178300
+  },
+  "thread" : "SpringApplicationShutdownHook",
+  "level" : "INFO",
+  "loggerName" : "com.zaxxer.hikari.HikariDataSource",
+  "message" : "HikariPool-1 - Shutdown completed.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.slf4j.Log4jLogger",
+  "threadId" : 25,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663796,
+    "nanoOfSecond" : 184535200
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "com.projects.spotifyclone.SpotifycloneApplication",
+  "message" : "Starting SpotifycloneApplication using Java 17.0.9 with PID 1264 (E:\\Projets\\Personnels\\Spring\\spotifyclone\\target\\classes started by DELL in E:\\Projets\\Personnels\\Spring\\spotifyclone)",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663796,
+    "nanoOfSecond" : 116531300
+  },
+  "thread" : "background-preinit",
+  "level" : "INFO",
+  "loggerName" : "org.hibernate.validator.internal.util.Version",
+  "message" : "HV000001: Hibernate Validator 8.0.1.Final",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.hibernate.validator.internal.util.logging.Log_$logger",
+  "threadId" : 26,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663796,
+    "nanoOfSecond" : 284530100
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "com.projects.spotifyclone.SpotifycloneApplication",
+  "message" : "No active profile set, falling back to 1 default profile: \"default\"",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663796,
+    "nanoOfSecond" : 350532300
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor",
+  "message" : "Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663796,
+    "nanoOfSecond" : 352536700
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor",
+  "message" : "For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663797,
+    "nanoOfSecond" : 665118400
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Multiple Spring Data modules found, entering strict repository configuration mode",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663797,
+    "nanoOfSecond" : 667138300
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Bootstrapping Spring Data JDBC repositories in DEFAULT mode.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663797,
+    "nanoOfSecond" : 745118800
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport",
+  "message" : "Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.projects.spotifyclone.repository.AlbumRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663797,
+    "nanoOfSecond" : 749117400
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport",
+  "message" : "Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.projects.spotifyclone.repository.ArtistRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663797,
+    "nanoOfSecond" : 752114800
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport",
+  "message" : "Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.projects.spotifyclone.repository.CategoryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663797,
+    "nanoOfSecond" : 755117300
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport",
+  "message" : "Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.projects.spotifyclone.repository.SpotifyPlaylistRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663797,
+    "nanoOfSecond" : 758115800
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport",
+  "message" : "Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.projects.spotifyclone.repository.TrackListenRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663797,
+    "nanoOfSecond" : 762119500
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport",
+  "message" : "Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.projects.spotifyclone.repository.TrackRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663797,
+    "nanoOfSecond" : 765117700
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport",
+  "message" : "Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.projects.spotifyclone.repository.UserPlaylistRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663797,
+    "nanoOfSecond" : 768117100
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport",
+  "message" : "Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.projects.spotifyclone.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663797,
+    "nanoOfSecond" : 771119900
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Finished Spring Data repository scanning in 96 ms. Found 0 JDBC repository interfaces.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663797,
+    "nanoOfSecond" : 794114300
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Multiple Spring Data modules found, entering strict repository configuration mode",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663797,
+    "nanoOfSecond" : 802117700
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663797,
+    "nanoOfSecond" : 884115300
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Finished Spring Data repository scanning in 75 ms. Found 8 JPA repository interfaces.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663799,
+    "nanoOfSecond" : 41156000
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.boot.web.embedded.tomcat.TomcatWebServer",
+  "message" : "Tomcat initialized with port 8081 (http)",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663799,
+    "nanoOfSecond" : 61162500
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.apache.coyote.http11.Http11NioProtocol",
+  "message" : "Initializing ProtocolHandler [\"http-nio-8081\"]",
+  "endOfBatch" : false,
+  "loggerFqcn" : "java.util.logging.Logger",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663799,
+    "nanoOfSecond" : 65156200
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.apache.catalina.core.StandardService",
+  "message" : "Starting service [Tomcat]",
+  "endOfBatch" : false,
+  "loggerFqcn" : "java.util.logging.Logger",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663799,
+    "nanoOfSecond" : 66154700
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.apache.catalina.core.StandardEngine",
+  "message" : "Starting Servlet engine: [Apache Tomcat/10.1.19]",
+  "endOfBatch" : false,
+  "loggerFqcn" : "java.util.logging.Logger",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663799,
+    "nanoOfSecond" : 175155200
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]",
+  "message" : "Initializing Spring embedded WebApplicationContext",
+  "endOfBatch" : false,
+  "loggerFqcn" : "java.util.logging.Logger",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663799,
+    "nanoOfSecond" : 176158200
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext",
+  "message" : "Root WebApplicationContext: initialization completed in 2823 ms",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663799,
+    "nanoOfSecond" : 249167000
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "com.zaxxer.hikari.HikariDataSource",
+  "message" : "HikariPool-1 - Starting...",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.slf4j.Log4jLogger",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663799,
+    "nanoOfSecond" : 462159200
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "com.zaxxer.hikari.pool.HikariPool",
+  "message" : "HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3db58729",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.slf4j.Log4jLogger",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663799,
+    "nanoOfSecond" : 467157500
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "com.zaxxer.hikari.HikariDataSource",
+  "message" : "HikariPool-1 - Start completed.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.slf4j.Log4jLogger",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663799,
+    "nanoOfSecond" : 483162000
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration",
+  "message" : "H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/dbspotify?createDatabaseIfNotExist=true'",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663799,
+    "nanoOfSecond" : 741153500
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.hibernate.jpa.internal.util.LogHelper",
+  "message" : "HHH000204: Processing PersistenceUnitInfo [name: default]",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.hibernate.internal.EntityManagerMessageLogger_$logger",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663799,
+    "nanoOfSecond" : 830161000
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.hibernate.Version",
+  "message" : "HHH000412: Hibernate ORM core version 6.4.4.Final",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.hibernate.internal.CoreMessageLogger_$logger",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663799,
+    "nanoOfSecond" : 878177700
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.hibernate.cache.internal.RegionFactoryInitiator",
+  "message" : "HHH000026: Second-level cache disabled",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.hibernate.internal.CoreMessageLogger_$logger",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663800,
+    "nanoOfSecond" : 280196200
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo",
+  "message" : "No LoadTimeWeaver setup: ignoring JPA class transformer",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663800,
+    "nanoOfSecond" : 406299500
+  },
+  "thread" : "restartedMain",
+  "level" : "WARN",
+  "loggerName" : "org.hibernate.dialect.Dialect",
+  "message" : "HHH000511: The 5.5.0 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.hibernate.internal.CoreMessageLogger_$logger",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663802,
+    "nanoOfSecond" : 390492800
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator",
+  "message" : "HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.hibernate.internal.CoreMessageLogger_$logger",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663802,
+    "nanoOfSecond" : 921491400
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean",
+  "message" : "Initialized JPA EntityManagerFactory for persistence unit 'default'",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663803,
+    "nanoOfSecond" : 474512900
+  },
+  "thread" : "restartedMain",
+  "level" : "WARN",
+  "loggerName" : "org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext",
+  "message" : "Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authenticationController' defined in file [E:\\Projets\\Personnels\\Spring\\spotifyclone\\target\\classes\\com\\projects\\spotifyclone\\controller\\AuthenticationController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userService' defined in file [E:\\Projets\\Personnels\\Spring\\spotifyclone\\target\\classes\\com\\projects\\spotifyclone\\service\\UserService.class]: Unsatisfied dependency expressed through constructor parameter 2: Error creating bean with name 'securityConfig' defined in file [E:\\Projets\\Personnels\\Spring\\spotifyclone\\target\\classes\\com\\projects\\spotifyclone\\security\\SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 3: Error creating bean with name 'passwordEncoder': Requested bean is currently in creation: Is there an unresolvable circular reference?",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663803,
+    "nanoOfSecond" : 476494800
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean",
+  "message" : "Closing JPA EntityManagerFactory for persistence unit 'default'",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663803,
+    "nanoOfSecond" : 481488500
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "com.zaxxer.hikari.HikariDataSource",
+  "message" : "HikariPool-1 - Shutdown initiated...",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.slf4j.Log4jLogger",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663803,
+    "nanoOfSecond" : 493490000
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "com.zaxxer.hikari.HikariDataSource",
+  "message" : "HikariPool-1 - Shutdown completed.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.slf4j.Log4jLogger",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663803,
+    "nanoOfSecond" : 497488700
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.apache.catalina.core.StandardService",
+  "message" : "Stopping service [Tomcat]",
+  "endOfBatch" : false,
+  "loggerFqcn" : "java.util.logging.Logger",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663803,
+    "nanoOfSecond" : 523492000
+  },
+  "thread" : "restartedMain",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger",
+  "message" : "\r\n\r\nError starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}
+{
+  "instant" : {
+    "epochSecond" : 1714663803,
+    "nanoOfSecond" : 560491500
+  },
+  "thread" : "restartedMain",
+  "level" : "ERROR",
+  "loggerName" : "org.springframework.boot.SpringApplication",
+  "message" : "Application run failed",
+  "thrown" : {
+    "commonElementCount" : 0,
+    "localizedMessage" : "Error creating bean with name 'authenticationController' defined in file [E:\\Projets\\Personnels\\Spring\\spotifyclone\\target\\classes\\com\\projects\\spotifyclone\\controller\\AuthenticationController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userService' defined in file [E:\\Projets\\Personnels\\Spring\\spotifyclone\\target\\classes\\com\\projects\\spotifyclone\\service\\UserService.class]: Unsatisfied dependency expressed through constructor parameter 2: Error creating bean with name 'securityConfig' defined in file [E:\\Projets\\Personnels\\Spring\\spotifyclone\\target\\classes\\com\\projects\\spotifyclone\\security\\SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 3: Error creating bean with name 'passwordEncoder': Requested bean is currently in creation: Is there an unresolvable circular reference?",
+    "message" : "Error creating bean with name 'authenticationController' defined in file [E:\\Projets\\Personnels\\Spring\\spotifyclone\\target\\classes\\com\\projects\\spotifyclone\\controller\\AuthenticationController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userService' defined in file [E:\\Projets\\Personnels\\Spring\\spotifyclone\\target\\classes\\com\\projects\\spotifyclone\\service\\UserService.class]: Unsatisfied dependency expressed through constructor parameter 2: Error creating bean with name 'securityConfig' defined in file [E:\\Projets\\Personnels\\Spring\\spotifyclone\\target\\classes\\com\\projects\\spotifyclone\\security\\SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 3: Error creating bean with name 'passwordEncoder': Requested bean is currently in creation: Is there an unresolvable circular reference?",
+    "name" : "org.springframework.beans.factory.UnsatisfiedDependencyException",
+    "cause" : {
+      "commonElementCount" : 24,
+      "localizedMessage" : "Error creating bean with name 'userService' defined in file [E:\\Projets\\Personnels\\Spring\\spotifyclone\\target\\classes\\com\\projects\\spotifyclone\\service\\UserService.class]: Unsatisfied dependency expressed through constructor parameter 2: Error creating bean with name 'securityConfig' defined in file [E:\\Projets\\Personnels\\Spring\\spotifyclone\\target\\classes\\com\\projects\\spotifyclone\\security\\SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 3: Error creating bean with name 'passwordEncoder': Requested bean is currently in creation: Is there an unresolvable circular reference?",
+      "message" : "Error creating bean with name 'userService' defined in file [E:\\Projets\\Personnels\\Spring\\spotifyclone\\target\\classes\\com\\projects\\spotifyclone\\service\\UserService.class]: Unsatisfied dependency expressed through constructor parameter 2: Error creating bean with name 'securityConfig' defined in file [E:\\Projets\\Personnels\\Spring\\spotifyclone\\target\\classes\\com\\projects\\spotifyclone\\security\\SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 3: Error creating bean with name 'passwordEncoder': Requested bean is currently in creation: Is there an unresolvable circular reference?",
+      "name" : "org.springframework.beans.factory.UnsatisfiedDependencyException",
+      "cause" : {
+        "commonElementCount" : 24,
+        "localizedMessage" : "Error creating bean with name 'securityConfig' defined in file [E:\\Projets\\Personnels\\Spring\\spotifyclone\\target\\classes\\com\\projects\\spotifyclone\\security\\SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 3: Error creating bean with name 'passwordEncoder': Requested bean is currently in creation: Is there an unresolvable circular reference?",
+        "message" : "Error creating bean with name 'securityConfig' defined in file [E:\\Projets\\Personnels\\Spring\\spotifyclone\\target\\classes\\com\\projects\\spotifyclone\\security\\SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 3: Error creating bean with name 'passwordEncoder': Requested bean is currently in creation: Is there an unresolvable circular reference?",
+        "name" : "org.springframework.beans.factory.UnsatisfiedDependencyException",
+        "cause" : {
+          "commonElementCount" : 24,
+          "localizedMessage" : "Error creating bean with name 'passwordEncoder': Requested bean is currently in creation: Is there an unresolvable circular reference?",
+          "message" : "Error creating bean with name 'passwordEncoder': Requested bean is currently in creation: Is there an unresolvable circular reference?",
+          "name" : "org.springframework.beans.factory.BeanCurrentlyInCreationException",
+          "extendedStackTrace" : [ {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.DefaultSingletonBeanRegistry",
+            "method" : "beforeSingletonCreation",
+            "file" : "DefaultSingletonBeanRegistry.java",
+            "line" : 355,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.DefaultSingletonBeanRegistry",
+            "method" : "getSingleton",
+            "file" : "DefaultSingletonBeanRegistry.java",
+            "line" : 227,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.AbstractBeanFactory",
+            "method" : "doGetBean",
+            "file" : "AbstractBeanFactory.java",
+            "line" : 324,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.AbstractBeanFactory",
+            "method" : "getBean",
+            "file" : "AbstractBeanFactory.java",
+            "line" : 200,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.config.DependencyDescriptor",
+            "method" : "resolveCandidate",
+            "file" : "DependencyDescriptor.java",
+            "line" : 254,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.DefaultListableBeanFactory",
+            "method" : "doResolveDependency",
+            "file" : "DefaultListableBeanFactory.java",
+            "line" : 1443,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.DefaultListableBeanFactory",
+            "method" : "resolveDependency",
+            "file" : "DefaultListableBeanFactory.java",
+            "line" : 1353,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.ConstructorResolver",
+            "method" : "resolveAutowiredArgument",
+            "file" : "ConstructorResolver.java",
+            "line" : 904,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.ConstructorResolver",
+            "method" : "createArgumentArray",
+            "file" : "ConstructorResolver.java",
+            "line" : 782,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.ConstructorResolver",
+            "method" : "autowireConstructor",
+            "file" : "ConstructorResolver.java",
+            "line" : 237,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory",
+            "method" : "autowireConstructor",
+            "file" : "AbstractAutowireCapableBeanFactory.java",
+            "line" : 1355,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory",
+            "method" : "createBeanInstance",
+            "file" : "AbstractAutowireCapableBeanFactory.java",
+            "line" : 1192,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory",
+            "method" : "doCreateBean",
+            "file" : "AbstractAutowireCapableBeanFactory.java",
+            "line" : 562,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory",
+            "method" : "createBean",
+            "file" : "AbstractAutowireCapableBeanFactory.java",
+            "line" : 522,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.AbstractBeanFactory",
+            "method" : "lambda$doGetBean$0",
+            "file" : "AbstractBeanFactory.java",
+            "line" : 326,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.DefaultSingletonBeanRegistry",
+            "method" : "getSingleton",
+            "file" : "DefaultSingletonBeanRegistry.java",
+            "line" : 234,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.AbstractBeanFactory",
+            "method" : "doGetBean",
+            "file" : "AbstractBeanFactory.java",
+            "line" : 324,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.AbstractBeanFactory",
+            "method" : "getBean",
+            "file" : "AbstractBeanFactory.java",
+            "line" : 200,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.ConstructorResolver",
+            "method" : "instantiateUsingFactoryMethod",
+            "file" : "ConstructorResolver.java",
+            "line" : 409,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory",
+            "method" : "instantiateUsingFactoryMethod",
+            "file" : "AbstractAutowireCapableBeanFactory.java",
+            "line" : 1335,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory",
+            "method" : "createBeanInstance",
+            "file" : "AbstractAutowireCapableBeanFactory.java",
+            "line" : 1165,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory",
+            "method" : "doCreateBean",
+            "file" : "AbstractAutowireCapableBeanFactory.java",
+            "line" : 562,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory",
+            "method" : "createBean",
+            "file" : "AbstractAutowireCapableBeanFactory.java",
+            "line" : 522,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.AbstractBeanFactory",
+            "method" : "lambda$doGetBean$0",
+            "file" : "AbstractBeanFactory.java",
+            "line" : 326,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.DefaultSingletonBeanRegistry",
+            "method" : "getSingleton",
+            "file" : "DefaultSingletonBeanRegistry.java",
+            "line" : 234,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.AbstractBeanFactory",
+            "method" : "doGetBean",
+            "file" : "AbstractBeanFactory.java",
+            "line" : 324,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.AbstractBeanFactory",
+            "method" : "getBean",
+            "file" : "AbstractBeanFactory.java",
+            "line" : 200,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.config.DependencyDescriptor",
+            "method" : "resolveCandidate",
+            "file" : "DependencyDescriptor.java",
+            "line" : 254,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.DefaultListableBeanFactory",
+            "method" : "doResolveDependency",
+            "file" : "DefaultListableBeanFactory.java",
+            "line" : 1443,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.DefaultListableBeanFactory",
+            "method" : "resolveDependency",
+            "file" : "DefaultListableBeanFactory.java",
+            "line" : 1353,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.ConstructorResolver",
+            "method" : "resolveAutowiredArgument",
+            "file" : "ConstructorResolver.java",
+            "line" : 904,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.ConstructorResolver",
+            "method" : "createArgumentArray",
+            "file" : "ConstructorResolver.java",
+            "line" : 782,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.ConstructorResolver",
+            "method" : "autowireConstructor",
+            "file" : "ConstructorResolver.java",
+            "line" : 237,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory",
+            "method" : "autowireConstructor",
+            "file" : "AbstractAutowireCapableBeanFactory.java",
+            "line" : 1355,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory",
+            "method" : "createBeanInstance",
+            "file" : "AbstractAutowireCapableBeanFactory.java",
+            "line" : 1192,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory",
+            "method" : "doCreateBean",
+            "file" : "AbstractAutowireCapableBeanFactory.java",
+            "line" : 562,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory",
+            "method" : "createBean",
+            "file" : "AbstractAutowireCapableBeanFactory.java",
+            "line" : 522,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.AbstractBeanFactory",
+            "method" : "lambda$doGetBean$0",
+            "file" : "AbstractBeanFactory.java",
+            "line" : 326,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.DefaultSingletonBeanRegistry",
+            "method" : "getSingleton",
+            "file" : "DefaultSingletonBeanRegistry.java",
+            "line" : 234,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.AbstractBeanFactory",
+            "method" : "doGetBean",
+            "file" : "AbstractBeanFactory.java",
+            "line" : 324,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.AbstractBeanFactory",
+            "method" : "getBean",
+            "file" : "AbstractBeanFactory.java",
+            "line" : 200,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.config.DependencyDescriptor",
+            "method" : "resolveCandidate",
+            "file" : "DependencyDescriptor.java",
+            "line" : 254,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.DefaultListableBeanFactory",
+            "method" : "doResolveDependency",
+            "file" : "DefaultListableBeanFactory.java",
+            "line" : 1443,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.DefaultListableBeanFactory",
+            "method" : "resolveDependency",
+            "file" : "DefaultListableBeanFactory.java",
+            "line" : 1353,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.ConstructorResolver",
+            "method" : "resolveAutowiredArgument",
+            "file" : "ConstructorResolver.java",
+            "line" : 904,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          }, {
+            "classLoaderName" : "app",
+            "class" : "org.springframework.beans.factory.support.ConstructorResolver",
+            "method" : "createArgumentArray",
+            "file" : "ConstructorResolver.java",
+            "line" : 782,
+            "exact" : false,
+            "location" : "spring-beans-6.1.5.jar",
+            "version" : "6.1.5"
+          } ]
+        },
+        "extendedStackTrace" : [ {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.support.ConstructorResolver",
+          "method" : "createArgumentArray",
+          "file" : "ConstructorResolver.java",
+          "line" : 795,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.support.ConstructorResolver",
+          "method" : "autowireConstructor",
+          "file" : "ConstructorResolver.java",
+          "line" : 237,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory",
+          "method" : "autowireConstructor",
+          "file" : "AbstractAutowireCapableBeanFactory.java",
+          "line" : 1355,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory",
+          "method" : "createBeanInstance",
+          "file" : "AbstractAutowireCapableBeanFactory.java",
+          "line" : 1192,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory",
+          "method" : "doCreateBean",
+          "file" : "AbstractAutowireCapableBeanFactory.java",
+          "line" : 562,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory",
+          "method" : "createBean",
+          "file" : "AbstractAutowireCapableBeanFactory.java",
+          "line" : 522,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.support.AbstractBeanFactory",
+          "method" : "lambda$doGetBean$0",
+          "file" : "AbstractBeanFactory.java",
+          "line" : 326,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.support.DefaultSingletonBeanRegistry",
+          "method" : "getSingleton",
+          "file" : "DefaultSingletonBeanRegistry.java",
+          "line" : 234,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.support.AbstractBeanFactory",
+          "method" : "doGetBean",
+          "file" : "AbstractBeanFactory.java",
+          "line" : 324,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.support.AbstractBeanFactory",
+          "method" : "getBean",
+          "file" : "AbstractBeanFactory.java",
+          "line" : 200,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.support.ConstructorResolver",
+          "method" : "instantiateUsingFactoryMethod",
+          "file" : "ConstructorResolver.java",
+          "line" : 409,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory",
+          "method" : "instantiateUsingFactoryMethod",
+          "file" : "AbstractAutowireCapableBeanFactory.java",
+          "line" : 1335,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory",
+          "method" : "createBeanInstance",
+          "file" : "AbstractAutowireCapableBeanFactory.java",
+          "line" : 1165,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory",
+          "method" : "doCreateBean",
+          "file" : "AbstractAutowireCapableBeanFactory.java",
+          "line" : 562,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory",
+          "method" : "createBean",
+          "file" : "AbstractAutowireCapableBeanFactory.java",
+          "line" : 522,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.support.AbstractBeanFactory",
+          "method" : "lambda$doGetBean$0",
+          "file" : "AbstractBeanFactory.java",
+          "line" : 326,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.support.DefaultSingletonBeanRegistry",
+          "method" : "getSingleton",
+          "file" : "DefaultSingletonBeanRegistry.java",
+          "line" : 234,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.support.AbstractBeanFactory",
+          "method" : "doGetBean",
+          "file" : "AbstractBeanFactory.java",
+          "line" : 324,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.support.AbstractBeanFactory",
+          "method" : "getBean",
+          "file" : "AbstractBeanFactory.java",
+          "line" : 200,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.config.DependencyDescriptor",
+          "method" : "resolveCandidate",
+          "file" : "DependencyDescriptor.java",
+          "line" : 254,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.support.DefaultListableBeanFactory",
+          "method" : "doResolveDependency",
+          "file" : "DefaultListableBeanFactory.java",
+          "line" : 1443,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.support.DefaultListableBeanFactory",
+          "method" : "resolveDependency",
+          "file" : "DefaultListableBeanFactory.java",
+          "line" : 1353,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.support.ConstructorResolver",
+          "method" : "resolveAutowiredArgument",
+          "file" : "ConstructorResolver.java",
+          "line" : 904,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.support.ConstructorResolver",
+          "method" : "createArgumentArray",
+          "file" : "ConstructorResolver.java",
+          "line" : 782,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.support.ConstructorResolver",
+          "method" : "autowireConstructor",
+          "file" : "ConstructorResolver.java",
+          "line" : 237,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory",
+          "method" : "autowireConstructor",
+          "file" : "AbstractAutowireCapableBeanFactory.java",
+          "line" : 1355,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory",
+          "method" : "createBeanInstance",
+          "file" : "AbstractAutowireCapableBeanFactory.java",
+          "line" : 1192,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory",
+          "method" : "doCreateBean",
+          "file" : "AbstractAutowireCapableBeanFactory.java",
+          "line" : 562,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory",
+          "method" : "createBean",
+          "file" : "AbstractAutowireCapableBeanFactory.java",
+          "line" : 522,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.support.AbstractBeanFactory",
+          "method" : "lambda$doGetBean$0",
+          "file" : "AbstractBeanFactory.java",
+          "line" : 326,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.support.DefaultSingletonBeanRegistry",
+          "method" : "getSingleton",
+          "file" : "DefaultSingletonBeanRegistry.java",
+          "line" : 234,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.support.AbstractBeanFactory",
+          "method" : "doGetBean",
+          "file" : "AbstractBeanFactory.java",
+          "line" : 324,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.support.AbstractBeanFactory",
+          "method" : "getBean",
+          "file" : "AbstractBeanFactory.java",
+          "line" : 200,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.config.DependencyDescriptor",
+          "method" : "resolveCandidate",
+          "file" : "DependencyDescriptor.java",
+          "line" : 254,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.support.DefaultListableBeanFactory",
+          "method" : "doResolveDependency",
+          "file" : "DefaultListableBeanFactory.java",
+          "line" : 1443,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.support.DefaultListableBeanFactory",
+          "method" : "resolveDependency",
+          "file" : "DefaultListableBeanFactory.java",
+          "line" : 1353,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.support.ConstructorResolver",
+          "method" : "resolveAutowiredArgument",
+          "file" : "ConstructorResolver.java",
+          "line" : 904,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        }, {
+          "classLoaderName" : "app",
+          "class" : "org.springframework.beans.factory.support.ConstructorResolver",
+          "method" : "createArgumentArray",
+          "file" : "ConstructorResolver.java",
+          "line" : 782,
+          "exact" : false,
+          "location" : "spring-beans-6.1.5.jar",
+          "version" : "6.1.5"
+        } ]
+      },
+      "extendedStackTrace" : [ {
+        "classLoaderName" : "app",
+        "class" : "org.springframework.beans.factory.support.ConstructorResolver",
+        "method" : "createArgumentArray",
+        "file" : "ConstructorResolver.java",
+        "line" : 795,
+        "exact" : false,
+        "location" : "spring-beans-6.1.5.jar",
+        "version" : "6.1.5"
+      }, {
+        "classLoaderName" : "app",
+        "class" : "org.springframework.beans.factory.support.ConstructorResolver",
+        "method" : "autowireConstructor",
+        "file" : "ConstructorResolver.java",
+        "line" : 237,
+        "exact" : false,
+        "location" : "spring-beans-6.1.5.jar",
+        "version" : "6.1.5"
+      }, {
+        "classLoaderName" : "app",
+        "class" : "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory",
+        "method" : "autowireConstructor",
+        "file" : "AbstractAutowireCapableBeanFactory.java",
+        "line" : 1355,
+        "exact" : false,
+        "location" : "spring-beans-6.1.5.jar",
+        "version" : "6.1.5"
+      }, {
+        "classLoaderName" : "app",
+        "class" : "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory",
+        "method" : "createBeanInstance",
+        "file" : "AbstractAutowireCapableBeanFactory.java",
+        "line" : 1192,
+        "exact" : false,
+        "location" : "spring-beans-6.1.5.jar",
+        "version" : "6.1.5"
+      }, {
+        "classLoaderName" : "app",
+        "class" : "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory",
+        "method" : "doCreateBean",
+        "file" : "AbstractAutowireCapableBeanFactory.java",
+        "line" : 562,
+        "exact" : false,
+        "location" : "spring-beans-6.1.5.jar",
+        "version" : "6.1.5"
+      }, {
+        "classLoaderName" : "app",
+        "class" : "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory",
+        "method" : "createBean",
+        "file" : "AbstractAutowireCapableBeanFactory.java",
+        "line" : 522,
+        "exact" : false,
+        "location" : "spring-beans-6.1.5.jar",
+        "version" : "6.1.5"
+      }, {
+        "classLoaderName" : "app",
+        "class" : "org.springframework.beans.factory.support.AbstractBeanFactory",
+        "method" : "lambda$doGetBean$0",
+        "file" : "AbstractBeanFactory.java",
+        "line" : 326,
+        "exact" : false,
+        "location" : "spring-beans-6.1.5.jar",
+        "version" : "6.1.5"
+      }, {
+        "classLoaderName" : "app",
+        "class" : "org.springframework.beans.factory.support.DefaultSingletonBeanRegistry",
+        "method" : "getSingleton",
+        "file" : "DefaultSingletonBeanRegistry.java",
+        "line" : 234,
+        "exact" : false,
+        "location" : "spring-beans-6.1.5.jar",
+        "version" : "6.1.5"
+      }, {
+        "classLoaderName" : "app",
+        "class" : "org.springframework.beans.factory.support.AbstractBeanFactory",
+        "method" : "doGetBean",
+        "file" : "AbstractBeanFactory.java",
+        "line" : 324,
+        "exact" : false,
+        "location" : "spring-beans-6.1.5.jar",
+        "version" : "6.1.5"
+      }, {
+        "classLoaderName" : "app",
+        "class" : "org.springframework.beans.factory.support.AbstractBeanFactory",
+        "method" : "getBean",
+        "file" : "AbstractBeanFactory.java",
+        "line" : 200,
+        "exact" : false,
+        "location" : "spring-beans-6.1.5.jar",
+        "version" : "6.1.5"
+      }, {
+        "classLoaderName" : "app",
+        "class" : "org.springframework.beans.factory.config.DependencyDescriptor",
+        "method" : "resolveCandidate",
+        "file" : "DependencyDescriptor.java",
+        "line" : 254,
+        "exact" : false,
+        "location" : "spring-beans-6.1.5.jar",
+        "version" : "6.1.5"
+      }, {
+        "classLoaderName" : "app",
+        "class" : "org.springframework.beans.factory.support.DefaultListableBeanFactory",
+        "method" : "doResolveDependency",
+        "file" : "DefaultListableBeanFactory.java",
+        "line" : 1443,
+        "exact" : false,
+        "location" : "spring-beans-6.1.5.jar",
+        "version" : "6.1.5"
+      }, {
+        "classLoaderName" : "app",
+        "class" : "org.springframework.beans.factory.support.DefaultListableBeanFactory",
+        "method" : "resolveDependency",
+        "file" : "DefaultListableBeanFactory.java",
+        "line" : 1353,
+        "exact" : false,
+        "location" : "spring-beans-6.1.5.jar",
+        "version" : "6.1.5"
+      }, {
+        "classLoaderName" : "app",
+        "class" : "org.springframework.beans.factory.support.ConstructorResolver",
+        "method" : "resolveAutowiredArgument",
+        "file" : "ConstructorResolver.java",
+        "line" : 904,
+        "exact" : false,
+        "location" : "spring-beans-6.1.5.jar",
+        "version" : "6.1.5"
+      }, {
+        "classLoaderName" : "app",
+        "class" : "org.springframework.beans.factory.support.ConstructorResolver",
+        "method" : "createArgumentArray",
+        "file" : "ConstructorResolver.java",
+        "line" : 782,
+        "exact" : false,
+        "location" : "spring-beans-6.1.5.jar",
+        "version" : "6.1.5"
+      } ]
+    },
+    "extendedStackTrace" : [ {
+      "classLoaderName" : "app",
+      "class" : "org.springframework.beans.factory.support.ConstructorResolver",
+      "method" : "createArgumentArray",
+      "file" : "ConstructorResolver.java",
+      "line" : 795,
+      "exact" : false,
+      "location" : "spring-beans-6.1.5.jar",
+      "version" : "6.1.5"
+    }, {
+      "classLoaderName" : "app",
+      "class" : "org.springframework.beans.factory.support.ConstructorResolver",
+      "method" : "autowireConstructor",
+      "file" : "ConstructorResolver.java",
+      "line" : 237,
+      "exact" : false,
+      "location" : "spring-beans-6.1.5.jar",
+      "version" : "6.1.5"
+    }, {
+      "classLoaderName" : "app",
+      "class" : "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory",
+      "method" : "autowireConstructor",
+      "file" : "AbstractAutowireCapableBeanFactory.java",
+      "line" : 1355,
+      "exact" : false,
+      "location" : "spring-beans-6.1.5.jar",
+      "version" : "6.1.5"
+    }, {
+      "classLoaderName" : "app",
+      "class" : "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory",
+      "method" : "createBeanInstance",
+      "file" : "AbstractAutowireCapableBeanFactory.java",
+      "line" : 1192,
+      "exact" : false,
+      "location" : "spring-beans-6.1.5.jar",
+      "version" : "6.1.5"
+    }, {
+      "classLoaderName" : "app",
+      "class" : "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory",
+      "method" : "doCreateBean",
+      "file" : "AbstractAutowireCapableBeanFactory.java",
+      "line" : 562,
+      "exact" : false,
+      "location" : "spring-beans-6.1.5.jar",
+      "version" : "6.1.5"
+    }, {
+      "classLoaderName" : "app",
+      "class" : "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory",
+      "method" : "createBean",
+      "file" : "AbstractAutowireCapableBeanFactory.java",
+      "line" : 522,
+      "exact" : false,
+      "location" : "spring-beans-6.1.5.jar",
+      "version" : "6.1.5"
+    }, {
+      "classLoaderName" : "app",
+      "class" : "org.springframework.beans.factory.support.AbstractBeanFactory",
+      "method" : "lambda$doGetBean$0",
+      "file" : "AbstractBeanFactory.java",
+      "line" : 326,
+      "exact" : false,
+      "location" : "spring-beans-6.1.5.jar",
+      "version" : "6.1.5"
+    }, {
+      "classLoaderName" : "app",
+      "class" : "org.springframework.beans.factory.support.DefaultSingletonBeanRegistry",
+      "method" : "getSingleton",
+      "file" : "DefaultSingletonBeanRegistry.java",
+      "line" : 234,
+      "exact" : false,
+      "location" : "spring-beans-6.1.5.jar",
+      "version" : "6.1.5"
+    }, {
+      "classLoaderName" : "app",
+      "class" : "org.springframework.beans.factory.support.AbstractBeanFactory",
+      "method" : "doGetBean",
+      "file" : "AbstractBeanFactory.java",
+      "line" : 324,
+      "exact" : false,
+      "location" : "spring-beans-6.1.5.jar",
+      "version" : "6.1.5"
+    }, {
+      "classLoaderName" : "app",
+      "class" : "org.springframework.beans.factory.support.AbstractBeanFactory",
+      "method" : "getBean",
+      "file" : "AbstractBeanFactory.java",
+      "line" : 200,
+      "exact" : false,
+      "location" : "spring-beans-6.1.5.jar",
+      "version" : "6.1.5"
+    }, {
+      "classLoaderName" : "app",
+      "class" : "org.springframework.beans.factory.support.DefaultListableBeanFactory",
+      "method" : "preInstantiateSingletons",
+      "file" : "DefaultListableBeanFactory.java",
+      "line" : 975,
+      "exact" : false,
+      "location" : "spring-beans-6.1.5.jar",
+      "version" : "6.1.5"
+    }, {
+      "classLoaderName" : "app",
+      "class" : "org.springframework.context.support.AbstractApplicationContext",
+      "method" : "finishBeanFactoryInitialization",
+      "file" : "AbstractApplicationContext.java",
+      "line" : 962,
+      "exact" : false,
+      "location" : "spring-context-6.1.5.jar",
+      "version" : "6.1.5"
+    }, {
+      "classLoaderName" : "app",
+      "class" : "org.springframework.context.support.AbstractApplicationContext",
+      "method" : "refresh",
+      "file" : "AbstractApplicationContext.java",
+      "line" : 624,
+      "exact" : false,
+      "location" : "spring-context-6.1.5.jar",
+      "version" : "6.1.5"
+    }, {
+      "classLoaderName" : "app",
+      "class" : "org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext",
+      "method" : "refresh",
+      "file" : "ServletWebServerApplicationContext.java",
+      "line" : 146,
+      "exact" : false,
+      "location" : "spring-boot-3.2.4.jar",
+      "version" : "3.2.4"
+    }, {
+      "classLoaderName" : "app",
+      "class" : "org.springframework.boot.SpringApplication",
+      "method" : "refresh",
+      "file" : "SpringApplication.java",
+      "line" : 754,
+      "exact" : true,
+      "location" : "spring-boot-3.2.4.jar",
+      "version" : "3.2.4"
+    }, {
+      "classLoaderName" : "app",
+      "class" : "org.springframework.boot.SpringApplication",
+      "method" : "refreshContext",
+      "file" : "SpringApplication.java",
+      "line" : 456,
+      "exact" : true,
+      "location" : "spring-boot-3.2.4.jar",
+      "version" : "3.2.4"
+    }, {
+      "classLoaderName" : "app",
+      "class" : "org.springframework.boot.SpringApplication",
+      "method" : "run",
+      "file" : "SpringApplication.java",
+      "line" : 334,
+      "exact" : true,
+      "location" : "spring-boot-3.2.4.jar",
+      "version" : "3.2.4"
+    }, {
+      "classLoaderName" : "app",
+      "class" : "org.springframework.boot.SpringApplication",
+      "method" : "run",
+      "file" : "SpringApplication.java",
+      "line" : 1354,
+      "exact" : true,
+      "location" : "spring-boot-3.2.4.jar",
+      "version" : "3.2.4"
+    }, {
+      "classLoaderName" : "app",
+      "class" : "org.springframework.boot.SpringApplication",
+      "method" : "run",
+      "file" : "SpringApplication.java",
+      "line" : 1343,
+      "exact" : true,
+      "location" : "spring-boot-3.2.4.jar",
+      "version" : "3.2.4"
+    }, {
+      "class" : "com.projects.spotifyclone.SpotifycloneApplication",
+      "method" : "main",
+      "file" : "SpotifycloneApplication.java",
+      "line" : 10,
+      "exact" : true,
+      "location" : "classes/",
+      "version" : "?"
+    }, {
+      "module" : "java.base",
+      "moduleVersion" : "17.0.9",
+      "class" : "jdk.internal.reflect.NativeMethodAccessorImpl",
+      "method" : "invoke0",
+      "file" : "NativeMethodAccessorImpl.java",
+      "line" : -2,
+      "exact" : false,
+      "location" : "?",
+      "version" : "?"
+    }, {
+      "module" : "java.base",
+      "moduleVersion" : "17.0.9",
+      "class" : "jdk.internal.reflect.NativeMethodAccessorImpl",
+      "method" : "invoke",
+      "file" : "NativeMethodAccessorImpl.java",
+      "line" : 77,
+      "exact" : false,
+      "location" : "?",
+      "version" : "?"
+    }, {
+      "module" : "java.base",
+      "moduleVersion" : "17.0.9",
+      "class" : "jdk.internal.reflect.DelegatingMethodAccessorImpl",
+      "method" : "invoke",
+      "file" : "DelegatingMethodAccessorImpl.java",
+      "line" : 43,
+      "exact" : false,
+      "location" : "?",
+      "version" : "?"
+    }, {
+      "module" : "java.base",
+      "moduleVersion" : "17.0.9",
+      "class" : "java.lang.reflect.Method",
+      "method" : "invoke",
+      "file" : "Method.java",
+      "line" : 568,
+      "exact" : false,
+      "location" : "?",
+      "version" : "?"
+    }, {
+      "classLoaderName" : "app",
+      "class" : "org.springframework.boot.devtools.restart.RestartLauncher",
+      "method" : "run",
+      "file" : "RestartLauncher.java",
+      "line" : 50,
+      "exact" : true,
+      "location" : "spring-boot-devtools-3.2.4.jar",
+      "version" : "3.2.4"
+    } ]
+  },
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 23,
+  "threadPriority" : 5,
+  "service" : "spotify-clone"
+}

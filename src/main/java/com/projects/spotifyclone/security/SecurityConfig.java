@@ -1,7 +1,6 @@
 package com.projects.spotifyclone.security;
 
 import com.projects.spotifyclone.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -23,9 +22,11 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 @EnableWebSecurity
 @CrossOrigin
 public class SecurityConfig {
+    private final JwtFilter jwtFilter;
 
-    @Autowired
-    private JwtFilter jwtFilter;
+    public SecurityConfig(JwtFilter jwtFilter) {
+        this.jwtFilter = jwtFilter;
+    }
 
     // Defines a UserDetailsService bean for user authentication
     @Bean
