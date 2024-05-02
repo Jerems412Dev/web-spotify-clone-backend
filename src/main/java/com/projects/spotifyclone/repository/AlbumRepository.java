@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface AlbumRepository extends JpaRepository<AlbumEntity, Integer> {
     AlbumEntity findByTitleAlbum(String titleAlbum);
-    AlbumEntity findByIdAlbum(Long idAlbum);
+    AlbumEntity findByIdAlbum(long idAlbum);
     List<AlbumEntity> findDistinctByUsersUsername(String username);
     List<AlbumEntity> findDistinctByCategoriesNameCategory(String nameCategory);
     List<AlbumEntity> findDistinctByTitleAlbumContaining(String search);

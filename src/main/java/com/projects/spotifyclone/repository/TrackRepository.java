@@ -4,10 +4,10 @@ import com.projects.spotifyclone.entity.TrackEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface TrackRepository extends JpaRepository<TrackEntity, Integer> {
-    Optional<TrackEntity> findByTitleTrack(String titleTrack);
+    TrackEntity findByTitleTrack(String titleTrack);
+    TrackEntity findByIdTrack(long idTrack);
     List<TrackEntity> findDistinctByArtistsNameArtist(String nameArtist);
     List<TrackEntity> findDistinctByAlbum_TitleAlbum(String titleAlbum);
     List<TrackEntity> findDistinctByUsersUsername(String username);

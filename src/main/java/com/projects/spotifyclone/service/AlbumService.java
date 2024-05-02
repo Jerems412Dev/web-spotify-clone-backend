@@ -1,6 +1,7 @@
 package com.projects.spotifyclone.service;
 
 import com.projects.spotifyclone.dto.AlbumDTO;
+import com.projects.spotifyclone.dto.ArtistDTO;
 import com.projects.spotifyclone.entity.UserEntity;
 import com.projects.spotifyclone.mapper.AlbumMapper;
 import com.projects.spotifyclone.repository.AlbumRepository;
@@ -25,9 +26,10 @@ public class AlbumService {
 
     // add an album
     @Transactional
-    public String createAlbum(AlbumDTO album) {
+    public String createAlbum(AlbumDTO album, ArtistDTO artist) {
+        album.setArtist(artist);
         albumMapper.toAlbumDTO(albumRepository.save(albumMapper.fromAlbumDTO(album)));
-        return "album register successfully";
+        return "album added successfully";
     }
 
     // retrieve a user's list of favorite albums
@@ -68,14 +70,15 @@ public class AlbumService {
 
     // Adds an object to the user_album pivot table (the action of liking an album).
     @Transactional()
-    public String likeAlbumByUser(Long idUser, Long idAlbum) {
+    public String favAlbumByUser(long idUser, long idAlbum) {
         AlbumDTO album = albumMapper.toAlbumDTO(albumRepository.findByIdAlbum(idAlbum));
         List<UserEntity> userList = new ArrayList<>();
         userList.add(userRepository.findByIdUser(idUser));
         albumRepository.save(albumMapper.fromAlbumDTO(album));
-        return "album register successfully";
+        return "fav added successfully";
     }
 
+    // find an artist by name
     @Transactional(readOnly = true)
     public AlbumDTO findByTitleAlbum(String titleAlbum) {
         return albumMapper.toAlbumDTO(albumRepository.findByTitleAlbum(titleAlbum));
