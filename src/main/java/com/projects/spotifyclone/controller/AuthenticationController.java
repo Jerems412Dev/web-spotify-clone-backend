@@ -4,7 +4,6 @@ import com.projects.spotifyclone.dto.UserDTO;
 import com.projects.spotifyclone.security.JwtService;
 import com.projects.spotifyclone.service.UserService;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -18,13 +17,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/auth")
 @AllArgsConstructor
 public class AuthenticationController {
-    @Autowired
     private UserService userService;
-
-    @Autowired
     private AuthenticationManager authenticationManager;
-
-    @Autowired
     private JwtService jwtService;
 
     @PostMapping("/register")

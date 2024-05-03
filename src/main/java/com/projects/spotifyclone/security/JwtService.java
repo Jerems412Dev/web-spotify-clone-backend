@@ -10,6 +10,7 @@ import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
 
@@ -24,12 +25,14 @@ import java.util.function.Function;
 public class JwtService {
     @Autowired
     private UserMapper userMapper;
-
     @Autowired
     private UserRepository userRepository;
+    @Autowired
+    private ApiTokenRepository apitokenRepository;
 
     // Secret Key for signing the JWT. It should be kept private.
-    private static final String SECRET = "59d407208c0bfb4fc52780506cdecd71cbde23b4dd622bc80d84b66e9efc4dd2=\r\n";
+    @Value("${application.security.jwt.secret-key}")
+    private String secretKey;
 
     // Generates a JWT token for the given userName.
     public String generateToken(UserDTO user) {
@@ -38,26 +41,38 @@ public class JwtService {
         Optional<UserEntity> userClaim = userRepository.findByUsername(user.getUsername());
         user = userMapper.toUserDTO(userClaim.get());
         claims.put("idUser", user.getIdUser());
-        claims.put("birth", user.getBirth());
-        claims.put("country", user.getCountry());
-        claims.put("gender", user.getGender());
         claims.put("profileName", user.getProfileName());
+        claims.put("isValid", true);
         // Build JWT token with claims, subject, issued time, expiration time, and signing algorithm
-        // Token valid for 3 minutes
-        return Jwts.builder()
+        // Token valid for 90 minutes
+        var token = Jwts.builder()
                 .setClaims(claims)
                 .setSubject(user.getUsername())
                 .setIssuedAt(new Date(System.currentTimeMillis()))
-                .setExpiration(new Date(System.currentTimeMillis() + 1000 * 60 * 3))
+                .setExpiration(new Date(System.currentTimeMillis() + 1000 * 60 * 90))
                 .signWith(getSignKey(), SignatureAlgorithm.HS256).compact();
+        ApiToken apitoken = new ApiToken();
+        if(Boolean.FALSE.equals(apitokenRepository.existsByUsername(user.getUsername()))) {
+            apitoken.setToken(token);
+            apitoken.setCreatedAt(extractIssuedAt(token));
+            apitoken.setUpdatedAt(new Date(System.currentTimeMillis()));
+            apitoken.setIsValid(true);
+            apitoken.setUsername(user.getUsername());
+        }else {
+            apitoken = apitokenRepository.findByUsername(user.getUsername());
+            apitoken.setToken(token);
+            apitoken.setIsValid(true);
+            apitoken.setUpdatedAt(new Date(System.currentTimeMillis()));
+        }
+        apitokenRepository.save(apitoken);
+        return token;
     }
-
 
     // Creates a signing key from the base64 encoded secret.
     //returns a Key object for signing the JWT.
     private Key getSignKey() {
         // Decode the base64 encoded secret key and return a Key object
-        byte[] keyBytes = Decoders.BASE64.decode(SECRET);
+        byte[] keyBytes = Decoders.BASE64.decode(secretKey);
         return Keys.hmacShaKeyFor(keyBytes);
     }
 
@@ -69,12 +84,26 @@ public class JwtService {
         return extractClaim(token, Claims::getSubject);
     }
 
+    // Extracts the valid from the JWT token.
+    //return -> The valid contained in the token.
+    public Boolean extractIsValid(String token) {
+        final Claims claims = extractAllClaims(token);
+        return claims != null && (Boolean) claims.get("isValid");
+    }
+
 
     // Extracts the expiration date from the JWT token.
     //@return The expiration date of the token.
     public Date extractExpiration(String token) {
         // Extract and return the expiration claim from the token
         return extractClaim(token, Claims::getExpiration);
+    }
+
+    // Extracts the issuesAt date from the JWT token.
+    //@return The expiration date of the token.
+    public Date extractIssuedAt(String token) {
+        // Extract and return the expiration claim from the token
+        return extractClaim(token, Claims::getIssuedAt);
     }
 
 
@@ -110,7 +139,7 @@ public class JwtService {
     public Boolean validateToken(String token, UserDetails userDetails) {
         // Extract username from token and check if it matches UserDetails' username
         final String userName = extractUserName(token);
-        // Also check if the token is expired
-        return (userName.equals(userDetails.getUsername()) && !isTokenExpired(token));
+        // Also check if the token is valid
+        return (userName.equals(userDetails.getUsername()) && !isTokenExpired(token) && apitokenRepository.existsByTokenAndIsValid(token,true));
     }
 }
