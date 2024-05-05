@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/tracklistens")
+@RequestMapping("/tracklistens")
 public class TrackListenController {
     private final TrackListenService tracklistenservice;
 

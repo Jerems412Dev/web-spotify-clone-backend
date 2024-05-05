@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/userplaylists")
+@RequestMapping("/userplaylists")
 public class UserPlaylistController {
     private final UserPlaylistService userplaylistservice;
 

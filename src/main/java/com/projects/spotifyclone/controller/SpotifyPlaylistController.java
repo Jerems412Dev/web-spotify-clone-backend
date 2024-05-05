@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/spotifyplaylists")
+@RequestMapping("/spotifyplaylists")
 public class SpotifyPlaylistController {
     private final SpotifyPlaylistService spotifyplaylistservice;
 

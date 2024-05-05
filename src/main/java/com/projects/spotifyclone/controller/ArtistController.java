@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/artists")
+@RequestMapping("/artists")
 public class ArtistController {
     private final ArtistService artistservice;
 
@@ -53,7 +53,7 @@ public class ArtistController {
         return new ResponseEntity<>(artistservice.deleteArtistUser(username,nameartist), HttpStatus.OK);
     }
 
-    @GetMapping("/favartistbyUser/{iduser}/{idartist}")
+    @GetMapping("/favartistbyuser/{iduser}/{idartist}")
     public ResponseEntity<String> favArtistByUser(@PathVariable("iduser") long iduser,@PathVariable("idartist") long idartist) {
         return new ResponseEntity<>(artistservice.favArtistByUser(iduser,idartist), HttpStatus.OK);
     }

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/categories")
+@RequestMapping("/categories")
 public class CategoryController {
     private final CategoryService categoryservice;
 
@@ -43,12 +43,12 @@ public class CategoryController {
         return new ResponseEntity<>(categoryservice.findByNameArtist(nameartist), HttpStatus.OK);
     }
 
-    @GetMapping("/findByNamePlaylist/{nameplaylist}")
+    @GetMapping("/findbynameplaylist/{nameplaylist}")
     public ResponseEntity<List<CategoryDTO>> findByNamePlaylist(@PathVariable("nameplaylist") String nameplaylist) {
         return new ResponseEntity<>(categoryservice.findByNamePlaylist(nameplaylist), HttpStatus.OK);
     }
 
-    @GetMapping("/findByNamePlaylist/{namecategory}")
+    @GetMapping("/findbynameplaylist/{namecategory}")
     public ResponseEntity<Boolean> categoryExist(@PathVariable("namecategory") String namecategory) {
         return new ResponseEntity<>(categoryservice.categoryExist(namecategory), HttpStatus.OK);
     }
