@@ -37,7 +37,7 @@ public class UserPlaylistService {
         return userPlaylistMapper.toUserPlaylistDTO(userPlaylistRepository.findByIdUserPlaylist(idPlaylist));
     }
 
-    // find playlist by categoryName
+    // find playlist by userName
     @Transactional(readOnly = true)
     public List<UserPlaylistDTO> findByUsername(String username) {
         return userPlaylistMapper.userPlaylistEntityListToUserPlaylistDTOList(userPlaylistRepository.findDistinctByUser_Username(username));

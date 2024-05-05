@@ -14,6 +14,7 @@ public class ArtistDTO {
     private long idArtist;
     private String nameArtist;
     private String profilePicture;
+    private String coverPicture;
 
     //All relationships
 

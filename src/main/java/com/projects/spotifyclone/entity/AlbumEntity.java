@@ -16,6 +16,7 @@ public class AlbumEntity {
     private long idAlbum;
     private String titleAlbum;
     private String profilePicture;
+    private String releaseDate;
 
     //All relationships
 

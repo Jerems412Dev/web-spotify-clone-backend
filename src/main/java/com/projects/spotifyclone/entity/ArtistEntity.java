@@ -16,6 +16,7 @@ public class ArtistEntity {
     private long idArtist;
     private String nameArtist;
     private String profilePicture;
+    private String coverPicture;
 
     //All relationships
 
