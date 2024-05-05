@@ -28,8 +28,7 @@ public class AlbumService {
 
     // add an album
     @Transactional
-    public String createAlbum(AlbumDTO album, ArtistDTO artist) {
-        album.setArtist(artist);
+    public String createAlbum(AlbumDTO album) {
         albumMapper.toAlbumDTO(albumRepository.save(albumMapper.fromAlbumDTO(album)));
         return "album added successfully";
     }

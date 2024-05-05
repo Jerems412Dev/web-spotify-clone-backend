@@ -1,6 +1,5 @@
 package com.projects.spotifyclone.service;
 
-import com.projects.spotifyclone.dto.AlbumDTO;
 import com.projects.spotifyclone.dto.TrackDTO;
 import com.projects.spotifyclone.mapper.TrackMapper;
 import com.projects.spotifyclone.repository.TrackRepository;
@@ -21,8 +20,7 @@ public class TrackService {
 
     // create track
     @Transactional
-    public String createTrack(TrackDTO track, AlbumDTO album) {
-        track.setAlbum(album);
+    public String createTrack(TrackDTO track) {
         trackMapper.toTrackDTO(trackRepository.save(trackMapper.fromTrackDTO(track)));
         return "track added successfully";
     }
