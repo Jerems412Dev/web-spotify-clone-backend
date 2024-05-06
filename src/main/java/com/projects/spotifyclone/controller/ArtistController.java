@@ -3,11 +3,13 @@ package com.projects.spotifyclone.controller;
 import com.projects.spotifyclone.dto.ArtistDTO;
 import com.projects.spotifyclone.service.ArtistService;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin()
 @RestController
 @RequestMapping("/artists")
 public class ArtistController {
@@ -17,51 +19,50 @@ public class ArtistController {
         this.artistservice = artistservice;
     }
 
-    @PostMapping("/createartist")
+    @PostMapping(value = "/createartist", produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(code = HttpStatus.CREATED)
     public ResponseEntity<String> createArtist(@RequestBody ArtistDTO artist) {
-        return new ResponseEntity<>(artistservice.createArtist(artist), HttpStatus.OK);
+        return ResponseEntity.ok().body(artistservice.createArtist(artist));
     }
 
-    @GetMapping("/findartistbyusername/{username}")
+    @GetMapping(value = "/findartistbyusername/{username}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<ArtistDTO>> findArtistByUsername(@PathVariable("username") String username) {
-        return new ResponseEntity<>(artistservice.findArtistByUsername(username), HttpStatus.OK);
+        return ResponseEntity.ok().body(artistservice.findArtistByUsername(username));
     }
 
-    @GetMapping("/findbycategoryname/{categoryname}")
+    @GetMapping(value = "/findbycategoryname/{categoryname}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<ArtistDTO>> findByCategoryName(@PathVariable("categoryname") String categoryname) {
-        return new ResponseEntity<>(artistservice.findByCategoryName(categoryname), HttpStatus.OK);
+        return ResponseEntity.ok().body(artistservice.findByCategoryName(categoryname));
     }
 
-    @GetMapping("/searchartist/{containing}")
+    @GetMapping(value = "/searchartist/{containing}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<ArtistDTO>> searchArtist(@PathVariable("containing") String containing) {
-        return new ResponseEntity<>(artistservice.searchArtist(containing), HttpStatus.OK);
+        return ResponseEntity.ok().body(artistservice.searchArtist(containing));
     }
 
-    @GetMapping("/artistexist/{nameartist}")
+    @GetMapping(value = "/artistexist/{nameartist}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> artistExist(@PathVariable("nameartist") String nameartist) {
-        return new ResponseEntity<>(artistservice.artistExist(nameartist), HttpStatus.OK);
+        return ResponseEntity.ok().body(artistservice.artistExist(nameartist));
     }
 
-    @GetMapping("/artistexistincategory/{nameartist}/{namecategory}")
+    @GetMapping(value = "/artistexistincategory/{nameartist}/{namecategory}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> artistExistInCategory(@PathVariable("nameartist") String nameartist,@PathVariable("namecategory") String namecategory) {
-        return new ResponseEntity<>(artistservice.artistExistInCategory(nameartist,namecategory), HttpStatus.OK);
+        return ResponseEntity.ok().body(artistservice.artistExistInCategory(nameartist,namecategory));
     }
 
-    @GetMapping("/deleteartistuser/{username}/{nameartist}")
+    @GetMapping(value = "/deleteartistuser/{username}/{nameartist}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> deleteArtistUser(@PathVariable("username") String username,@PathVariable("nameartist") String nameartist) {
-        return new ResponseEntity<>(artistservice.deleteArtistUser(username,nameartist), HttpStatus.OK);
+        return ResponseEntity.ok().body(artistservice.deleteArtistUser(username,nameartist));
     }
 
-    @GetMapping("/favartistbyuser/{iduser}/{idartist}")
+    @GetMapping(value = "/favartistbyuser/{iduser}/{idartist}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> favArtistByUser(@PathVariable("iduser") long iduser,@PathVariable("idartist") long idartist) {
-        return new ResponseEntity<>(artistservice.favArtistByUser(iduser,idartist), HttpStatus.OK);
+        return ResponseEntity.ok().body(artistservice.favArtistByUser(iduser,idartist));
     }
 
-    @GetMapping("/findartistbynameartist/{nameartist}")
+    @GetMapping(value = "/findartistbynameartist/{nameartist}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<ArtistDTO> findByNameArtist(@PathVariable("nameartist") String nameartist) {
-        return new ResponseEntity<>(artistservice.findByNameArtist(nameartist), HttpStatus.OK);
+        return ResponseEntity.ok().body(artistservice.findByNameArtist(nameartist));
     }
-
 
 }

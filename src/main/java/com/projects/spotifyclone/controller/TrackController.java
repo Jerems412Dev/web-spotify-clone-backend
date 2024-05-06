@@ -3,11 +3,13 @@ package com.projects.spotifyclone.controller;
 import com.projects.spotifyclone.dto.TrackDTO;
 import com.projects.spotifyclone.service.TrackService;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin()
 @RestController
 @RequestMapping("/tracks")
 public class TrackController {
@@ -17,80 +19,80 @@ public class TrackController {
         this.trackservice = trackservice;
     }
 
-    @PostMapping("/createtrack")
+    @PostMapping(value = "/createtrack", produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(code = HttpStatus.CREATED)
     public ResponseEntity<String> createTrack(@RequestBody TrackDTO track) {
-        return new ResponseEntity<>(trackservice.createTrack(track), HttpStatus.OK);
+        return ResponseEntity.ok().body(trackservice.createTrack(track));
     }
 
-    @GetMapping("/findtrackbytitle/{titletrack}")
+    @GetMapping(value = "/findtrackbytitle/{titletrack}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<TrackDTO> findTrackByTitle(@PathVariable("titletrack") String titletrack) {
-        return new ResponseEntity<>(trackservice.findTrackByTitle(titletrack), HttpStatus.OK);
+        return ResponseEntity.ok().body(trackservice.findTrackByTitle(titletrack));
     }
 
-    @GetMapping("/findtrackbyId/{idtrack}")
+    @GetMapping(value = "/findtrackbyId/{idtrack}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<TrackDTO> findTrackById(@PathVariable("idtrack") long idtrack) {
-        return new ResponseEntity<>(trackservice.findTrackById(idtrack), HttpStatus.OK);
+        return ResponseEntity.ok().body(trackservice.findTrackById(idtrack));
     }
 
-    @GetMapping("/findtrackbyusername/{username}")
+    @GetMapping(value = "/findtrackbyusername/{username}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<TrackDTO>> findTrackByUsername(@PathVariable("username") String username) {
-        return new ResponseEntity<>(trackservice.findTrackByUsername(username), HttpStatus.OK);
+        return ResponseEntity.ok().body(trackservice.findTrackByUsername(username));
     }
 
-    @GetMapping("/findtrackbytitlealbum/{titlealbum}")
+    @GetMapping(value = "/findtrackbytitlealbum/{titlealbum}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<TrackDTO>> findTrackByTitleAlbum(@PathVariable("titlealbum") String titlealbum) {
-        return new ResponseEntity<>(trackservice.findTrackByTitleAlbum(titlealbum), HttpStatus.OK);
+        return ResponseEntity.ok().body(trackservice.findTrackByTitleAlbum(titlealbum));
     }
 
-    @GetMapping("/findtrackbynameartist/{nameartist}")
+    @GetMapping(value = "/findtrackbynameartist/{nameartist}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<TrackDTO>> findTrackByNameArtist(@PathVariable("nameartist") String nameartist) {
-        return new ResponseEntity<>(trackservice.findTrackByNameArtist(nameartist), HttpStatus.OK);
+        return ResponseEntity.ok().body(trackservice.findTrackByNameArtist(nameartist));
     }
 
-    @GetMapping("/findbynamecategory/{nameCategory}")
+    @GetMapping(value = "/findbynamecategory/{nameCategory}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<TrackDTO>> findByNameCategory(@PathVariable("nameCategory") String nameCategory) {
-        return new ResponseEntity<>(trackservice.findByNameCategory(nameCategory), HttpStatus.OK);
+        return ResponseEntity.ok().body(trackservice.findByNameCategory(nameCategory));
     }
 
-    @GetMapping("/findbyiduserplaylist/{idplaylist}")
+    @GetMapping(value = "/findbyiduserplaylist/{idplaylist}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<TrackDTO>> findByIdUserPlaylist(@PathVariable("idplaylist") long idplaylist) {
-        return new ResponseEntity<>(trackservice.findByIdUserPlaylist(idplaylist), HttpStatus.OK);
+        return ResponseEntity.ok().body(trackservice.findByIdUserPlaylist(idplaylist));
     }
 
-    @GetMapping("/findbyiduserplaylistnot/{idplaylist}")
+    @GetMapping(value = "/findbyiduserplaylistnot/{idplaylist}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<TrackDTO>> findByIdUserPlaylistNot(@PathVariable("idplaylist") long idplaylist) {
-        return new ResponseEntity<>(trackservice.findByIdUserPlaylistNot(idplaylist), HttpStatus.OK);
+        return ResponseEntity.ok().body(trackservice.findByIdUserPlaylistNot(idplaylist));
     }
 
-    @GetMapping("/findbyidspotifyplaylist/{idplaylist}")
+    @GetMapping(value = "/findbyidspotifyplaylist/{idplaylist}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<TrackDTO>> findByIdSpotifyPlaylist(@PathVariable("idplaylist") long idplaylist) {
-        return new ResponseEntity<>(trackservice.findByIdSpotifyPlaylist(idplaylist), HttpStatus.OK);
+        return ResponseEntity.ok().body(trackservice.findByIdSpotifyPlaylist(idplaylist));
     }
 
-    @GetMapping("/findbyidspotifyplaylistnot/{idplaylist}")
+    @GetMapping(value = "/findbyidspotifyplaylistnot/{idplaylist}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<TrackDTO>> findByIdSpotifyPlaylistNot(@PathVariable("idplaylist") long idplaylist) {
-        return new ResponseEntity<>(trackservice.findByIdSpotifyPlaylistNot(idplaylist), HttpStatus.OK);
+        return ResponseEntity.ok().body(trackservice.findByIdSpotifyPlaylistNot(idplaylist));
     }
 
-    @GetMapping("/findBytitletrackcontaining/{search}")
+    @GetMapping(value = "/findBytitletrackcontaining/{search}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<TrackDTO>> findByTitleTrackContaining(@PathVariable("search") String search) {
-        return new ResponseEntity<>(trackservice.findByTitleTrackContaining(search), HttpStatus.OK);
+        return ResponseEntity.ok().body(trackservice.findByTitleTrackContaining(search));
     }
 
-    @GetMapping("/existsByTitleTrack/{titletrack}")
+    @GetMapping(value = "/existsByTitleTrack/{titletrack}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> existsByTitleTrack(@PathVariable("titletrack") String titletrack) {
-        return new ResponseEntity<>(trackservice.existsByTitleTrack(titletrack), HttpStatus.OK);
+        return ResponseEntity.ok().body(trackservice.existsByTitleTrack(titletrack));
     }
 
-    @GetMapping("/existsbytitletrackandusername/{titletrack}/{username}")
+    @GetMapping(value = "/existsbytitletrackandusername/{titletrack}/{username}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> existsByTitleTrackAndUsername(@PathVariable("titletrack") String titletrack,@PathVariable("username") String username) {
-        return new ResponseEntity<>(trackservice.existsByTitleTrackAndUsername(titletrack,username), HttpStatus.OK);
+        return ResponseEntity.ok().body(trackservice.existsByTitleTrackAndUsername(titletrack,username));
     }
 
-    @GetMapping("/deletebyusernameandtitletrack/{username}/{titletrack}")
+    @GetMapping(value = "/deletebyusernameandtitletrack/{username}/{titletrack}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> deleteByUsernameAndTitleTrack(@PathVariable("username") String username,@PathVariable("titletrack") String titletrack) {
-        return new ResponseEntity<>(trackservice.deleteByUsernameAndTitleTrack(username,titletrack), HttpStatus.OK);
+        return ResponseEntity.ok().body(trackservice.deleteByUsernameAndTitleTrack(username,titletrack));
     }
 
 }

@@ -3,11 +3,13 @@ package com.projects.spotifyclone.controller;
 import com.projects.spotifyclone.dto.CategoryDTO;
 import com.projects.spotifyclone.service.CategoryService;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin()
 @RestController
 @RequestMapping("/categories")
 public class CategoryController {
@@ -17,39 +19,39 @@ public class CategoryController {
         this.categoryservice = categoryservice;
     }
 
-    @PostMapping("/createcategory")
+    @PostMapping(value = "/createcategory", produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(code = HttpStatus.CREATED)
     public ResponseEntity<String> createCategory(@RequestBody CategoryDTO category) {
-        return new ResponseEntity<>(categoryservice.createCategory(category), HttpStatus.OK);
+        return ResponseEntity.ok().body(categoryservice.createCategory(category));
     }
 
-    @GetMapping("/findbynamecategory/{namecategory}")
+    @GetMapping(value = "/findbynamecategory/{namecategory}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<CategoryDTO> findAlbumByNameCategory(@PathVariable("namecategory") String namecategory) {
-        return new ResponseEntity<>(categoryservice.findByNameCategory(namecategory), HttpStatus.OK);
+        return ResponseEntity.ok().body(categoryservice.findByNameCategory(namecategory));
     }
 
-    @GetMapping("/findbyidcategory/{idcategory}")
+    @GetMapping(value = "/findbyidcategory/{idcategory}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<CategoryDTO> findByIdCategory(@PathVariable("idcategory") long idcategory) {
-        return new ResponseEntity<>(categoryservice.findByIdCategory(idcategory), HttpStatus.OK);
+        return ResponseEntity.ok().body(categoryservice.findByIdCategory(idcategory));
     }
 
-    @GetMapping("/findbytitlealbum/{titlealbum}")
+    @GetMapping(value = "/findbytitlealbum/{titlealbum}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<CategoryDTO>> findByTitleAlbum(@PathVariable("titlealbum") String titlealbum) {
-        return new ResponseEntity<>(categoryservice.findByTitleAlbum(titlealbum), HttpStatus.OK);
+        return ResponseEntity.ok().body(categoryservice.findByTitleAlbum(titlealbum));
     }
 
-    @GetMapping("/findbynameartist/{nameartist}")
+    @GetMapping(value = "/findbynameartist/{nameartist}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<CategoryDTO>> findByNameArtist(@PathVariable("nameartist") String nameartist) {
-        return new ResponseEntity<>(categoryservice.findByNameArtist(nameartist), HttpStatus.OK);
+        return ResponseEntity.ok().body(categoryservice.findByNameArtist(nameartist));
     }
 
-    @GetMapping("/findbynameplaylist/{nameplaylist}")
+    @GetMapping(value = "/findbynameplaylist/{nameplaylist}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<CategoryDTO>> findByNamePlaylist(@PathVariable("nameplaylist") String nameplaylist) {
-        return new ResponseEntity<>(categoryservice.findByNamePlaylist(nameplaylist), HttpStatus.OK);
+        return ResponseEntity.ok().body(categoryservice.findByNamePlaylist(nameplaylist));
     }
 
-    @GetMapping("/findbynameplaylist/{namecategory}")
+    @GetMapping(value = "/categoryexist/{namecategory}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> categoryExist(@PathVariable("namecategory") String namecategory) {
-        return new ResponseEntity<>(categoryservice.categoryExist(namecategory), HttpStatus.OK);
+        return ResponseEntity.ok().body(categoryservice.categoryExist(namecategory));
     }
 }

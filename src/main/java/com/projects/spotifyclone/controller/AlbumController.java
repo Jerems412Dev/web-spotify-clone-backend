@@ -3,11 +3,13 @@ package com.projects.spotifyclone.controller;
 import com.projects.spotifyclone.dto.AlbumDTO;
 import com.projects.spotifyclone.service.AlbumService;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin()
 @RestController
 @RequestMapping("/albums")
 public class AlbumController {
@@ -17,50 +19,50 @@ public class AlbumController {
         this.albumservice = albumservice;
     }
 
-    @PostMapping("/createalbum")
+    @PostMapping(value = "/createalbum", produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(code = HttpStatus.CREATED)
     public ResponseEntity<String> createAlbum(@RequestBody AlbumDTO album) {
-        return new ResponseEntity<>(albumservice.createAlbum(album), HttpStatus.OK);
+        return ResponseEntity.ok().body(albumservice.createAlbum(album));
     }
 
-    @GetMapping("/findalbumbyusername/{username}")
+    @GetMapping(value = "/findalbumbyusername/{username}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<AlbumDTO>> findAlbumByUsername(@PathVariable("username") String username) {
-        return new ResponseEntity<>(albumservice.findAlbumByUsername(username), HttpStatus.OK);
+        return ResponseEntity.ok().body(albumservice.findAlbumByUsername(username));
     }
 
-    @GetMapping("/findbycategoryname/{categoryname}")
+    @GetMapping(value = "/findbycategoryname/{categoryname}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<AlbumDTO>> findByCategoryName(@PathVariable("categoryname") String categoryname) {
-        return new ResponseEntity<>(albumservice.findByCategoryName(categoryname), HttpStatus.OK);
+        return ResponseEntity.ok().body(albumservice.findByCategoryName(categoryname));
     }
 
-    @GetMapping("/searchalbum/{containing}")
+    @GetMapping(value = "/searchalbum/{containing}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<AlbumDTO>> searchAlbum(@PathVariable("containing") String containing) {
-        return new ResponseEntity<>(albumservice.searchAlbum(containing), HttpStatus.OK);
+        return ResponseEntity.ok().body(albumservice.searchAlbum(containing));
     }
 
-    @GetMapping("/albumexist/{titlealbum}")
+    @GetMapping(value = "/albumexist/{titlealbum}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> albumExist(@PathVariable("titlealbum") String titlealbum) {
-        return new ResponseEntity<>(albumservice.albumExist(titlealbum), HttpStatus.OK);
+        return ResponseEntity.ok().body(albumservice.albumExist(titlealbum));
     }
 
-    @GetMapping("/albumexistincategory/{titlealbum}/{namecategory}")
+    @GetMapping(value = "/albumexistincategory/{titlealbum}/{namecategory}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> albumExistInCategory(@PathVariable("titlealbum") String titlealbum,@PathVariable("namecategory") String namecategory) {
-        return new ResponseEntity<>(albumservice.albumExistInCategory(titlealbum,namecategory), HttpStatus.OK);
+        return ResponseEntity.ok().body(albumservice.albumExistInCategory(titlealbum,namecategory));
     }
 
-    @GetMapping("/deletealbumuser/{username}/{titlealbum}")
+    @GetMapping(value = "/deletealbumuser/{username}/{titlealbum}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> deleteAlbumUser(@PathVariable("username") String username,@PathVariable("titlealbum") String titlealbum) {
-        return new ResponseEntity<>(albumservice.deleteAlbumUser(username,titlealbum), HttpStatus.OK);
+        return ResponseEntity.ok().body(albumservice.deleteAlbumUser(username,titlealbum));
     }
 
-    @GetMapping("/favalbumbyuser/{iduser}/{idalbum}")
+    @GetMapping(value = "/favalbumbyuser/{iduser}/{idalbum}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> favAlbumByUser(@PathVariable("iduser") long iduser,@PathVariable("idalbum") long idalbum) {
-        return new ResponseEntity<>(albumservice.favAlbumByUser(iduser,idalbum), HttpStatus.OK);
+        return ResponseEntity.ok().body(albumservice.favAlbumByUser(iduser,idalbum));
     }
 
-    @GetMapping("/findbytitlealbum/{titlealbum}")
+    @GetMapping(value = "/findbytitlealbum/{titlealbum}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<AlbumDTO> findByTitleAlbum(@PathVariable("titlealbum") String titlealbum) {
-        return new ResponseEntity<>(albumservice.findByTitleAlbum(titlealbum), HttpStatus.OK);
+        return ResponseEntity.ok().body(albumservice.findByTitleAlbum(titlealbum));
     }
 
 }

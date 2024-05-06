@@ -3,11 +3,13 @@ package com.projects.spotifyclone.controller;
 import com.projects.spotifyclone.dto.UserPlaylistDTO;
 import com.projects.spotifyclone.service.UserPlaylistService;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin()
 @RestController
 @RequestMapping("/userplaylists")
 public class UserPlaylistController {
@@ -17,34 +19,34 @@ public class UserPlaylistController {
         this.userplaylistservice = userplaylistservice;
     }
 
-    @PostMapping("/createuserplaylist")
+    @PostMapping(value = "/createuserplaylist", produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(code = HttpStatus.CREATED)
     public ResponseEntity<String> createUserPlaylist(@RequestBody UserPlaylistDTO playlist) {
-        return new ResponseEntity<>(userplaylistservice.createUserPlaylist(playlist), HttpStatus.OK);
+        return ResponseEntity.ok().body(userplaylistservice.createUserPlaylist(playlist));
     }
 
-    @GetMapping("/findbynameplaylist/{nameplaylist}")
+    @GetMapping(value = "/findbynameplaylist/{nameplaylist}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<UserPlaylistDTO> findByNamePlaylist(@PathVariable("nameplaylist") String nameplaylist) {
-        return new ResponseEntity<>(userplaylistservice.findByNamePlaylist(nameplaylist), HttpStatus.OK);
+        return ResponseEntity.ok().body(userplaylistservice.findByNamePlaylist(nameplaylist));
     }
 
-    @GetMapping("/findbyidplaylist/{idplaylist}")
+    @GetMapping(value = "/findbyidplaylist/{idplaylist}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<UserPlaylistDTO> findByIdPlaylist(@PathVariable("idplaylist") long idplaylist) {
-        return new ResponseEntity<>(userplaylistservice.findByIdPlaylist(idplaylist), HttpStatus.OK);
+        return ResponseEntity.ok().body(userplaylistservice.findByIdPlaylist(idplaylist));
     }
 
-    @GetMapping("/findbyusername/{username}")
+    @GetMapping(value = "/findbyusername/{username}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<UserPlaylistDTO>> findByUsername(@PathVariable("username") String username) {
-        return new ResponseEntity<>(userplaylistservice.findByUsername(username), HttpStatus.OK);
+        return ResponseEntity.ok().body(userplaylistservice.findByUsername(username));
     }
 
-    @GetMapping("/existsbynameplaylist/{nameplaylist}")
+    @GetMapping(value = "/existsbynameplaylist/{nameplaylist}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> existsByNamePlaylist(@PathVariable("nameplaylist") String nameplaylist) {
-        return new ResponseEntity<>(userplaylistservice.existsByNamePlaylist(nameplaylist), HttpStatus.OK);
+        return ResponseEntity.ok().body(userplaylistservice.existsByNamePlaylist(nameplaylist));
     }
 
-    @GetMapping("/deletebytracksanduserplaylist/{titletrack}/{id}")
+    @GetMapping(value = "/deletebytracksanduserplaylist/{titletrack}/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> deleteByTracksAndUserPlaylist(@PathVariable("titletrack") String titletrack,@PathVariable("id") long id) {
-        return new ResponseEntity<>(userplaylistservice.deleteByTracksAndUserPlaylist(titletrack,id), HttpStatus.OK);
+        return ResponseEntity.ok().body(userplaylistservice.deleteByTracksAndUserPlaylist(titletrack,id));
     }
 }

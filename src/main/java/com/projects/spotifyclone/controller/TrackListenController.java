@@ -3,15 +3,13 @@ package com.projects.spotifyclone.controller;
 import com.projects.spotifyclone.dto.TrackDTO;
 import com.projects.spotifyclone.dto.TrackListenDTO;
 import com.projects.spotifyclone.service.TrackListenService;
-import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/tracklistens")
 public class TrackListenController {
@@ -21,23 +19,23 @@ public class TrackListenController {
         this.tracklistenservice = tracklistenservice;
     }
 
-    @GetMapping("/findlasttracklisten/{username}")
+    @GetMapping(value = "/findlasttracklisten/{username}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<TrackDTO> findLastTrackListen(@PathVariable("username") String username) {
-        return new ResponseEntity<>(tracklistenservice.findLastTrackListen(username), HttpStatus.OK);
+        return ResponseEntity.ok().body(tracklistenservice.findLastTrackListen(username));
     }
 
-    @GetMapping("/findbyuserandtrack/{username}/{titletrack}")
+    @GetMapping(value = "/findbyuserandtrack/{username}/{titletrack}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<TrackListenDTO>> findByUserAndTrack(@PathVariable("username") String username,@PathVariable("titletrack") String titletrack) {
-        return new ResponseEntity<>(tracklistenservice.findByUserAndTrack(username,titletrack), HttpStatus.OK);
+        return ResponseEntity.ok().body(tracklistenservice.findByUserAndTrack(username,titletrack));
     }
 
-    @GetMapping("/findbyuserandtracknot/{username}/{titletrack}")
+    @GetMapping(value = "/findbyuserandtracknot/{username}/{titletrack}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<TrackListenDTO>> findByUserAndTrackNot(@PathVariable("username") String username,@PathVariable("titletrack") String titletrack) {
-        return new ResponseEntity<>(tracklistenservice.findByUserAndTrackNot(username,titletrack), HttpStatus.OK);
+        return ResponseEntity.ok().body(tracklistenservice.findByUserAndTrackNot(username,titletrack));
     }
 
-    @GetMapping("/existsbyuserandtrack/{username}/{titletrack}")
+    @GetMapping(value = "/existsbyuserandtrack/{username}/{titletrack}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> existsByUserAndTrack(@PathVariable("username") String username,@PathVariable("titletrack") String titletrack) {
-        return new ResponseEntity<>(tracklistenservice.existsByUserAndTrack(username,titletrack), HttpStatus.OK);
+        return ResponseEntity.ok().body(tracklistenservice.existsByUserAndTrack(username,titletrack));
     }
 }
