@@ -9,5 +9,6 @@ import java.util.List;
 public interface ArtistMapper {
     ArtistDTO toArtistDTO(ArtistEntity artistEntity);
     List<ArtistDTO> artistEntityListToArtistDTOList(List<ArtistEntity> list);
+    List<ArtistEntity> artistDTOListToArtistEntityList(List<ArtistDTO> list);
     ArtistEntity fromArtistDTO(ArtistDTO artistDTO);
 }

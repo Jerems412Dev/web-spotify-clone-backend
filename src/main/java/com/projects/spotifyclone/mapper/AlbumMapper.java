@@ -9,5 +9,6 @@ import java.util.List;
 public interface AlbumMapper {
     AlbumDTO toAlbumDTO(AlbumEntity albumEntity);
     List<AlbumDTO> albumEntityListToAlbumDTOList(List<AlbumEntity> list);
+    List<AlbumEntity> albumDTOListToAlbumEntityList(List<AlbumDTO> list);
     AlbumEntity fromAlbumDTO(AlbumDTO albumDTO);
 }

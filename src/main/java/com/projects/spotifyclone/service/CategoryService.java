@@ -21,8 +21,15 @@ public class CategoryService {
     // add new category
     @Transactional
     public String createCategory(CategoryDTO category) {
-        categoryMapper.toCategoryDTO(categoryRepository.save(categoryMapper.fromCategoryDTO(category)));
+        categoryRepository.save(categoryMapper.fromCategoryDTO(category));
         return "category added successfully";
+    }
+
+    // add categories
+    @Transactional
+    public String createCategories(List<CategoryDTO> categories) {
+        categoryRepository.saveAll(categoryMapper.categoryDTOListToCategoryEntityList(categories));
+        return "categories added successfully";
     }
 
     // find category by name

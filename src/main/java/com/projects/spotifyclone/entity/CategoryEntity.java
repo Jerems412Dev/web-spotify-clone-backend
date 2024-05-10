@@ -15,6 +15,7 @@ public class CategoryEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long idCategory;
     private String nameCategory;
+    private String color;
 
     //All relationships
 

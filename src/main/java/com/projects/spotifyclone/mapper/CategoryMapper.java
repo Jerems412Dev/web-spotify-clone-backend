@@ -9,5 +9,6 @@ import java.util.List;
 public interface CategoryMapper {
     CategoryDTO toCategoryDTO(CategoryEntity categoryEntity);
     List<CategoryDTO> categoryEntityListToCategoryDTOList(List<CategoryEntity> list);
+    List<CategoryEntity> categoryDTOListToCategoryEntityList(List<CategoryDTO> list);
     CategoryEntity fromCategoryDTO(CategoryDTO categoryDTO);
 }

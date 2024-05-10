@@ -25,6 +25,13 @@ public class TrackService {
         return "track added successfully";
     }
 
+    // create tracks
+    @Transactional
+    public String createTracks(List<TrackDTO> tracks) {
+        trackRepository.saveAll(trackMapper.trackDTOListToTrackEntityList(tracks));
+        return "tracks added successfully";
+    }
+
     // retrieve a track list by titleTrack
     @Transactional(readOnly = true)
     public TrackDTO findTrackByTitle(String titleTrack) {

@@ -25,6 +25,12 @@ public class ArtistController {
         return ResponseEntity.ok().body(artistservice.createArtist(artist));
     }
 
+    @PostMapping(value = "/createartists", produces = MediaType.APPLICATION_JSON_VALUE)
+    @ResponseStatus(code = HttpStatus.CREATED)
+    public ResponseEntity<String> createArtists(@RequestBody List<ArtistDTO> artists) {
+        return ResponseEntity.ok().body(artistservice.createArtists(artists));
+    }
+
     @GetMapping(value = "/findartistbyusername/{username}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<ArtistDTO>> findArtistByUsername(@PathVariable("username") String username) {
         return ResponseEntity.ok().body(artistservice.findArtistByUsername(username));

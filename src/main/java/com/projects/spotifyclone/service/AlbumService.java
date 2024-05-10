@@ -29,8 +29,15 @@ public class AlbumService {
     // add an album
     @Transactional
     public String createAlbum(AlbumDTO album) {
-        albumMapper.toAlbumDTO(albumRepository.save(albumMapper.fromAlbumDTO(album)));
+        albumRepository.save(albumMapper.fromAlbumDTO(album));
         return "album added successfully";
+    }
+
+    // add albums
+    @Transactional
+    public String createAlbums(List<AlbumDTO> albums) {
+        albumRepository.saveAll(albumMapper.albumDTOListToAlbumEntityList(albums));
+        return "albums added successfully";
     }
 
     // retrieve a user's list of favorite albums

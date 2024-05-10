@@ -25,6 +25,12 @@ public class CategoryController {
         return ResponseEntity.ok().body(categoryservice.createCategory(category));
     }
 
+    @PostMapping(value = "/createcategories", produces = MediaType.APPLICATION_JSON_VALUE)
+    @ResponseStatus(code = HttpStatus.CREATED)
+    public ResponseEntity<String> createCategories(@RequestBody List<CategoryDTO> categorie) {
+        return ResponseEntity.ok().body(categoryservice.createCategories(categorie));
+    }
+
     @GetMapping(value = "/findbynamecategory/{namecategory}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<CategoryDTO> findAlbumByNameCategory(@PathVariable("namecategory") String namecategory) {
         return ResponseEntity.ok().body(categoryservice.findByNameCategory(namecategory));

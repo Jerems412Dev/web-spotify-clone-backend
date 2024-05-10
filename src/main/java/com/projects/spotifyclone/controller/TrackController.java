@@ -25,6 +25,12 @@ public class TrackController {
         return ResponseEntity.ok().body(trackservice.createTrack(track));
     }
 
+    @PostMapping(value = "/createtracks", produces = MediaType.APPLICATION_JSON_VALUE)
+    @ResponseStatus(code = HttpStatus.CREATED)
+    public ResponseEntity<String> createTracks(@RequestBody List<TrackDTO> tracks) {
+        return ResponseEntity.ok().body(trackservice.createTracks(tracks));
+    }
+
     @GetMapping(value = "/findtrackbytitle/{titletrack}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<TrackDTO> findTrackByTitle(@PathVariable("titletrack") String titletrack) {
         return ResponseEntity.ok().body(trackservice.findTrackByTitle(titletrack));

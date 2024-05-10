@@ -10,5 +10,6 @@ import java.util.List;
 public interface TrackMapper {
     TrackDTO toTrackDTO(TrackEntity trackEntity);
     List<TrackDTO> trackEntityListToTrackDTOList(List<TrackEntity> list);
+    List<TrackEntity> trackDTOListToTrackEntityList(List<TrackDTO> list);
     TrackEntity fromTrackDTO(TrackDTO trackDTO);
 }

@@ -13,6 +13,7 @@ import java.util.List;
 public class CategoryDTO {
     private long idCategory;
     private String nameCategory;
+    private String color;
 
     //All relationships
 

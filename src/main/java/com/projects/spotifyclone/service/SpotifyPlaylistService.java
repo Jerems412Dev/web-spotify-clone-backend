@@ -21,8 +21,15 @@ public class SpotifyPlaylistService {
     // add an spotifyPlaylist
     @Transactional
     public String createSpotifyPlaylist(SpotifyPlaylistDTO spotifyPlaylist) {
-        spotifyPlaylistMapper.toSpotifyPlaylistDTO(spotifyPlaylistRepository.save(spotifyPlaylistMapper.fromSpotifyPlaylistDTO(spotifyPlaylist)));
+        spotifyPlaylistRepository.save(spotifyPlaylistMapper.fromSpotifyPlaylistDTO(spotifyPlaylist));
         return "spotifyPlaylist added successfully";
+    }
+
+    // add spotifyPlaylists
+    @Transactional
+    public String createSpotifyPlaylists(List<SpotifyPlaylistDTO> spotifyPlaylists) {
+        spotifyPlaylistRepository.saveAll(spotifyPlaylistMapper.spotifyPlaylistDTOListToSpotifyPlaylistEntityList(spotifyPlaylists));
+        return "spotifyPlaylists added successfully";
     }
 
     // find playlist by name

@@ -9,5 +9,6 @@ import java.util.List;
 public interface SpotifyPlaylistMapper {
     SpotifyPlaylistDTO toSpotifyPlaylistDTO(SpotifyPlaylistEntity spotifyPlaylistEntity);
     List<SpotifyPlaylistDTO> spotifyPlaylistEntityListToSpotifyPlaylistDTOList(List<SpotifyPlaylistEntity> list);
+    List<SpotifyPlaylistEntity> spotifyPlaylistDTOListToSpotifyPlaylistEntityList(List<SpotifyPlaylistDTO> list);
     SpotifyPlaylistEntity fromSpotifyPlaylistDTO(SpotifyPlaylistDTO spotifyPlaylistDTO);
 }

@@ -25,6 +25,12 @@ public class SpotifyPlaylistController {
         return ResponseEntity.ok().body(spotifyplaylistservice.createSpotifyPlaylist(playlist));
     }
 
+    @PostMapping(value = "/createspotifyplaylists", produces = MediaType.APPLICATION_JSON_VALUE)
+    @ResponseStatus(code = HttpStatus.CREATED)
+    public ResponseEntity<String> createSpotifyPlaylists(@RequestBody List<SpotifyPlaylistDTO> playlists) {
+        return ResponseEntity.ok().body(spotifyplaylistservice.createSpotifyPlaylists(playlists));
+    }
+
     @GetMapping(value = "/findbynameplaylist/{nameplaylist}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<SpotifyPlaylistDTO> findByNamePlaylist(@PathVariable("nameplaylist") String nameplaylist) {
         return ResponseEntity.ok().body(spotifyplaylistservice.findByNamePlaylist(nameplaylist));

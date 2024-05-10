@@ -25,6 +25,12 @@ public class AlbumController {
         return ResponseEntity.ok().body(albumservice.createAlbum(album));
     }
 
+    @PostMapping(value = "/createalbums", produces = MediaType.APPLICATION_JSON_VALUE)
+    @ResponseStatus(code = HttpStatus.CREATED)
+    public ResponseEntity<String> createAlbums(@RequestBody List<AlbumDTO> albums) {
+        return ResponseEntity.ok().body(albumservice.createAlbums(albums));
+    }
+
     @GetMapping(value = "/findalbumbyusername/{username}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<AlbumDTO>> findAlbumByUsername(@PathVariable("username") String username) {
         return ResponseEntity.ok().body(albumservice.findAlbumByUsername(username));
