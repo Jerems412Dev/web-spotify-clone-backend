@@ -20,7 +20,7 @@ public class TrackListenController {
     }
 
     @GetMapping(value = "/findlasttracklisten/{username}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<TrackDTO> findLastTrackListen(@PathVariable("username") String username) {
+    public ResponseEntity<TrackListenDTO> findLastTrackListen(@PathVariable("username") String username) {
         return ResponseEntity.ok().body(tracklistenservice.findLastTrackListen(username));
     }
 

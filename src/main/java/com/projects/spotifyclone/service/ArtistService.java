@@ -35,7 +35,7 @@ public class ArtistService {
     @Transactional
     public String createArtists(List<ArtistDTO> artists) {
         artistRepository.saveAll(artistMapper.artistDTOListToArtistEntityList(artists));
-        return "artist added successfully";
+        return "artists added successfully";
     }
 
     // retrieve a user's list of favorite artists
