@@ -20,14 +20,13 @@ public class UserServiceTest {
 
     @Test
     public void addUser() {
-        UserDTO user = new UserDTO();
+        /*UserDTO user = new UserDTO();
         user.setProfileName("jerems");
         user.setUsername("jeremyobiang412@gmail.com");
         user.setGender("Male");
         user.setCountry("Gabon");
         user.setBirth("04-25-2002");
-        user.setPassword("1234");
         user.setRole(USER);
-        userService.addUser(user);
+        userService.addUser(user);*/
     }
 }

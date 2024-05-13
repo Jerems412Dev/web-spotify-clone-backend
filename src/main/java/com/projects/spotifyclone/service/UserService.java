@@ -1,6 +1,6 @@
 package com.projects.spotifyclone.service;
 
-import com.projects.spotifyclone.dto.UserDTO;
+import com.projects.spotifyclone.dto.RegisterDTO;
 import com.projects.spotifyclone.entity.UserEntity;
 import com.projects.spotifyclone.security.UserPrincipal;
 import com.projects.spotifyclone.mapper.UserMapper;
@@ -30,9 +30,9 @@ public class UserService implements UserDetailsService {
         return user.map(UserPrincipal::new)
                 .orElseThrow(() -> new UsernameNotFoundException("UserName not found: " + username));
     }
-    public String addUser(UserDTO user) {
-        user.setPassword(passwordEncoder.encode(user.getPassword()));
-        userMapper.toUserDTO(userRepository.save(userMapper.fromUserDTO(user)));
+    public String addUser(RegisterDTO register) {
+        register.setPassword(passwordEncoder.encode(register.getPassword()));
+        userMapper.toUserDTO(userRepository.save(userMapper.fromRegisterDTO(register)));
         return "user register successfully";
     }
 }

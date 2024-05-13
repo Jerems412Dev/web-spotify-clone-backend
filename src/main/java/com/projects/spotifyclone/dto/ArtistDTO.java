@@ -1,11 +1,8 @@
 package com.projects.spotifyclone.dto;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -15,19 +12,4 @@ public class ArtistDTO {
     private String nameArtist;
     private String profilePicture;
     private String coverPicture;
-
-    //All relationships
-
-    @OneToMany(mappedBy = "artist")
-    private List<AlbumDTO> albums;
-
-    @ManyToMany(mappedBy = "artists")
-    private List<UserDTO> users;
-
-    @ManyToMany(mappedBy = "artists")
-    private List<TrackDTO> tracks;
-
-    //relation for category
-    @ManyToMany
-    private List<CategoryDTO> categories;
 }

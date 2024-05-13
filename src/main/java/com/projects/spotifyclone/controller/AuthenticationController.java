@@ -1,5 +1,7 @@
 package com.projects.spotifyclone.controller;
 
+import com.projects.spotifyclone.dto.LoginDTO;
+import com.projects.spotifyclone.dto.RegisterDTO;
 import com.projects.spotifyclone.dto.UserDTO;
 import com.projects.spotifyclone.security.JwtService;
 import com.projects.spotifyclone.service.UserService;
@@ -26,18 +28,18 @@ public class AuthenticationController {
     private JwtService jwtService;
 
     @PostMapping("/register")
-    public ResponseEntity<Map<String,String>> register(@RequestBody UserDTO user){
+    public ResponseEntity<Map<String,String>> register(@RequestBody RegisterDTO user){
         Map<String, String> response = new HashMap<>();
         response.put("response", userService.addUser(user));
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
     @PostMapping(value = "/login", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Map<String,String>> login(@RequestBody UserDTO user) {
+    public ResponseEntity<Map<String,String>> login(@RequestBody LoginDTO login) {
         Authentication authenticate = authenticationManager
-                .authenticate(new UsernamePasswordAuthenticationToken(user.getUsername(),user.getPassword()));
+                .authenticate(new UsernamePasswordAuthenticationToken(login.getUsername(),login.getPassword()));
         if(authenticate.isAuthenticated()) {
-            String token = jwtService.generateToken(user);
+            String token = jwtService.generateToken(login);
             Map<String, String> response = new HashMap<>();
             response.put("token", token);
             return ResponseEntity.ok().body(response);

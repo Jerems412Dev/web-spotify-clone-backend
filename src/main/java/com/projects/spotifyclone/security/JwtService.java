@@ -1,5 +1,6 @@
 package com.projects.spotifyclone.security;
 
+import com.projects.spotifyclone.dto.LoginDTO;
 import com.projects.spotifyclone.dto.UserDTO;
 import com.projects.spotifyclone.entity.UserEntity;
 import com.projects.spotifyclone.mapper.UserMapper;
@@ -35,31 +36,31 @@ public class JwtService {
     private String secretKey;
 
     // Generates a JWT token for the given userName.
-    public String generateToken(UserDTO user) {
+    public String generateToken(LoginDTO user) {
         // Prepare claims for the token
         Map<String, Object> claims = new HashMap<>();
         Optional<UserEntity> userClaim = userRepository.findByUsername(user.getUsername());
-        user = userMapper.toUserDTO(userClaim.get());
-        claims.put("idUser", user.getIdUser());
-        claims.put("profileName", user.getProfileName());
+        UserDTO userDTO = userMapper.toUserDTO(userClaim.get());
+        claims.put("idUser", userDTO.getIdUser());
+        claims.put("profileName", userDTO.getProfileName());
         claims.put("isValid", true);
         // Build JWT token with claims, subject, issued time, expiration time, and signing algorithm
         // Token valid for 90 minutes
         var token = Jwts.builder()
                 .setClaims(claims)
-                .setSubject(user.getUsername())
+                .setSubject(userDTO.getUsername())
                 .setIssuedAt(new Date(System.currentTimeMillis()))
                 .setExpiration(new Date(System.currentTimeMillis() + 1000 * 60 * 90))
                 .signWith(getSignKey(), SignatureAlgorithm.HS256).compact();
         ApiToken apitoken = new ApiToken();
-        if(Boolean.FALSE.equals(apitokenRepository.existsByUsername(user.getUsername()))) {
+        if(Boolean.FALSE.equals(apitokenRepository.existsByUsername(userDTO.getUsername()))) {
             apitoken.setToken(token);
             apitoken.setCreatedAt(extractIssuedAt(token));
             apitoken.setUpdatedAt(new Date(System.currentTimeMillis()));
             apitoken.setIsValid(true);
-            apitoken.setUsername(user.getUsername());
+            apitoken.setUsername(userDTO.getUsername());
         }else {
-            apitoken = apitokenRepository.findByUsername(user.getUsername());
+            apitoken = apitokenRepository.findByUsername(userDTO.getUsername());
             apitoken.setToken(token);
             apitoken.setIsValid(true);
             apitoken.setUpdatedAt(new Date(System.currentTimeMillis()));
