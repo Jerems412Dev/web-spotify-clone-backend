@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin()
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/spotifyplaylists")
 public class SpotifyPlaylistController {
@@ -34,6 +34,11 @@ public class SpotifyPlaylistController {
     @GetMapping(value = "/findbynameplaylist/{nameplaylist}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<SpotifyPlaylistDTO> findByNamePlaylist(@PathVariable("nameplaylist") String nameplaylist) {
         return ResponseEntity.ok().body(spotifyplaylistservice.findByNamePlaylist(nameplaylist));
+    }
+
+    @GetMapping(value = "/findrandom10playlist", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<List<SpotifyPlaylistDTO>> findRandom10Playlist() {
+        return ResponseEntity.ok().body(spotifyplaylistservice.findRandom10Playlist());
     }
 
     @GetMapping(value = "/findbyidplaylist/{idplaylist}", produces = MediaType.APPLICATION_JSON_VALUE)

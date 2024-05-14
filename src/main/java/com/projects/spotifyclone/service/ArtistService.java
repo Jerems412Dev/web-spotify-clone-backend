@@ -38,6 +38,12 @@ public class ArtistService {
         return "artists added successfully";
     }
 
+    // retrieve 10 random artists
+    @Transactional(readOnly = true)
+    public List<ArtistDTO> findRandom10() {
+        return artistMapper.artistEntityListToArtistDTOList(artistRepository.findAll());
+    }
+
     // retrieve a user's list of favorite artists
     @Transactional(readOnly = true)
     public List<ArtistDTO> findArtistByUsername(String username) {

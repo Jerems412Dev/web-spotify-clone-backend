@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin()
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/albums")
 public class AlbumController {
@@ -34,6 +34,11 @@ public class AlbumController {
     @GetMapping(value = "/findalbumbyusername/{username}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<AlbumDTO>> findAlbumByUsername(@PathVariable("username") String username) {
         return ResponseEntity.ok().body(albumservice.findAlbumByUsername(username));
+    }
+
+    @GetMapping(value = "/findrandom10album", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<List<AlbumDTO>> findRandom10() {
+        return ResponseEntity.ok().body(albumservice.findRandom10());
     }
 
     @GetMapping(value = "/findbycategoryname/{categoryname}", produces = MediaType.APPLICATION_JSON_VALUE)

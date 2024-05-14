@@ -32,6 +32,12 @@ public class TrackService {
         return "tracks added successfully";
     }
 
+    // retrieve 10 random track
+    @Transactional(readOnly = true)
+    public List<TrackDTO> findRandom10() {
+        return trackMapper.trackEntityListToTrackDTOList(trackRepository.findAll());
+    }
+
     // retrieve a track list by titleTrack
     @Transactional(readOnly = true)
     public TrackDTO findTrackByTitle(String titleTrack) {

@@ -50,6 +50,12 @@ public class SpotifyPlaylistService {
         return spotifyPlaylistMapper.spotifyPlaylistEntityListToSpotifyPlaylistDTOList(spotifyPlaylistRepository.findDistinctByCategoriesNameCategory(nameCategory));
     }
 
+    // find playlist
+    @Transactional(readOnly = true)
+    public List<SpotifyPlaylistDTO> findRandom10Playlist() {
+        return spotifyPlaylistMapper.spotifyPlaylistEntityListToSpotifyPlaylistDTOList(spotifyPlaylistRepository.findAll());
+    }
+
     // find playlist by username
     @Transactional(readOnly = true)
     public List<SpotifyPlaylistDTO> findByUsername(String username) {

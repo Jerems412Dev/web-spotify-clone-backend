@@ -1,7 +1,6 @@
 package com.projects.spotifyclone.service;
 
 import com.projects.spotifyclone.dto.AlbumDTO;
-import com.projects.spotifyclone.dto.ArtistDTO;
 import com.projects.spotifyclone.entity.UserEntity;
 import com.projects.spotifyclone.mapper.AlbumMapper;
 import com.projects.spotifyclone.repository.AlbumRepository;
@@ -38,6 +37,12 @@ public class AlbumService {
     public String createAlbums(List<AlbumDTO> albums) {
         albumRepository.saveAll(albumMapper.albumDTOListToAlbumEntityList(albums));
         return "albums added successfully";
+    }
+
+    // retrieve 10 random albums
+    @Transactional(readOnly = true)
+    public List<AlbumDTO> findRandom10() {
+        return albumMapper.albumEntityListToAlbumDTOList(albumRepository.findAll());
     }
 
     // retrieve a user's list of favorite albums
