@@ -2,7 +2,6 @@ package com.projects.spotifyclone.controller;
 
 import com.projects.spotifyclone.dto.LoginDTO;
 import com.projects.spotifyclone.dto.RegisterDTO;
-import com.projects.spotifyclone.dto.UserDTO;
 import com.projects.spotifyclone.security.JwtService;
 import com.projects.spotifyclone.service.UserService;
 import lombok.AllArgsConstructor;
@@ -18,7 +17,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.HashMap;
 import java.util.Map;
 
-@CrossOrigin()
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/auth")
 @AllArgsConstructor
