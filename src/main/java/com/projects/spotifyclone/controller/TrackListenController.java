@@ -25,7 +25,9 @@ public class TrackListenController {
     @PostMapping(value = "/createlisten", produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(code = HttpStatus.CREATED)
     public ResponseEntity<String> createListen(@RequestBody TrackListenDTO track) {
-        return ResponseEntity.ok().body(tracklistenservice.createListen(track));
+        Map<String, String> response = new HashMap<>();
+        response.put("response",tracklistenservice.createListen(track));
+        return ResponseEntity.ok().body(response.get("response"));
     }
 
     @GetMapping(value = "/findlasttracklisten/{username}", produces = MediaType.APPLICATION_JSON_VALUE)
