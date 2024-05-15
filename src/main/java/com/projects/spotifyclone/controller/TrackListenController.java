@@ -1,7 +1,9 @@
 package com.projects.spotifyclone.controller;
 
+import com.projects.spotifyclone.dto.TrackDTO;
 import com.projects.spotifyclone.dto.TrackListenDTO;
 import com.projects.spotifyclone.service.TrackListenService;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,6 +20,12 @@ public class TrackListenController {
 
     public TrackListenController(TrackListenService tracklistenservice) {
         this.tracklistenservice = tracklistenservice;
+    }
+
+    @PostMapping(value = "/createlisten", produces = MediaType.APPLICATION_JSON_VALUE)
+    @ResponseStatus(code = HttpStatus.CREATED)
+    public ResponseEntity<String> createListen(@RequestBody TrackListenDTO track) {
+        return ResponseEntity.ok().body(tracklistenservice.createListen(track));
     }
 
     @GetMapping(value = "/findlasttracklisten/{username}", produces = MediaType.APPLICATION_JSON_VALUE)

@@ -1,5 +1,6 @@
 package com.projects.spotifyclone.service;
 
+import com.projects.spotifyclone.dto.TrackDTO;
 import com.projects.spotifyclone.dto.TrackListenDTO;
 import com.projects.spotifyclone.mapper.TrackListenMapper;
 import com.projects.spotifyclone.repository.TrackListenRepository;
@@ -16,6 +17,13 @@ public class TrackListenService {
     public TrackListenService(TrackListenMapper tracklistenMapper, TrackListenRepository tracklistenRepository) {
         this.tracklistenMapper = tracklistenMapper;
         this.tracklistenRepository = tracklistenRepository;
+    }
+
+    // create tracksListen
+    @Transactional
+    public String createListen(TrackListenDTO tracks) {
+        tracklistenRepository.save(tracklistenMapper.fromTrackListenDTO(tracks));
+        return "tracks added successfully";
     }
 
     // find last track listen by user
