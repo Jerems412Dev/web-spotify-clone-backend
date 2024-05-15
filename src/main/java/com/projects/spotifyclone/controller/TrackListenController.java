@@ -7,6 +7,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -25,6 +26,7 @@ public class TrackListenController {
     @ResponseStatus(code = HttpStatus.CREATED)
     public ResponseEntity<Map<String,String>> createListen(@RequestBody TrackListenDTO track) {
         Map<String, String> response = new HashMap<>();
+        track.setListenedAt(LocalDateTime.now());
         response.put("response",tracklistenservice.createListen(track));
         return ResponseEntity.ok().body(response);
     }
