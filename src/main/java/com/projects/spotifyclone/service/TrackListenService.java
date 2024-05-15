@@ -29,7 +29,7 @@ public class TrackListenService {
     // find last track listen by user
     @Transactional(readOnly = true)
     public TrackListenDTO findLastTrackListen(String username) {
-        return tracklistenMapper.toTrackListenDTO(tracklistenRepository.findTopByUser_UsernameOrderById(username));
+        return tracklistenMapper.toTrackListenDTO(tracklistenRepository.findTopByUser_UsernameOrderByIdDesc(username));
     }
 
     // find trackListen by username and titleTrack
