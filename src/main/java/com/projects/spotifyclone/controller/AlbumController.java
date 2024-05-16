@@ -81,7 +81,7 @@ public class AlbumController {
     }
 
     @GetMapping(value = "/existsbytitlealbumandusername/{titlealbum}/{username}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Boolean> existsByNameArtistAndUsername(@PathVariable("titlealbum") String titlealbum,@PathVariable("username") String username) {
+    public ResponseEntity<Boolean> existsByTitleAlbumAndUsername(@PathVariable("titlealbum") String titlealbum,@PathVariable("username") String username) {
         return ResponseEntity.ok().body(albumservice.existsByTitleAlbumAndUsername(titlealbum,username));
     }
 
