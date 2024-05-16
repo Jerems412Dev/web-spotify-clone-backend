@@ -7,7 +7,9 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @CrossOrigin(origins = "*")
 @RestController
@@ -67,13 +69,20 @@ public class AlbumController {
     }
 
     @GetMapping(value = "/favalbumbyuser/{iduser}/{idalbum}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<String> favAlbumByUser(@PathVariable("iduser") long iduser,@PathVariable("idalbum") long idalbum) {
-        return ResponseEntity.ok().body(albumservice.favAlbumByUser(iduser,idalbum));
+    public ResponseEntity<Map<String,String>> favAlbumByUser(@PathVariable("iduser") long iduser,@PathVariable("idalbum") long idalbum) {
+        Map<String, String> response = new HashMap<>();
+        response.put("response",albumservice.favAlbumByUser(iduser,idalbum));
+        return ResponseEntity.ok().body(response);
     }
 
     @GetMapping(value = "/findbytitlealbum/{titlealbum}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<AlbumDTO> findByTitleAlbum(@PathVariable("titlealbum") String titlealbum) {
         return ResponseEntity.ok().body(albumservice.findByTitleAlbum(titlealbum));
+    }
+
+    @GetMapping(value = "/existsbytitlealbumandusername/{titlealbum}/{username}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Boolean> existsByNameArtistAndUsername(@PathVariable("titlealbum") String titlealbum,@PathVariable("username") String username) {
+        return ResponseEntity.ok().body(albumservice.existsByTitleAlbumAndUsername(titlealbum,username));
     }
 
 }

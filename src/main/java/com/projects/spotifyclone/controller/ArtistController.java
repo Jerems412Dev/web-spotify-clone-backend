@@ -7,7 +7,9 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @CrossOrigin(origins = "*")
 @RestController
@@ -67,13 +69,20 @@ public class ArtistController {
     }
 
     @GetMapping(value = "/favartistbyuser/{iduser}/{idartist}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<String> favArtistByUser(@PathVariable("iduser") long iduser,@PathVariable("idartist") long idartist) {
-        return ResponseEntity.ok().body(artistservice.favArtistByUser(iduser,idartist));
+    public ResponseEntity<Map<String,String>> favArtistByUser(@PathVariable("iduser") long iduser,@PathVariable("idartist") long idartist) {
+        Map<String, String> response = new HashMap<>();
+        response.put("response",artistservice.favArtistByUser(iduser,idartist));
+        return ResponseEntity.ok().body(response);
     }
 
     @GetMapping(value = "/findartistbynameartist/{nameartist}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<ArtistDTO> findByNameArtist(@PathVariable("nameartist") String nameartist) {
         return ResponseEntity.ok().body(artistservice.findByNameArtist(nameartist));
+    }
+
+    @GetMapping(value = "/existsbynameartistandusername/{nameartist}/{username}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Boolean> existsByNameArtistAndUsername(@PathVariable("nameartist") String nameartist,@PathVariable("username") String username) {
+        return ResponseEntity.ok().body(artistservice.existsByNameArtistAndUsername(nameartist,username));
     }
 
 }

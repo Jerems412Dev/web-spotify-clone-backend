@@ -97,4 +97,9 @@ public class AlbumService {
         return albumMapper.toAlbumDTO(albumRepository.findByTitleAlbum(titleAlbum));
     }
 
+    @Transactional(readOnly = true)
+    public Boolean existsByTitleAlbumAndUsername(String titleAlbum, String username) {
+        return albumRepository.existsByTitleAlbumAndUsersUsername(titleAlbum,username);
+    }
+
 }

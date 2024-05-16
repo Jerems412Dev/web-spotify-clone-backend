@@ -90,6 +90,11 @@ public class ArtistService {
         return "fav added successfully";
     }
 
+    @Transactional(readOnly = true)
+    public Boolean existsByNameArtistAndUsername(String nameArtist, String username) {
+        return artistRepository.existsByNameArtistAndUsersUsername(nameArtist,username);
+    }
+
     // find an artist by name
     @Transactional(readOnly = true)
     public ArtistDTO findByNameArtist(String nameArtist) {

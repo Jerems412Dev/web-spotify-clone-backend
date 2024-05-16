@@ -1,21 +1,26 @@
 package com.projects.spotifyclone.service;
 
 import com.projects.spotifyclone.dto.TrackDTO;
+import com.projects.spotifyclone.entity.UserEntity;
 import com.projects.spotifyclone.mapper.TrackMapper;
 import com.projects.spotifyclone.repository.TrackRepository;
+import com.projects.spotifyclone.repository.UserRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
 public class TrackService {
     private final TrackMapper trackMapper;
     private final TrackRepository trackRepository;
+    private final UserRepository userRepository;
 
-    public TrackService(TrackMapper trackMapper, TrackRepository trackRepository) {
+    public TrackService(TrackMapper trackMapper, TrackRepository trackRepository, UserRepository userRepository) {
         this.trackMapper = trackMapper;
         this.trackRepository = trackRepository;
+        this.userRepository = userRepository;
     }
 
     // create track
@@ -120,6 +125,15 @@ public class TrackService {
     @Transactional(readOnly = true)
     public Boolean deleteByUsernameAndTitleTrack(String username, String titleTrack) {
         return trackRepository.deleteDistinctByUsersUsernameAndTitleTrack(username,titleTrack);
+    }
+
+    @Transactional()
+    public String favTrackByUser(long idUser, long idTrack) {
+        TrackDTO track = trackMapper.toTrackDTO(trackRepository.findByIdTrack(idTrack));
+        List<UserEntity> userList = new ArrayList<>();
+        userList.add(userRepository.findByIdUser(idUser));
+        trackRepository.save(trackMapper.fromTrackDTO(track));
+        return "fav added successfully";
     }
 
 }

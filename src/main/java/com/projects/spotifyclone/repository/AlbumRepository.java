@@ -14,4 +14,5 @@ public interface AlbumRepository extends JpaRepository<AlbumEntity, Integer> {
     Boolean existsByTitleAlbum(String albumName);
     Boolean existsByTitleAlbumAndCategoriesNameCategory(String titleAlbum, String nameCategory);
     Boolean deleteDistinctByUsersUsernameAndTitleAlbum(String username,String titleAlbum);
+    Boolean existsByTitleAlbumAndUsersUsername(String titleAlbum, String username);
 }

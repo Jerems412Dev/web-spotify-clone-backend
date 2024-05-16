@@ -12,5 +12,6 @@ public interface ArtistRepository extends JpaRepository<ArtistEntity, Integer> {
     List<ArtistEntity> findDistinctByNameArtistContaining(String search);
     Boolean existsByNameArtist(String artistName);
     Boolean existsByNameArtistAndCategoriesNameCategory(String nameArtist, String nameCategory);
+    Boolean existsByNameArtistAndUsersUsername(String nameArtist, String username);
     Boolean deleteDistinctByUsersUsernameAndNameArtist(String username,String nameArtist);
 }
