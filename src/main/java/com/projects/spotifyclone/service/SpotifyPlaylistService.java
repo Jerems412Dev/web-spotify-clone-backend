@@ -1,21 +1,26 @@
 package com.projects.spotifyclone.service;
 
 import com.projects.spotifyclone.dto.SpotifyPlaylistDTO;
+import com.projects.spotifyclone.entity.UserEntity;
 import com.projects.spotifyclone.mapper.SpotifyPlaylistMapper;
 import com.projects.spotifyclone.repository.SpotifyPlaylistRepository;
+import com.projects.spotifyclone.repository.UserRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
 public class SpotifyPlaylistService {
     private final SpotifyPlaylistMapper spotifyPlaylistMapper;
     private final SpotifyPlaylistRepository spotifyPlaylistRepository;
+    private final UserRepository userRepository;
 
-    public SpotifyPlaylistService(SpotifyPlaylistMapper spotifyPlaylistMapper, SpotifyPlaylistRepository spotifyPlaylistRepository) {
+    public SpotifyPlaylistService(SpotifyPlaylistMapper spotifyPlaylistMapper, SpotifyPlaylistRepository spotifyPlaylistRepository, UserRepository userRepository) {
         this.spotifyPlaylistMapper = spotifyPlaylistMapper;
         this.spotifyPlaylistRepository = spotifyPlaylistRepository;
+        this.userRepository = userRepository;
     }
 
     // add an spotifyPlaylist
@@ -78,6 +83,15 @@ public class SpotifyPlaylistService {
     @Transactional(readOnly = true)
     public List<SpotifyPlaylistDTO> searchSpotifyPlaylist(String containing) {
         return spotifyPlaylistMapper.spotifyPlaylistEntityListToSpotifyPlaylistDTOList(spotifyPlaylistRepository.findDistinctByNamePlaylistContaining(containing));
+    }
+
+    @Transactional()
+    public String favSpotifyPlaylistByUser(long idUser, long idPlaylist) {
+        SpotifyPlaylistDTO playlist = spotifyPlaylistMapper.toSpotifyPlaylistDTO(spotifyPlaylistRepository.findByIdSpotifyPlaylist(idPlaylist));
+        List<UserEntity> userList = new ArrayList<>();
+        userList.add(userRepository.findByIdUser(idUser));
+        spotifyPlaylistRepository.save(spotifyPlaylistMapper.fromSpotifyPlaylistDTO(playlist));
+        return "fav added successfully";
     }
 
 }
