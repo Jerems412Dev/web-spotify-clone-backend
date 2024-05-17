@@ -4,6 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -13,4 +15,7 @@ public class AlbumDTO {
     private String profilePicture;
     private String releaseDate;
     private ArtistDTO artist;
+    private List<TrackDTO> tracks;
+    private List<UserDTO> users;
+    private List<CategoryDTO> categories;
 }

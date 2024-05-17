@@ -3,6 +3,7 @@ package com.projects.spotifyclone.service;
 import com.projects.spotifyclone.dto.TrackDTO;
 import com.projects.spotifyclone.entity.UserEntity;
 import com.projects.spotifyclone.mapper.TrackMapper;
+import com.projects.spotifyclone.mapper.UserMapper;
 import com.projects.spotifyclone.repository.TrackRepository;
 import com.projects.spotifyclone.repository.UserRepository;
 import org.springframework.stereotype.Service;
@@ -14,11 +15,13 @@ import java.util.List;
 @Service
 public class TrackService {
     private final TrackMapper trackMapper;
+    private final UserMapper userMapper;
     private final TrackRepository trackRepository;
     private final UserRepository userRepository;
 
-    public TrackService(TrackMapper trackMapper, TrackRepository trackRepository, UserRepository userRepository) {
+    public TrackService(TrackMapper trackMapper, UserMapper userMapper, TrackRepository trackRepository, UserRepository userRepository) {
         this.trackMapper = trackMapper;
+        this.userMapper = userMapper;
         this.trackRepository = trackRepository;
         this.userRepository = userRepository;
     }
@@ -132,6 +135,7 @@ public class TrackService {
         TrackDTO track = trackMapper.toTrackDTO(trackRepository.findByIdTrack(idTrack));
         List<UserEntity> userList = new ArrayList<>();
         userList.add(userRepository.findByIdUser(idUser));
+        track.setUsers(userMapper.userEntityListToUserDTOList(userList));
         trackRepository.save(trackMapper.fromTrackDTO(track));
         return "fav added successfully";
     }

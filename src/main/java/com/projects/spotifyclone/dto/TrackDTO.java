@@ -16,4 +16,8 @@ public class TrackDTO {
     private String profilePicture;
     private AlbumDTO album;
     private List<ArtistDTO> artists;
+    private List<UserDTO> users;
+    private List<CategoryDTO> categories;
+    private List<SpotifyPlaylistDTO> spotifyplaylists;
+    private List<UserPlaylistDTO> userplaylists;
 }

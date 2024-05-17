@@ -3,6 +3,7 @@ package com.projects.spotifyclone.service;
 import com.projects.spotifyclone.dto.SpotifyPlaylistDTO;
 import com.projects.spotifyclone.entity.UserEntity;
 import com.projects.spotifyclone.mapper.SpotifyPlaylistMapper;
+import com.projects.spotifyclone.mapper.UserMapper;
 import com.projects.spotifyclone.repository.SpotifyPlaylistRepository;
 import com.projects.spotifyclone.repository.UserRepository;
 import org.springframework.stereotype.Service;
@@ -14,11 +15,13 @@ import java.util.List;
 @Service
 public class SpotifyPlaylistService {
     private final SpotifyPlaylistMapper spotifyPlaylistMapper;
+    private final UserMapper userMapper;
     private final SpotifyPlaylistRepository spotifyPlaylistRepository;
     private final UserRepository userRepository;
 
-    public SpotifyPlaylistService(SpotifyPlaylistMapper spotifyPlaylistMapper, SpotifyPlaylistRepository spotifyPlaylistRepository, UserRepository userRepository) {
+    public SpotifyPlaylistService(SpotifyPlaylistMapper spotifyPlaylistMapper, UserMapper userMapper, SpotifyPlaylistRepository spotifyPlaylistRepository, UserRepository userRepository) {
         this.spotifyPlaylistMapper = spotifyPlaylistMapper;
+        this.userMapper = userMapper;
         this.spotifyPlaylistRepository = spotifyPlaylistRepository;
         this.userRepository = userRepository;
     }
@@ -90,6 +93,7 @@ public class SpotifyPlaylistService {
         SpotifyPlaylistDTO playlist = spotifyPlaylistMapper.toSpotifyPlaylistDTO(spotifyPlaylistRepository.findByIdSpotifyPlaylist(idPlaylist));
         List<UserEntity> userList = new ArrayList<>();
         userList.add(userRepository.findByIdUser(idUser));
+        playlist.setUsers(userMapper.userEntityListToUserDTOList(userList));
         spotifyPlaylistRepository.save(spotifyPlaylistMapper.fromSpotifyPlaylistDTO(playlist));
         return "fav added successfully";
     }

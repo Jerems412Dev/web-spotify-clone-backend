@@ -3,6 +3,7 @@ package com.projects.spotifyclone.service;
 import com.projects.spotifyclone.dto.AlbumDTO;
 import com.projects.spotifyclone.entity.UserEntity;
 import com.projects.spotifyclone.mapper.AlbumMapper;
+import com.projects.spotifyclone.mapper.UserMapper;
 import com.projects.spotifyclone.repository.AlbumRepository;
 import com.projects.spotifyclone.repository.UserRepository;
 import org.springframework.stereotype.Service;
@@ -14,13 +15,15 @@ import java.util.List;
 @Service
 public class AlbumService {
     private final AlbumMapper albumMapper;
+    private final UserMapper userMapper;
 
     private final AlbumRepository albumRepository;
 
     private final UserRepository userRepository;
 
-    public AlbumService(AlbumMapper albumMapper, AlbumRepository albumRepository, UserRepository userRepository) {
+    public AlbumService(AlbumMapper albumMapper, UserMapper userMapper, AlbumRepository albumRepository, UserRepository userRepository) {
         this.albumMapper = albumMapper;
+        this.userMapper = userMapper;
         this.albumRepository = albumRepository;
         this.userRepository = userRepository;
     }
@@ -87,6 +90,7 @@ public class AlbumService {
         AlbumDTO album = albumMapper.toAlbumDTO(albumRepository.findByIdAlbum(idAlbum));
         List<UserEntity> userList = new ArrayList<>();
         userList.add(userRepository.findByIdUser(idUser));
+        album.setUsers(userMapper.userEntityListToUserDTOList(userList));
         albumRepository.save(albumMapper.fromAlbumDTO(album));
         return "fav added successfully";
     }
