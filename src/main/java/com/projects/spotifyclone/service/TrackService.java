@@ -46,7 +46,7 @@ public class TrackService {
         return trackMapper.trackEntityListToTrackDTOList(trackRepository.findAll());
     }
 
-    // retrieve a track list by titleTrack
+    // retrieve a track list by titleTrac
     @Transactional(readOnly = true)
     public TrackDTO findTrackByTitle(String titleTrack) {
         return trackMapper.toTrackDTO(trackRepository.findByTitleTrack(titleTrack));
