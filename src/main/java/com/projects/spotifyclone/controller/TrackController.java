@@ -7,9 +7,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @CrossOrigin(origins = "*")
 @RestController
@@ -106,13 +104,6 @@ public class TrackController {
     @GetMapping(value = "/deletebyusernameandtitletrack/{username}/{titletrack}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> deleteByUsernameAndTitleTrack(@PathVariable("username") String username,@PathVariable("titletrack") String titletrack) {
         return ResponseEntity.ok().body(trackservice.deleteByUsernameAndTitleTrack(username,titletrack));
-    }
-
-    @GetMapping(value = "/favtrackbyuser/{iduser}/{idtrack}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Map<String,String>> favTrackByUser(@PathVariable("iduser") long iduser, @PathVariable("idtrack") long idtrack) {
-        Map<String, String> response = new HashMap<>();
-        response.put("response",trackservice.favTrackByUser(iduser,idtrack));
-        return ResponseEntity.ok().body(response);
     }
 
 }

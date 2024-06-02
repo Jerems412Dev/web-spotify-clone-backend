@@ -7,9 +7,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @CrossOrigin(origins = "*")
 @RestController
@@ -71,12 +69,5 @@ public class SpotifyPlaylistController {
     @GetMapping(value = "/deletebyusernameandnameplaylist/{username}/{nameplaylist}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> deleteByUsernameAndNamePlaylist(@PathVariable("username") String username,@PathVariable("nameplaylist") String nameplaylist) {
         return ResponseEntity.ok().body(spotifyplaylistservice.deleteByUsernameAndNamePlaylist(username,nameplaylist));
-    }
-
-    @GetMapping(value = "/favspotifyplaylistbyuser/{iduser}/{idplaylist}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Map<String,String>> favSpotifyPlaylistByUser(@PathVariable("iduser") long iduser, @PathVariable("idplaylist") long idplaylist) {
-        Map<String, String> response = new HashMap<>();
-        response.put("response",spotifyplaylistservice.favSpotifyPlaylistByUser(iduser,idplaylist));
-        return ResponseEntity.ok().body(response);
     }
 }

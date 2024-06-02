@@ -7,9 +7,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @CrossOrigin(origins = "*")
 @RestController
@@ -66,13 +64,6 @@ public class ArtistController {
     @GetMapping(value = "/deleteartistuser/{username}/{nameartist}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> deleteArtistUser(@PathVariable("username") String username,@PathVariable("nameartist") String nameartist) {
         return ResponseEntity.ok().body(artistservice.deleteArtistUser(username,nameartist));
-    }
-
-    @GetMapping(value = "/favartistbyuser/{iduser}/{idartist}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Map<String,String>> favArtistByUser(@PathVariable("iduser") long iduser,@PathVariable("idartist") long idartist) {
-        Map<String, String> response = new HashMap<>();
-        response.put("response",artistservice.favArtistByUser(iduser,idartist));
-        return ResponseEntity.ok().body(response);
     }
 
     @GetMapping(value = "/findartistbynameartist/{nameartist}", produces = MediaType.APPLICATION_JSON_VALUE)

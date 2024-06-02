@@ -14,7 +14,5 @@ public class SpotifyPlaylistDTO {
     private String namePlaylist;
     private String description;
     private String profilePicture;
-    private List<UserDTO> users;
     private List<TrackDTO> tracks;
-    private List<CategoryDTO> categories;
 }

@@ -1,7 +1,8 @@
 package com.projects.spotifyclone.service;
 
 import com.projects.spotifyclone.dto.AlbumDTO;
-import com.projects.spotifyclone.entity.UserEntity;
+import com.projects.spotifyclone.dto.AlbumWithPivotDTO;
+import com.projects.spotifyclone.dto.UserDTO;
 import com.projects.spotifyclone.mapper.AlbumMapper;
 import com.projects.spotifyclone.mapper.UserMapper;
 import com.projects.spotifyclone.repository.AlbumRepository;
@@ -16,9 +17,7 @@ import java.util.List;
 public class AlbumService {
     private final AlbumMapper albumMapper;
     private final UserMapper userMapper;
-
     private final AlbumRepository albumRepository;
-
     private final UserRepository userRepository;
 
     public AlbumService(AlbumMapper albumMapper, UserMapper userMapper, AlbumRepository albumRepository, UserRepository userRepository) {
@@ -84,17 +83,6 @@ public class AlbumService {
         return albumRepository.deleteDistinctByUsersUsernameAndTitleAlbum(username,titleAlbum);
     }
 
-    // Adds an object to the user_album pivot table (the action of liking an album).
-    @Transactional()
-    public String favAlbumByUser(long idUser, long idAlbum) {
-        AlbumDTO album = albumMapper.toAlbumDTO(albumRepository.findByIdAlbum(idAlbum));
-        List<UserEntity> userList = new ArrayList<>();
-        userList.add(userRepository.findByIdUser(idUser));
-        album.setUsers(userMapper.userEntityListToUserDTOList(userList));
-        albumRepository.save(albumMapper.fromAlbumDTO(album));
-        return "fav added successfully";
-    }
-
     // find an artist by name
     @Transactional(readOnly = true)
     public AlbumDTO findByTitleAlbum(String titleAlbum) {
@@ -104,6 +92,18 @@ public class AlbumService {
     @Transactional(readOnly = true)
     public Boolean existsByTitleAlbumAndUsername(String titleAlbum, String username) {
         return albumRepository.existsByTitleAlbumAndUsersUsername(titleAlbum,username);
+    }
+
+    // Adds an object to the user_album pivot table (the action of liking an album).
+    @Transactional()
+    public String favAlbumByUser(long idUser, long idAlbum) {
+        AlbumWithPivotDTO album = albumMapper.toAlbumWithPivotDTO(albumRepository.findByIdAlbum(idAlbum));
+        UserDTO user = userMapper.toUserDTO(userRepository.findByIdUser(idUser));
+        List<UserDTO> list = album.getUsers();
+        list.add(user);
+        album.setUsers(list);
+        albumRepository.save(albumMapper.fromAlbumWithPivotDTO(album));
+        return "fav added successfully";
     }
 
 }

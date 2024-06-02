@@ -1,6 +1,7 @@
 package com.projects.spotifyclone.mapper;
 
 import com.projects.spotifyclone.dto.TrackDTO;
+import com.projects.spotifyclone.dto.TrackWithPivotDTO;
 import com.projects.spotifyclone.entity.TrackEntity;
 import org.mapstruct.Mapper;
 
@@ -12,4 +13,8 @@ public interface TrackMapper {
     List<TrackDTO> trackEntityListToTrackDTOList(List<TrackEntity> list);
     List<TrackEntity> trackDTOListToTrackEntityList(List<TrackDTO> list);
     TrackEntity fromTrackDTO(TrackDTO trackDTO);
+    TrackWithPivotDTO toTrackWithPivotDTO(TrackEntity trackEntity);
+    List<TrackWithPivotDTO> trackEntityListToTrackWithPivotDTOList(List<TrackEntity> list);
+    List<TrackEntity> trackWithPivotDTOListToTrackEntityList(List<TrackWithPivotDTO> list);
+    TrackEntity fromTrackWithPivotDTO(TrackWithPivotDTO trackDTO);
 }

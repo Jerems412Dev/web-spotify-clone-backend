@@ -1,6 +1,5 @@
 package com.projects.spotifyclone.service;
 
-import com.projects.spotifyclone.dto.TrackDTO;
 import com.projects.spotifyclone.dto.TrackListenDTO;
 import com.projects.spotifyclone.mapper.TrackListenMapper;
 import com.projects.spotifyclone.repository.TrackListenRepository;

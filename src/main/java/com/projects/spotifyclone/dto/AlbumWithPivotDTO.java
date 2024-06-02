@@ -9,12 +9,13 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class TrackDTO {
-    private long idTrack;
-    private String titleTrack;
-    private String duration;
+public class AlbumWithPivotDTO {
+    private long idAlbum;
+    private String titleAlbum;
     private String profilePicture;
-    private AlbumDTO album;
-    private List<ArtistDTO> artists;
+    private String releaseDate;
+    private ArtistDTO artist;
+    private List<TrackDTO> tracks;
+    private List<UserDTO> users;
     private List<CategoryDTO> categories;
 }
