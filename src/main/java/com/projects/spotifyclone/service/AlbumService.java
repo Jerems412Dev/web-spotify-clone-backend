@@ -100,7 +100,7 @@ public class AlbumService {
         UserDTO user = userMapper.toUserDTO(userRepository.findByIdUser(idUser));
         album.getUsers().add(user);
         albumRepository.save(albumMapper.fromAlbumWithPivotDTO(album));
-        return "fav added successfully";
+        return "fav added successfully"+ album.getUsers();
     }
 
 }
