@@ -10,7 +10,6 @@ import com.projects.spotifyclone.repository.UserRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -99,9 +98,7 @@ public class AlbumService {
     public String favAlbumByUser(long idUser, long idAlbum) {
         AlbumWithPivotDTO album = albumMapper.toAlbumWithPivotDTO(albumRepository.findByIdAlbum(idAlbum));
         UserDTO user = userMapper.toUserDTO(userRepository.findByIdUser(idUser));
-        List<UserDTO> list = album.getUsers();
-        list.add(user);
-        album.setUsers(list);
+        album.getUsers().add(user);
         albumRepository.save(albumMapper.fromAlbumWithPivotDTO(album));
         return "fav added successfully";
     }
