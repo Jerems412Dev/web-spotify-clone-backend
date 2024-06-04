@@ -62,6 +62,12 @@ public class CategoryService {
         return categoryMapper.categoryEntityListToCategoryDTOList(categoryRepository.findDistinctBySpotifyplaylistsNamePlaylist(namePlaylist));
     }
 
+    // returns a list of all categories
+    @Transactional(readOnly = true)
+    public List<CategoryDTO> findAll() {
+        return categoryMapper.categoryEntityListToCategoryDTOList(categoryRepository.findAll());
+    }
+
     // check if an SpotifyPlaylist exists.
     @Transactional(readOnly = true)
     public Boolean categoryExist(String categoryName) {

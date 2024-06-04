@@ -31,6 +31,11 @@ public class CategoryController {
         return ResponseEntity.ok().body(categoryservice.createCategories(categorie));
     }
 
+    @GetMapping(value = "/findall", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<List<CategoryDTO>> findAll() {
+        return ResponseEntity.ok().body(categoryservice.findAll());
+    }
+
     @GetMapping(value = "/findbynamecategory/{namecategory}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<CategoryDTO> findAlbumByNameCategory(@PathVariable("namecategory") String namecategory) {
         return ResponseEntity.ok().body(categoryservice.findByNameCategory(namecategory));
