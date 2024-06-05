@@ -43,6 +43,12 @@ public class TrackListenService {
         return tracklistenMapper.tracklistenEntityListToTrackListenDTOList(tracklistenRepository.findDistinctByUser_UsernameAndTrack_TitleTrackNot(username,titleTrack));
     }
 
+    //find all trackListens by username
+    @Transactional(readOnly = true)
+    public List<TrackListenDTO> findByUsername(String username) {
+        return tracklistenMapper.tracklistenEntityListToTrackListenDTOList(tracklistenRepository.findDistinctByUser_Username(username));
+    }
+
     // check if a track has been listened to by a user
     @Transactional(readOnly = true)
     public Boolean existsByUserAndTrack(String username, String titleTrack) {

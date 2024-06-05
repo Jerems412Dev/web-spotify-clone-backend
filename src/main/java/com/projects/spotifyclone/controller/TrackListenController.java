@@ -48,6 +48,11 @@ public class TrackListenController {
         return ResponseEntity.ok().body(tracklistenservice.findByUserAndTrackNot(username,titletrack));
     }
 
+    @GetMapping(value = "/findbyusername/{username}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<List<TrackListenDTO>> findByUsername(@PathVariable("username") String username) {
+        return ResponseEntity.ok().body(tracklistenservice.findByUsername(username));
+    }
+
     @GetMapping(value = "/existsbyuserandtrack/{username}/{titletrack}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> existsByUserAndTrack(@PathVariable("username") String username,@PathVariable("titletrack") String titletrack) {
         return ResponseEntity.ok().body(tracklistenservice.existsByUserAndTrack(username,titletrack));
