@@ -15,4 +15,5 @@ public class SpotifyPlaylistDTO {
     private String description;
     private String profilePicture;
     private List<TrackDTO> tracks;
+    private List<CategoryDTO> categories;
 }

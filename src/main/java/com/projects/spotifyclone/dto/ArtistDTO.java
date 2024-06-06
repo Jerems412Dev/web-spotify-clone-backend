@@ -15,4 +15,5 @@ public class ArtistDTO {
     private String nameArtist;
     private String profilePicture;
     private String coverPicture;
+    private List<CategoryDTO> categories;
 }
