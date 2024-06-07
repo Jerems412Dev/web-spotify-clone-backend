@@ -4,7 +4,9 @@ import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Data
@@ -28,7 +30,7 @@ public class AlbumEntity {
     private List<TrackEntity> tracks;
 
     @ManyToMany(mappedBy = "albums")
-    private List<UserEntity> users;
+    private Set<UserEntity> users = new HashSet<>();
 
     //relation for categories
     @ManyToMany

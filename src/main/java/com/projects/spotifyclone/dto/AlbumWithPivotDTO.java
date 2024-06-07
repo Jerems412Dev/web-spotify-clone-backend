@@ -4,7 +4,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Data
 @NoArgsConstructor
@@ -16,6 +18,6 @@ public class AlbumWithPivotDTO {
     private String releaseDate;
     private ArtistDTO artist;
     private List<TrackDTO> tracks;
-    private List<UserDTO> users;
+    private Set<UserDTO> users = new HashSet<>();
     private List<CategoryDTO> categories;
 }
