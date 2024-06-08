@@ -70,4 +70,9 @@ public class SpotifyPlaylistController {
     public ResponseEntity<Boolean> deleteByUsernameAndNamePlaylist(@PathVariable("username") String username,@PathVariable("nameplaylist") String nameplaylist) {
         return ResponseEntity.ok().body(spotifyplaylistservice.deleteByUsernameAndNamePlaylist(username,nameplaylist));
     }
+
+    @GetMapping(value = "/favspotifyplaylistbyuser/{iduser}/{idplaylist}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> favSpotifyPlaylistByUser(@PathVariable("iduser") int iduser,@PathVariable("idplaylist") int idplaylist) {
+        return ResponseEntity.ok().body(spotifyplaylistservice.favSpotifyPlaylistByUser(iduser,idplaylist));
+    }
 }

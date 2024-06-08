@@ -49,4 +49,9 @@ public class UserPlaylistController {
     public ResponseEntity<Boolean> deleteByTracksAndUserPlaylist(@PathVariable("titletrack") String titletrack,@PathVariable("id") long id) {
         return ResponseEntity.ok().body(userplaylistservice.deleteByTracksAndUserPlaylist(titletrack,id));
     }
+
+    @GetMapping(value = "/addtrackinplaylist/{idplaylist}/{idtrack}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> favArtistByUser(@PathVariable("idplaylist") int idplaylist,@PathVariable("idtrack") int idtrack) {
+        return ResponseEntity.ok().body(userplaylistservice.addTrackInPlaylist(idplaylist,idtrack));
+    }
 }

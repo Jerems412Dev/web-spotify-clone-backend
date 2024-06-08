@@ -76,4 +76,9 @@ public class ArtistController {
         return ResponseEntity.ok().body(artistservice.existsByNameArtistAndUsername(nameartist,username));
     }
 
+    @GetMapping(value = "/favartistbyuser/{iduser}/{idartist}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> favArtistByUser(@PathVariable("iduser") int iduser,@PathVariable("idartist") int idartist) {
+        return ResponseEntity.ok().body(artistservice.favArtistByUser(iduser,idartist));
+    }
+
 }

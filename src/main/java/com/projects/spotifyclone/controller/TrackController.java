@@ -106,4 +106,9 @@ public class TrackController {
         return ResponseEntity.ok().body(trackservice.deleteByUsernameAndTitleTrack(username,titletrack));
     }
 
+    @GetMapping(value = "/favtrackbyuser/{iduser}/{idtrack}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> favTrackByUser(@PathVariable("iduser") int iduser,@PathVariable("idtrack") int idtrack) {
+        return ResponseEntity.ok().body(trackservice.favTrackByUser(iduser,idtrack));
+    }
+
 }

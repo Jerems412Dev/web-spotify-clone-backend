@@ -1,21 +1,27 @@
 package com.projects.spotifyclone.service;
 
 import com.projects.spotifyclone.dto.SpotifyPlaylistDTO;
+import com.projects.spotifyclone.entity.SpotifyPlaylistEntity;
+import com.projects.spotifyclone.entity.UserEntity;
 import com.projects.spotifyclone.mapper.SpotifyPlaylistMapper;
 import com.projects.spotifyclone.repository.SpotifyPlaylistRepository;
+import com.projects.spotifyclone.repository.UserRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class SpotifyPlaylistService {
     private final SpotifyPlaylistMapper spotifyPlaylistMapper;
     private final SpotifyPlaylistRepository spotifyPlaylistRepository;
+    private final UserRepository userRepository;
 
-    public SpotifyPlaylistService(SpotifyPlaylistMapper spotifyPlaylistMapper, SpotifyPlaylistRepository spotifyPlaylistRepository) {
+    public SpotifyPlaylistService(SpotifyPlaylistMapper spotifyPlaylistMapper, SpotifyPlaylistRepository spotifyPlaylistRepository, UserRepository userRepository) {
         this.spotifyPlaylistMapper = spotifyPlaylistMapper;
         this.spotifyPlaylistRepository = spotifyPlaylistRepository;
+        this.userRepository = userRepository;
     }
 
     // add an spotifyPlaylist
@@ -78,6 +84,17 @@ public class SpotifyPlaylistService {
     @Transactional(readOnly = true)
     public List<SpotifyPlaylistDTO> searchSpotifyPlaylist(String containing) {
         return spotifyPlaylistMapper.spotifyPlaylistEntityListToSpotifyPlaylistDTOList(spotifyPlaylistRepository.findDistinctByNamePlaylistContaining(containing));
+    }
+
+    // Adds an object to the user_spotifyplaylist pivot table (the action of liking an spotifyplaylist).
+    @Transactional()
+    public String favSpotifyPlaylistByUser(int idUser, int idSpotifyPlaylist) {
+        Optional<SpotifyPlaylistEntity> spotifyplaylist = spotifyPlaylistRepository.findById(idSpotifyPlaylist);
+        Optional<UserEntity> user = userRepository.findById(idUser);
+        spotifyplaylist.get().getUsers().add(user.get());
+        user.get().getSpotifyplaylists().add(spotifyplaylist.get());
+        spotifyPlaylistRepository.save(spotifyplaylist.get());
+        return "fav added successfully";
     }
 
 }

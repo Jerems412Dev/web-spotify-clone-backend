@@ -1,21 +1,27 @@
 package com.projects.spotifyclone.service;
 
 import com.projects.spotifyclone.dto.UserPlaylistDTO;
+import com.projects.spotifyclone.entity.TrackEntity;
+import com.projects.spotifyclone.entity.UserPlaylistEntity;
 import com.projects.spotifyclone.mapper.UserPlaylistMapper;
+import com.projects.spotifyclone.repository.TrackRepository;
 import com.projects.spotifyclone.repository.UserPlaylistRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class UserPlaylistService {
     private final UserPlaylistMapper userPlaylistMapper;
     private final UserPlaylistRepository userPlaylistRepository;
+    private final TrackRepository trackRepository;
 
-    public UserPlaylistService(UserPlaylistMapper userPlaylistMapper, UserPlaylistRepository userPlaylistRepository) {
+    public UserPlaylistService(UserPlaylistMapper userPlaylistMapper, UserPlaylistRepository userPlaylistRepository, TrackRepository trackRepository) {
         this.userPlaylistMapper = userPlaylistMapper;
         this.userPlaylistRepository = userPlaylistRepository;
+        this.trackRepository = trackRepository;
     }
 
     // add an userPlaylist
@@ -53,6 +59,17 @@ public class UserPlaylistService {
     @Transactional
     public Boolean deleteByTracksAndUserPlaylist(String titleTrack, Long id) {
         return userPlaylistRepository.deleteDistinctByTracksTitleTrackAndIdUserPlaylist(titleTrack,id);
+    }
+
+    // Adds an object to the user_userplaylist pivot table (the action of liking an track).
+    @Transactional()
+    public String addTrackInPlaylist(int idUserPlaylist, int idTrack) {
+        Optional<TrackEntity> track = trackRepository.findById(idTrack);
+        Optional<UserPlaylistEntity> user = userPlaylistRepository.findById(idUserPlaylist);
+        track.get().getUserplaylists().add(user.get());
+        user.get().getTracks().add(track.get());
+        trackRepository.save(track.get());
+        return "fav added successfully";
     }
 
 }

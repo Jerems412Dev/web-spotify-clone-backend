@@ -1,21 +1,27 @@
 package com.projects.spotifyclone.service;
 
 import com.projects.spotifyclone.dto.TrackDTO;
+import com.projects.spotifyclone.entity.TrackEntity;
+import com.projects.spotifyclone.entity.UserEntity;
 import com.projects.spotifyclone.mapper.TrackMapper;
 import com.projects.spotifyclone.repository.TrackRepository;
+import com.projects.spotifyclone.repository.UserRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class TrackService {
     private final TrackMapper trackMapper;
     private final TrackRepository trackRepository;
+    private final UserRepository userRepository;
 
-    public TrackService(TrackMapper trackMapper, TrackRepository trackRepository) {
+    public TrackService(TrackMapper trackMapper, TrackRepository trackRepository, UserRepository userRepository) {
         this.trackMapper = trackMapper;
         this.trackRepository = trackRepository;
+        this.userRepository = userRepository;
     }
 
     // create track
@@ -120,6 +126,17 @@ public class TrackService {
     @Transactional(readOnly = true)
     public Boolean deleteByUsernameAndTitleTrack(String username, String titleTrack) {
         return trackRepository.deleteDistinctByUsersUsernameAndTitleTrack(username,titleTrack);
+    }
+
+    // Adds an object to the user_track pivot table (the action of liking an track).
+    @Transactional()
+    public String favTrackByUser(int idUser, int idTrack) {
+        Optional<TrackEntity> track = trackRepository.findById(idTrack);
+        Optional<UserEntity> user = userRepository.findById(idUser);
+        track.get().getUsers().add(user.get());
+        user.get().getTracks().add(track.get());
+        trackRepository.save(track.get());
+        return "fav added successfully";
     }
 
 }

@@ -1,22 +1,28 @@
 package com.projects.spotifyclone.service;
 
 import com.projects.spotifyclone.dto.ArtistDTO;
+import com.projects.spotifyclone.entity.ArtistEntity;
+import com.projects.spotifyclone.entity.UserEntity;
 import com.projects.spotifyclone.mapper.ArtistMapper;
 import com.projects.spotifyclone.repository.ArtistRepository;
+import com.projects.spotifyclone.repository.UserRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class ArtistService {
 
     private final ArtistMapper artistMapper;
     private final ArtistRepository artistRepository;
+    private final UserRepository userRepository;
 
-    public ArtistService(ArtistMapper artistMapper, ArtistRepository artistRepository) {
+    public ArtistService(ArtistMapper artistMapper, ArtistRepository artistRepository, UserRepository userRepository) {
         this.artistMapper = artistMapper;
         this.artistRepository = artistRepository;
+        this.userRepository = userRepository;
     }
 
     // add an artist
@@ -84,6 +90,17 @@ public class ArtistService {
     @Transactional(readOnly = true)
     public ArtistDTO findByNameArtist(String nameArtist) {
         return artistMapper.toArtistDTO(artistRepository.findByNameArtist(nameArtist));
+    }
+
+    // Adds an object to the user_artist pivot table (the action of liking an artist).
+    @Transactional()
+    public String favArtistByUser(int idUser, int idArtist) {
+        Optional<ArtistEntity> artist = artistRepository.findById(idArtist);
+        Optional<UserEntity> user = userRepository.findById(idUser);
+        artist.get().getUsers().add(user.get());
+        user.get().getArtists().add(artist.get());
+        artistRepository.save(artist.get());
+        return "fav added successfully";
     }
 
 }
