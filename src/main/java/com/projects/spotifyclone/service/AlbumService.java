@@ -3,6 +3,8 @@ package com.projects.spotifyclone.service;
 import com.projects.spotifyclone.dto.AlbumDTO;
 import com.projects.spotifyclone.dto.AlbumWithPivotDTO;
 import com.projects.spotifyclone.dto.UserDTO;
+import com.projects.spotifyclone.entity.AlbumEntity;
+import com.projects.spotifyclone.entity.UserEntity;
 import com.projects.spotifyclone.mapper.AlbumMapper;
 import com.projects.spotifyclone.mapper.UserMapper;
 import com.projects.spotifyclone.repository.AlbumRepository;
@@ -11,6 +13,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class AlbumService {
@@ -95,12 +98,16 @@ public class AlbumService {
 
     // Adds an object to the user_album pivot table (the action of liking an album).
     @Transactional()
-    public String favAlbumByUser(long idUser, long idAlbum) {
-        AlbumWithPivotDTO album = albumMapper.toAlbumWithPivotDTO(albumRepository.findByIdAlbum(idAlbum));
-        UserDTO user = userMapper.toUserDTO(userRepository.findByIdUser(idUser));
-        album.getUsers().add(user);
-        albumRepository.save(albumMapper.fromAlbumWithPivotDTO(album));
-        return "fav added successfully"+ album.getUsers();
+    public String favAlbumByUser(int idUser, int idAlbum) {
+        Optional<AlbumEntity> album = albumRepository.findById(idAlbum);
+        Optional<UserEntity> user = userRepository.findById(idUser);
+
+        album.get().getUsers().add(user.get());
+        user.get().getAlbums().add(album.get());
+
+        albumRepository.save(album.get());
+
+        return "fav added successfully";
     }
 
 }

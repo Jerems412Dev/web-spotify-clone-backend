@@ -77,7 +77,7 @@ public class AlbumController {
     }
 
     @GetMapping(value = "/favalbumbyuser/{iduser}/{idalbum}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<String> favAlbumByUser(@PathVariable("iduser") long iduser,@PathVariable("idalbum") long idalbum) {
+    public ResponseEntity<String> favAlbumByUser(@PathVariable("iduser") int iduser,@PathVariable("idalbum") int idalbum) {
         return ResponseEntity.ok().body(albumservice.favAlbumByUser(iduser,idalbum));
     }
 
