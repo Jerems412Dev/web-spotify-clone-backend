@@ -46,7 +46,7 @@ public class TrackListenService {
     //find all trackListens by username
     @Transactional(readOnly = true)
     public List<TrackListenDTO> findByUsername(String username) {
-        return tracklistenMapper.tracklistenEntityListToTrackListenDTOList(tracklistenRepository.findTop8ByUser_Username(username));
+        return tracklistenMapper.tracklistenEntityListToTrackListenDTOList(tracklistenRepository.findByUser_Username(username));
     }
 
     // check if a track has been listened to by a user
