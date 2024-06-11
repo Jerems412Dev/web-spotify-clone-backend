@@ -63,9 +63,9 @@ public class ArtistController {
         return ResponseEntity.ok().body(artistservice.artistExistInCategory(nameartist,namecategory));
     }
 
-    @GetMapping(value = "/deleteartistuser/{username}/{nameartist}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Boolean> deleteArtistUser(@PathVariable("username") String username,@PathVariable("nameartist") String nameartist) {
-        return ResponseEntity.ok().body(artistservice.deleteArtistUser(username,nameartist));
+    @GetMapping(value = "/deleteartistuser/{iduser}/{idartist}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Boolean> deleteArtistUser(@PathVariable("iduser") int iduser,@PathVariable("idartist") int idartist) {
+        return ResponseEntity.ok().body(artistservice.deleteArtistUser(iduser,idartist));
     }
 
     @GetMapping(value = "/findartistbynameartist/{nameartist}", produces = MediaType.APPLICATION_JSON_VALUE)

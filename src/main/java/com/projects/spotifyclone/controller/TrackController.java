@@ -103,9 +103,9 @@ public class TrackController {
         return ResponseEntity.ok().body(trackservice.existsByIdTrackAndUsersUsername(idtrack,username));
     }
 
-    @GetMapping(value = "/deletebyusernameandtitletrack/{username}/{titletrack}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Boolean> deleteByUsernameAndTitleTrack(@PathVariable("username") String username,@PathVariable("titletrack") String titletrack) {
-        return ResponseEntity.ok().body(trackservice.deleteByUsernameAndTitleTrack(username,titletrack));
+    @GetMapping(value = "/deletebyusertrack/{iduser}/{idtrack}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Boolean> deleteByUserTrack(@PathVariable("iduser") int iduser,@PathVariable("idtrack") int idtrack) {
+        return ResponseEntity.ok().body(trackservice.deleteByUserAndTrack(iduser,idtrack));
     }
 
     @GetMapping(value = "/favtrackbyuser/{iduser}/{idtrack}", produces = MediaType.APPLICATION_JSON_VALUE)

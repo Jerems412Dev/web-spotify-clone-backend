@@ -124,8 +124,13 @@ public class TrackService {
 
     // Deletes a user's “like” of a track
     @Transactional(readOnly = true)
-    public Boolean deleteByUsernameAndTitleTrack(String username, String titleTrack) {
-        return trackRepository.deleteDistinctByUsersUsernameAndTitleTrack(username,titleTrack);
+    public Boolean deleteByUserAndTrack(int idUser, int idTrack) {
+        Optional<TrackEntity> track = trackRepository.findById(idTrack);
+        Optional<UserEntity> user = userRepository.findById(idUser);
+        user.get().getTracks().remove(track.get());
+        track.get().getUsers().remove(user.get());
+        trackRepository.save(track.get());
+        return true;
     }
 
     // Adds an object to the user_track pivot table (the action of liking an track).

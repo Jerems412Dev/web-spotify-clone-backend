@@ -64,7 +64,7 @@ public class AlbumController {
     }
 
     @GetMapping(value = "/deletealbumuser/{username}/{titlealbum}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Boolean> deleteAlbumUser(@PathVariable("username") String username,@PathVariable("titlealbum") String titlealbum) {
+    public ResponseEntity<Boolean> deleteAlbumUser(@PathVariable("username") int username,@PathVariable("titlealbum") int titlealbum) {
         return ResponseEntity.ok().body(albumservice.deleteAlbumUser(username,titlealbum));
     }
 

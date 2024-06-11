@@ -76,8 +76,13 @@ public class AlbumService {
 
     // Deletes a user's “like” of an album
     @Transactional(readOnly = true)
-    public Boolean deleteAlbumUser(String username, String titleAlbum) {
-        return albumRepository.deleteDistinctByUsersUsernameAndTitleAlbum(username,titleAlbum);
+    public Boolean deleteAlbumUser(int idUser, int idAlbum) {
+        Optional<AlbumEntity> album = albumRepository.findById(idAlbum);
+        Optional<UserEntity> user = userRepository.findById(idUser);
+        user.get().getAlbums().remove(album.get());
+        album.get().getUsers().remove(user.get());
+        albumRepository.save(album.get());
+        return true;
     }
 
     // find an artist by name

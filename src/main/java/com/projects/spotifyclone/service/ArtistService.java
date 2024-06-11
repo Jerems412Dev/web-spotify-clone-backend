@@ -77,8 +77,13 @@ public class ArtistService {
 
     // Deletes a user's “like” of an artist
     @Transactional(readOnly = true)
-    public Boolean deleteArtistUser(String username, String nameArtist) {
-        return artistRepository.deleteDistinctByUsersUsernameAndNameArtist(username,nameArtist);
+    public Boolean deleteArtistUser(int idUser, int idArtist) {
+        Optional<ArtistEntity> artist = artistRepository.findById(idArtist);
+        Optional<UserEntity> user = userRepository.findById(idUser);
+        user.get().getArtists().remove(artist.get());
+        artist.get().getUsers().remove(user.get());
+        artistRepository.save(artist.get());
+        return true;
     }
 
     @Transactional(readOnly = true)
