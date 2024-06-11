@@ -7,7 +7,9 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @CrossOrigin(origins = "*")
 @RestController
@@ -77,8 +79,10 @@ public class ArtistController {
     }
 
     @GetMapping(value = "/favartistbyuser/{iduser}/{idartist}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<String> favArtistByUser(@PathVariable("iduser") int iduser,@PathVariable("idartist") int idartist) {
-        return ResponseEntity.ok().body(artistservice.favArtistByUser(iduser,idartist));
+    public ResponseEntity<Map<String,String>> favArtistByUser(@PathVariable("iduser") int iduser, @PathVariable("idartist") int idartist) {
+        Map<String, String> response = new HashMap<>();
+        response.put("message",artistservice.favArtistByUser(iduser,idartist));
+        return ResponseEntity.ok().body(response);
     }
 
 }

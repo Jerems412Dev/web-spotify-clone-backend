@@ -7,7 +7,9 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @CrossOrigin(origins = "*")
 @RestController
@@ -107,8 +109,10 @@ public class TrackController {
     }
 
     @GetMapping(value = "/favtrackbyuser/{iduser}/{idtrack}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<String> favTrackByUser(@PathVariable("iduser") int iduser,@PathVariable("idtrack") int idtrack) {
-        return ResponseEntity.ok().body(trackservice.favTrackByUser(iduser,idtrack));
+    public ResponseEntity<Map<String,String>> favTrackByUser(@PathVariable("iduser") int iduser, @PathVariable("idtrack") int idtrack) {
+        Map<String, String> response = new HashMap<>();
+        response.put("message",trackservice.favTrackByUser(iduser,idtrack));
+        return ResponseEntity.ok().body(response);
     }
 
 }
