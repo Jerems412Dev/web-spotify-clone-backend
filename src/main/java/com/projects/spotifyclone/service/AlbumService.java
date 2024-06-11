@@ -82,6 +82,7 @@ public class AlbumService {
         user.get().getAlbums().remove(album.get());
         album.get().getUsers().remove(user.get());
         albumRepository.save(album.get());
+        userRepository.save(user.get());
         return true;
     }
 
