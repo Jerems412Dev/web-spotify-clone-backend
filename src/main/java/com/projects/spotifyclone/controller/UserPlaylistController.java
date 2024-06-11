@@ -7,7 +7,9 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @CrossOrigin(origins = "*")
 @RestController
@@ -51,7 +53,9 @@ public class UserPlaylistController {
     }
 
     @GetMapping(value = "/addtrackinplaylist/{idplaylist}/{idtrack}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<String> favArtistByUser(@PathVariable("idplaylist") int idplaylist,@PathVariable("idtrack") int idtrack) {
-        return ResponseEntity.ok().body(userplaylistservice.addTrackInPlaylist(idplaylist,idtrack));
+    public ResponseEntity<Map<String,String>> addTrackOnPlaylist(@PathVariable("idplaylist") int idplaylist, @PathVariable("idtrack") int idtrack) {
+        Map<String, String> response = new HashMap<>();
+        response.put("message",userplaylistservice.addTrackInPlaylist(idplaylist,idtrack));
+        return ResponseEntity.ok().body(response);
     }
 }
