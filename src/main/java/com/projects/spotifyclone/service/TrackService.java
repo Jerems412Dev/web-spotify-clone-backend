@@ -118,8 +118,8 @@ public class TrackService {
 
     // check if a track exists by titleTrack and username.
     @Transactional(readOnly = true)
-    public Boolean existsByTitleTrackAndUsername(String titleTrack, String username) {
-        return trackRepository.existsByTitleTrackAndUsersUsername(titleTrack,username);
+    public Boolean existsByIdTrackAndUsersUsername(long idTrack, String username) {
+        return trackRepository.existsByIdTrackAndUsersUsername(idTrack,username);
     }
 
     // Deletes a user's “like” of a track

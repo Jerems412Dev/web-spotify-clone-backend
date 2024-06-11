@@ -87,8 +87,8 @@ public class AlbumService {
     }
 
     @Transactional(readOnly = true)
-    public Boolean existsByTitleAlbumAndUsername(String titleAlbum, String username) {
-        return albumRepository.existsByTitleAlbumAndUsersUsername(titleAlbum,username);
+    public Boolean existsByIdAlbumAndUsername(long idAlbum, String username) {
+        return albumRepository.existsByIdAlbumAndUsersUsername(idAlbum,username);
     }
 
     // Adds an object to the user_album pivot table (the action of liking an album).

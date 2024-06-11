@@ -82,8 +82,8 @@ public class ArtistService {
     }
 
     @Transactional(readOnly = true)
-    public Boolean existsByNameArtistAndUsername(String nameArtist, String username) {
-        return artistRepository.existsByNameArtistAndUsersUsername(nameArtist,username);
+    public Boolean existsByIdArtistAndUsersUsername(long idArtist, String username) {
+        return artistRepository.existsByIdArtistAndUsersUsername(idArtist,username);
     }
 
     // find an artist by name

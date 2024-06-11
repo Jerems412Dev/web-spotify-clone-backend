@@ -18,6 +18,6 @@ public interface TrackRepository extends JpaRepository<TrackEntity, Integer> {
     List<TrackEntity> findDistinctBySpotifyplaylistsIdSpotifyPlaylistNot(Long id);
     List<TrackEntity> findDistinctByTitleTrackContaining(String search);
     Boolean existsByTitleTrack(String titleTrack);
-    Boolean existsByTitleTrackAndUsersUsername(String titleTrack, String username);
+    Boolean existsByIdTrackAndUsersUsername(long idTrack, String username);
     Boolean deleteDistinctByUsersUsernameAndTitleTrack(String username,String titleTrack);
 }

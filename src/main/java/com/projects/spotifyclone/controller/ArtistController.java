@@ -73,9 +73,9 @@ public class ArtistController {
         return ResponseEntity.ok().body(artistservice.findByNameArtist(nameartist));
     }
 
-    @GetMapping(value = "/existsbynameartistandusername/{nameartist}/{username}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Boolean> existsByNameArtistAndUsername(@PathVariable("nameartist") String nameartist,@PathVariable("username") String username) {
-        return ResponseEntity.ok().body(artistservice.existsByNameArtistAndUsername(nameartist,username));
+    @GetMapping(value = "/existsbyidartistandusername/{idartist}/{username}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Boolean> existsByIdArtistAndUsersUsername(@PathVariable("idartist") long idartist,@PathVariable("username") String username) {
+        return ResponseEntity.ok().body(artistservice.existsByIdArtistAndUsersUsername(idartist,username));
     }
 
     @GetMapping(value = "/favartistbyuser/{iduser}/{idartist}", produces = MediaType.APPLICATION_JSON_VALUE)

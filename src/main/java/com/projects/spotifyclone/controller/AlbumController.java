@@ -73,9 +73,9 @@ public class AlbumController {
         return ResponseEntity.ok().body(albumservice.findByTitleAlbum(titlealbum));
     }
 
-    @GetMapping(value = "/existsbytitlealbumandusername/{titlealbum}/{username}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Boolean> existsByTitleAlbumAndUsername(@PathVariable("titlealbum") String titlealbum,@PathVariable("username") String username) {
-        return ResponseEntity.ok().body(albumservice.existsByTitleAlbumAndUsername(titlealbum,username));
+    @GetMapping(value = "/existsbyidalbumandusername/{idalbum}/{username}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Boolean> existsByIdAlbumAndUsername(@PathVariable("idalbum") long idalbum,@PathVariable("username") String username) {
+        return ResponseEntity.ok().body(albumservice.existsByIdAlbumAndUsername(idalbum,username));
     }
 
     @GetMapping(value = "/favalbumbyuser/{iduser}/{idalbum}", produces = MediaType.APPLICATION_JSON_VALUE)
