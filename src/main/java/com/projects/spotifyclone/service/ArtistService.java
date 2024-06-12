@@ -80,9 +80,11 @@ public class ArtistService {
     public Boolean deleteArtistUser(int idUser, int idArtist) {
         Optional<ArtistEntity> artist = artistRepository.findById(idArtist);
         Optional<UserEntity> user = userRepository.findById(idUser);
-        user.get().getArtists().remove(artist.get());
-        artist.get().getUsers().remove(user.get());
-        artistRepository.save(artist.get());
+        if(artist.isPresent() && user.isPresent()) {
+            user.get().getArtists().remove(artist.get());
+            artist.get().getUsers().remove(user.get());
+            artistRepository.save(artist.get());
+        }
         return true;
     }
 
@@ -102,9 +104,11 @@ public class ArtistService {
     public String favArtistByUser(int idUser, int idArtist) {
         Optional<ArtistEntity> artist = artistRepository.findById(idArtist);
         Optional<UserEntity> user = userRepository.findById(idUser);
-        artist.get().getUsers().add(user.get());
-        user.get().getArtists().add(artist.get());
-        artistRepository.save(artist.get());
+        if(artist.isPresent() && user.isPresent()) {
+            artist.get().getUsers().add(user.get());
+            user.get().getArtists().add(artist.get());
+            artistRepository.save(artist.get());
+        }
         return "fav added successfully";
     }
 

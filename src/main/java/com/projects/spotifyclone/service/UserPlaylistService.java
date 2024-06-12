@@ -31,6 +31,20 @@ public class UserPlaylistService {
         return "userPlaylist added successfully";
     }
 
+    // update an userPlaylist
+    @Transactional
+    public String updateUserPlaylist(int id, UserPlaylistDTO userPlaylistDTO) {
+        Optional<UserPlaylistEntity> existingUserPlaylistO = userPlaylistRepository.findById(id);
+        if(existingUserPlaylistO.isPresent()) {
+            UserPlaylistEntity existingUserPlaylist = existingUserPlaylistO.get();
+            existingUserPlaylist.setNamePlaylist(userPlaylistDTO.getNamePlaylist());
+            existingUserPlaylist.setDescription(userPlaylistDTO.getDescription());
+            existingUserPlaylist.setProfilePicture(userPlaylistDTO.getProfilePicture());
+            userPlaylistRepository.save(existingUserPlaylist);
+        }
+        return "userPlaylist added successfully";
+    }
+
     // find playlist by name
     @Transactional(readOnly = true)
     public UserPlaylistDTO findByNamePlaylist(String namePlaylist) {
@@ -61,14 +75,16 @@ public class UserPlaylistService {
         return userPlaylistRepository.deleteDistinctByTracksTitleTrackAndIdUserPlaylist(titleTrack,id);
     }
 
-    // Adds an object to the user_userplaylist pivot table (the action of liking an track).
+    // Add an object to the user_userPlaylist pivot table (the action of liking a track).
     @Transactional()
     public String addTrackInPlaylist(int idUserPlaylist, int idTrack) {
         Optional<TrackEntity> track = trackRepository.findById(idTrack);
         Optional<UserPlaylistEntity> user = userPlaylistRepository.findById(idUserPlaylist);
-        track.get().getUserplaylists().add(user.get());
-        user.get().getTracks().add(track.get());
-        trackRepository.save(track.get());
+        if(track.isPresent() && user.isPresent()) {
+            track.get().getUserplaylists().add(user.get());
+            user.get().getTracks().add(track.get());
+            trackRepository.save(track.get());
+        }
         return "fav added successfully";
     }
 

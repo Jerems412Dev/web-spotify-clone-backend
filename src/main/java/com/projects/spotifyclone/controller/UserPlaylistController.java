@@ -58,4 +58,11 @@ public class UserPlaylistController {
         response.put("message",userplaylistservice.addTrackInPlaylist(idplaylist,idtrack));
         return ResponseEntity.ok().body(response);
     }
+
+    @GetMapping(value = "/updateuserplaylist/{idplaylist}/{playlist}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Map<String,String>> updateUserPlaylist(@PathVariable("idplaylist") int idplaylist, @PathVariable("playlist") UserPlaylistDTO playlist) {
+        Map<String, String> response = new HashMap<>();
+        response.put("message",userplaylistservice.updateUserPlaylist(idplaylist,playlist));
+        return ResponseEntity.ok().body(response);
+    }
 }

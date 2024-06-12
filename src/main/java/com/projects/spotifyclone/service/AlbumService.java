@@ -79,10 +79,12 @@ public class AlbumService {
     public Boolean deleteAlbumUser(int idUser, int idAlbum) {
         Optional<AlbumEntity> album = albumRepository.findById(idAlbum);
         Optional<UserEntity> user = userRepository.findById(idUser);
-        user.get().getAlbums().remove(album.get());
-        album.get().getUsers().remove(user.get());
-        albumRepository.save(album.get());
-        userRepository.save(user.get());
+        if(album.isPresent() && user.isPresent()) {
+            user.get().getAlbums().remove(album.get());
+            album.get().getUsers().remove(user.get());
+            albumRepository.save(album.get());
+            userRepository.save(user.get());
+        }
         return true;
     }
 
@@ -102,9 +104,11 @@ public class AlbumService {
     public String favAlbumByUser(int idUser, int idAlbum) {
         Optional<AlbumEntity> album = albumRepository.findById(idAlbum);
         Optional<UserEntity> user = userRepository.findById(idUser);
-        album.get().getUsers().add(user.get());
-        user.get().getAlbums().add(album.get());
-        albumRepository.save(album.get());
+        if(album.isPresent() && user.isPresent()) {
+            album.get().getUsers().add(user.get());
+            user.get().getAlbums().add(album.get());
+            albumRepository.save(album.get());
+        }
         return "fav added successfully";
     }
 

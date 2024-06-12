@@ -127,20 +127,24 @@ public class TrackService {
     public Boolean deleteByUserAndTrack(int idUser, int idTrack) {
         Optional<TrackEntity> track = trackRepository.findById(idTrack);
         Optional<UserEntity> user = userRepository.findById(idUser);
-        user.get().getTracks().remove(track.get());
-        track.get().getUsers().remove(user.get());
-        trackRepository.save(track.get());
+        if(track.isPresent() && user.isPresent()) {
+            user.get().getTracks().remove(track.get());
+            track.get().getUsers().remove(user.get());
+            trackRepository.save(track.get());
+        }
         return true;
     }
 
-    // Adds an object to the user_track pivot table (the action of liking an track).
+    // Adds an object to the user_track pivot table (the action of liking a track).
     @Transactional()
     public String favTrackByUser(int idUser, int idTrack) {
         Optional<TrackEntity> track = trackRepository.findById(idTrack);
         Optional<UserEntity> user = userRepository.findById(idUser);
-        track.get().getUsers().add(user.get());
-        user.get().getTracks().add(track.get());
-        trackRepository.save(track.get());
+        if(track.isPresent() && user.isPresent()) {
+            track.get().getUsers().add(user.get());
+            user.get().getTracks().add(track.get());
+            trackRepository.save(track.get());
+        }
         return "fav added successfully";
     }
 
