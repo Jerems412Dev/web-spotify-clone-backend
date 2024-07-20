@@ -7,13 +7,8 @@ This is a solution to the backend of my web spotify clone
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
 - [Author](#author)
-
-## Overview
 
 ### The challenge
 
@@ -38,8 +33,6 @@ Users should be able to:
 
 - Solution URL: [Add solution URL here](https://github.com/Jerems412Dev/web-spotify-clone-backend)
 - Live Site URL: [Add live site URL here](https://web-spotify-clone-4eml.vercel.app/)
-
-## My process
 
 ### Built with
 
